@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T11:30:17.006Z",
+ "updated": "2026-11-16T04:44:58.919Z",
  "reports": [
   {
    "company": "Aartech Solonics",
@@ -7256,6 +7256,25 @@
     "Capital commitments jumped significantly to ₹43.3 crore at the end of FY26 from just ₹8.5 crore in the prior year."
    ],
    "researchedOn": "2026-09-27"
+  },
+  {
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "year": "FY26",
+   "url": "https://archives.nseindia.com/annual_reports/AR_31534_VIVIANA_2025_2026_A_7497241_05092026162340.pdf",
+   "auditor": "The auditor gave a clean, unmodified opinion. However, they included an emphasis of matter regarding an unassessed impact of new labour codes and a ₹13.99 lakh debit balance in a director's current account. The CARO annexure noted delays in GST and TDS deposits, including ₹37.7 lakh of TDS unpaid for over six months. It also noted ₹62.7 lakh in late fees on statutory dues and small differences between bank stock statements and company books.",
+   "relatedParties": "The company lent ₹23.5cr to its subsidiaries during FY26, including ₹21.5cr to Viviana Life Spaces, leaving ₹31.6cr outstanding at year-end. The company also provided a ₹12.6cr guarantee for Aarsh. Promoters injected ₹4.3cr in loans and were repaid ₹4.6cr. The company acted as a co-borrower on a ₹1.68cr car loan for Richi Choksi. Additionally, subsidiary Life Spaces sold property worth ₹1.2cr in FY26 and ₹3.3cr in FY25 to Reema and Priyanka Choksi.",
+   "contingent": "Contingent liabilities included bank guarantees of ₹79.1cr, up from ₹23.1cr the previous year, and small income tax demands of about ₹20 lakh. The company is a co-borrower on a ₹1.68cr car loan. There is also a capital commitment of ₹48.2cr to purchase an office building.",
+   "outlook": "Management stated in the report that FY27 revenue would be above ₹900cr, with transformer revenue reaching ₹400–600cr by FY30. The management discussion noted that working capital is the main constraint. The MD&A also indicated that 48% of the year's revenue was booked in March alone.",
+   "other": "The company reported a single business segment for FY26. Of its ₹501.7cr standalone revenue, ₹437cr came from product sales and ₹64cr from services. Subsidiaries Aarsh Transformers and Viviana Engineering reported minor losses of ₹0.4cr and ₹0.5cr respectively. The board recommended a dividend of ₹1 per share, or 10%, for the year.",
+   "flags": [
+    "Operating cash flow has been negative every year, despite reported profits and rapid revenue growth.",
+    "The company lent ₹23.5cr to subsidiaries that are now being sold off to an undisclosed buyer.",
+    "The auditor flagged delayed statutory deposits, with ₹37.7 lakh of TDS unpaid for over six months.",
+    "Trade receivables are extremely high, standing at 268 days in FY26.",
+    "The report has an inconsistency where CARO notes subsidiary loans of ₹43.25 lakh, but note 38 shows ₹23.5 crore."
+   ],
+   "researchedOn": "2026-11-16"
   },
   {
    "company": "Vivid Electromech",

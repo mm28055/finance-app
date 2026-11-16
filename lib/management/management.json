@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -39597,6 +39597,109 @@
     "Q4 FY26 call transcript (25 May 2026)"
    ],
    "updatedOn": "2026-11-12"
+  },
+  {
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "style": "Promoter-run",
+   "styleNote": "A Vadodara family company founded in 2014 by Nikesh Choksi, a former GETCO, Torrent Power and Adani Transmission engineer, and his son Richi. Nikesh is Chairman and Managing Director, Richi a whole-time director who speaks for the company on the calls, Richi's wife Priyanka a whole-time director (she ran the real-estate subsidiary Viviana Life Spaces) and Nikesh's wife Reema a non-executive director. Promoters hold 70.79% (September 2026), down from 73.2% at listing in 2022: at 31 March 2026 Nikesh Choksi held 66.61%, Richi 1.96% and Priyanka 1.96%, with four other promoter-group holders under 0.1% each; institutions hold under 1%. Related-party dealings are material for a company this size: in FY26 it lent ₹21.5cr to Viviana Life Spaces and ₹1.6cr to Aarsh Transformers (₹31.6cr owed by subsidiaries at March 2026, earning ₹1.8cr of interest) and guaranteed ₹12.6cr of Aarsh's borrowings; the board decided in August 2026 to sell both subsidiaries to an undisclosed buyer, and Richi Choksi said the company will keep using Life Spaces' properties as loan collateral because 'the promoters are same'. Life Spaces sold ₹1.2cr (FY26) and ₹3.3cr (FY25) of property to Reema and Priyanka Choksi; the company has committed ₹48.2cr to buy an office building, which management says is in the Life Spaces tower; it is co-borrower on a ₹1.68cr car loan taken by Richi Choksi; the promoters lent it ₹4.3cr and were repaid ₹4.6cr in FY26; and it pays rent to Richi, Reema and Priyanka Choksi (₹8.5 lakh). Shares in a subsidiary were bought from key managers in FY26. The auditor flagged a ₹14 lakh debit balance in a director's current account during FY26.",
+   "people": [
+    {
+     "name": "Nikesh Kishorchandra Choksi",
+     "role": "Chairman and Managing Director",
+     "since": "Running the company since 2016 (presentation); co-founder in 2014",
+     "family": true,
+     "relation": "Promoter; father of Richi Choksi, husband of Reema Choksi",
+     "stake": "66.61% (31 March 2026); the promoter group holds 70.79% (September 2026)",
+     "bio": "A power engineer with about 40 years in the sector: 21 years at GETCO, Gujarat's transmission company, 3 years at Torrent Power and 8 years at Adani Transmission, specialising in extra-high-voltage lines and substations. Paid ₹39 lakh in FY26. He opens the results calls with the industry outlook and the medium-term targets (₹2,000–2,200cr of revenue and ₹200cr+ of profit by FY30)."
+    },
+    {
+     "name": "Richi Nikeshbhai Choksi",
+     "role": "Whole-Time Director",
+     "since": "Co-founder, 2014",
+     "family": true,
+     "relation": "Son of Nikesh Choksi; husband of Priyanka Choksi",
+     "stake": "1.96% (31 March 2026)",
+     "bio": "An electrical engineer with 12–15 years in power projects who began at Larsen & Toubro (3 years) before co-founding the company. He answers most questions on the calls (orders, bids, transformers, BESS, the subsidiary sales and fund-raising). Paid ₹36 lakh in FY26. The company is co-borrower on a ₹1.68cr Mercedes-Benz car loan in his name, and he lent the company ₹4.0cr and was repaid ₹4.4cr in FY26."
+    },
+    {
+     "name": "Priyanka Richi Choksi",
+     "role": "Whole-Time Director",
+     "since": "Joined as CFO in 2014; director since August 2025",
+     "family": true,
+     "relation": "Wife of Richi Choksi; daughter-in-law of Nikesh Choksi",
+     "stake": "1.96% (31 March 2026)",
+     "bio": "An interior designer with an MBA in finance (CARE), she was the company's first CFO and now oversees administration, finance and risk; she led the real-estate subsidiary Viviana Life Spaces, which the board decided to sell in August 2026. Her proprietorship Viviana Interio supplied ₹12.6 lakh of services to the group in FY25. Paid ₹36 lakh in FY26."
+    },
+    {
+     "name": "Reema Nikesh Choksi",
+     "role": "Non-Executive Director",
+     "since": "Director since 17 May 2022",
+     "family": true,
+     "relation": "Wife of Nikesh Choksi",
+     "bio": "A promoter-group director, aged about 60, who takes no pay; she sits on several board committees. With Priyanka Choksi she bought ₹1.2cr (FY26) and ₹3.3cr (FY25) of property from Life Spaces, and the company pays her rent."
+    },
+    {
+     "name": "Dipesh Patel",
+     "role": "Chief Financial Officer",
+     "family": false,
+     "bio": "Presents the results on the calls. On 25 June 2026 he said the transformer capex was funded by internal accruals and that the company was 'protecting our cash flows'; operating cash has been negative every year since FY23. In August he said over ₹40cr of receivables came in during July."
+    },
+    {
+     "name": "Kavaljit Nishant Parmar",
+     "role": "Company Secretary and Compliance Officer",
+     "family": false,
+     "bio": "Signs the company's exchange filings (membership A53248)."
+    },
+    {
+     "name": "Ajit Sakhrani",
+     "role": "Vice President and Head of Power T&D Business",
+     "family": false,
+     "bio": "An electrical engineer with 30+ years in transmission and distribution, earlier at Rohini Industrial Electricals, Pratibha Electricals Infra Projects and Bhavnagar Energy; leads EPC execution and site operations."
+    },
+    {
+     "name": "Bhavin Parikh",
+     "role": "General Manager and Head of Power Transformer Business",
+     "family": false,
+     "bio": "32+ years in transformer manufacturing (up to 100 MVA/220 kV) at Transformers & Rectifiers (India), Electrotherm, IMP Powers and Shilchar Technologies; leads the new transformer plants."
+    },
+    {
+     "name": "Laxmi Narayana Mishra",
+     "role": "Independent Director",
+     "family": false,
+     "bio": "38 years in power and infrastructure, IIT (BHU) and IIT Delhi engineer, formerly with Adani Transmission, Torrent Power, Reliance Power Transmission and Power Grid."
+    },
+    {
+     "name": "Sneha Varma",
+     "role": "Independent Director",
+     "since": "29 January 2026",
+     "family": false,
+     "bio": "A chartered accountant with over 10 years in accounting, tax and audit."
+    },
+    {
+     "name": "Vishal Ranchhodbhai Thakarani",
+     "role": "Independent Director",
+     "since": "29 January 2026",
+     "family": false,
+     "bio": "A chartered accountant with over 13 years in direct and indirect tax."
+    },
+    {
+     "name": "Sagar Natvarlal Tailor",
+     "role": "Independent Director",
+     "family": false,
+     "bio": "A company secretary and law graduate with about 9 years in corporate compliance."
+    }
+   ],
+   "changes": "Priyanka Choksi was made a director in August 2025; Sneha Varma and Vishal Thakarani joined as independent directors on 29 January 2026. The shares moved from NSE Emerge to the main board on 2 June 2026. Bhavin Parikh was brought in to head transformers before the June 2026 call. On 4 August 2026 the board approved selling the 90% stake in Viviana Life Spaces and the 75% stake in Aarsh Transformers (buyer not disclosed). On 6 October 2026 CARE cut its issuer rating to BB+ and withdrew it at the company's request; CRISIL assigned BBB-/A3 the same day. On 2 November 2026 the board approved a rights issue of up to ₹150cr.",
+   "sources": [
+    "https://archives.nseindia.com/annual_reports/AR_31534_VIVIANA_2025_2026_A_7497241_05092026162340.pdf",
+    "https://nsearchives.nseindia.com/corporate/VIVIANA_06082026122633_INVESTOR_PRESENTATION_06082026_RE.pdf",
+    "https://nsearchives.nseindia.com/corporate/VIVIANA_02112026195946_OUTCOME_BM_02112026.pdf",
+    "https://www.careratings.com/upload/CompanyFiles/PR/202610141042_VIVIANA_POWER_TECH_LIMITED.pdf",
+    "Q1 FY27 call transcript (6 Aug 2026)",
+    "Q4 FY26 call transcript (25 Jun 2026)"
+   ],
+   "updatedOn": "2026-11-16"
   }
  ]
 }

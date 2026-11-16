@@ -280,6 +280,7 @@ CONFIG = {
         'KEC International': ('KEC', None, HR, False),
         'Transrail Lighting': ('TRANSRAILL', None, HR, False),
         'Skipper': ('SKIPPER', None, HR, False),
+        'Viviana Power Tech': ('VIVIANA', None, HR, False),
     },
     'iron-steel': {
         'Aeroflex Industries': ('AEROFLEX', None, ALLOYSTEEL, False),

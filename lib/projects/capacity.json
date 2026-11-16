@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "capacity": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -5830,6 +5830,15 @@
    "fullUse": "Powders at about 80% have about a quarter more volume left before full use, and no powder or foil capacity is planned for two years, so growth there must come from exports and richer grades. Insulators at full use would bring ₹130–140cr of sales a year after ₹8–10cr more of balancing equipment (company); lidding foil at 75% use only ₹9–11cr",
    "capexStatus": "FY26 capex ₹49cr (₹21cr insulators, ₹16cr powders, ₹6cr conductors). Under way: 18,000 t aluminium wire-rod plant (₹13–15cr, commercial production Q4 FY27), 7 MW group-captive solar park (₹30cr, hardware at site, commissioning slipped to January–February 2027 for approvals), LT power cables at Umred 6,000 t (₹85–90cr over 2–3 years in two phases, trials Q4 FY28). Capital work in progress ₹56cr and borrowings ₹236cr at September 2026; the CFO's limit is net debt of 1 times equity",
    "source": "Q2 FY27 call (3 Nov 2026) and presentation, Q4 FY26 call (25 May 2026) and presentation, FY26 annual report (note 44), Screener"
+  },
+  {
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "today": "An EPC contractor, so capacity is mainly how much work its teams, subcontractors and bank limits can carry: revenue of ₹529cr in FY26 and ₹630cr over the last four quarters (Screener), with a single-bid limit of about ₹110–120cr. Order book ₹1,800cr+ on 2 November 2026, of which ₹506cr is battery storage (BESS) that CRISIL says is on hold, leaving about ₹1,300cr of power EPC work including orders where it is lowest bidder. Factories: a leased power-transformer plant at Por, Vadodara (up to 20 MVA, 66/33 kV, up to 1,000 MVA a year), inaugurated 21 September 2026; the leased Aarsh Transformers unit (distribution transformers up to 500 kVA) is being sold with that subsidiary",
+   "utilisation": "Bank limits, not people, are the constraint: CARE found fund-based limits ~85% used on average and 99.92% at peak in the year to July 2026, with three overdrawals; management said in June 2026 that cash collateral takes 90–95% of its limits. The new transformer plant had negligible revenue in H1 FY27",
+   "fullUse": "The ~₹1,300cr of EPC work is about 2.5 years of FY26 revenue, or about 1.5 years at the ₹840–910cr FY27 target; management expects to carry ₹800–900cr of orders into FY28 (November 2026 call, as reported). The 1,000 MVA transformer plant would add revenue only after utility type tests and approvals; the company does not give a revenue figure for it",
+   "capexStatus": "Planned: greenfield power-transformer plant on 14 acres near Vadodara, phase 1 about ₹90cr (₹70–80cr said in June) for 132 kV/63 MVA by the end of FY28, ₹3.5–4cr spent by August 2026 and about ₹10cr in FY27; CRISIL says it is to be funded by ₹50cr of debt and ₹40cr of equity. Two own BESS projects (Rajasthan 100 MW/200 MWh, capex ₹198cr; Gujarat 65 MW/130 MWh) need about ₹60cr of equity and are on hold. ₹48.2cr committed to buy an office building within 24 months. Capital work in progress ₹2.5cr at September 2026; a ₹150cr rights issue was approved on 2 November 2026",
+   "source": "Q1 FY27 call (6 Aug 2026) and presentation, Q4 FY26 call (25 Jun 2026) and presentation, Q2 FY27 results and press release (2 Nov 2026), NSE filing of 21 Sep 2026, FY26 annual report (note 41), CARE (6 Oct 2026) and CRISIL (6 Oct 2026) rationales, Screener"
   }
  ]
 }

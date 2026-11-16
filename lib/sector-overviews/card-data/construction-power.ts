@@ -1097,6 +1097,129 @@ export const constructionPowerCharts: Record<string, ProfileCharts> = {
             ],
             "note": "Standalone filings (the same as consolidated until FY26)."
         }
+    },
+    "Viviana Power Tech": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 71
+                },
+                {
+                    "label": "Staff",
+                    "share": 1
+                },
+                {
+                    "label": "Other costs",
+                    "share": 14
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 14
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Hot-rolled steel price",
+            "periods": [
+                "Q3 FY24",
+                "Q1 FY25",
+                "Q2 FY25",
+                "Q3 FY25",
+                "Q4 FY25",
+                "Q1 FY26",
+                "Q2 FY26",
+                "Q3 FY26",
+                "Q4 FY26",
+                "Q1 FY27",
+                "Q2 FY27"
+            ],
+            "margin": [
+                21.4,
+                16.7,
+                14.3,
+                16.7,
+                14.1,
+                18.8,
+                18.6,
+                11.9,
+                13.6,
+                13.9,
+                15.4
+            ],
+            "index": [
+                100,
+                96,
+                93,
+                89,
+                89,
+                92,
+                89,
+                87,
+                92,
+                97,
+                null
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                5.0,
+                5.0,
+                12.0,
+                32.0,
+                77.0
+            ],
+            "ocf": [
+                null,
+                -11.0,
+                -3.0,
+                -14.0,
+                -4.0
+            ],
+            "fcf": [
+                null,
+                -11.12,
+                -3.74,
+                -14.22,
+                -6.17
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "12.2x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "10.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹98cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "n/m",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "15%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     }
 };
 
@@ -1149,5 +1272,11 @@ export const constructionPowerValuationInputs: Record<string, ValuationInput> = 
         "ttmEbitda": 168,
         "mcapAtWriting": 1425,
         "peAtWriting": 15.7
+    },
+    "Viviana Power Tech": {
+        "netDebt": 98,
+        "ttmEbitda": 86.0,
+        "mcapAtWriting": 761.0,
+        "peAtWriting": 12.2
     }
 };

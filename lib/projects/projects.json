@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -16399,6 +16399,94 @@
      "text": "The May 2026 presentation targeted commissioning in H1 FY27 and the 25 May call Q3 FY27; on 3 Nov 2026 it was delayed by pending regulatory approvals to about January–February 2027"
     }
    ]
+  },
+  {
+   "id": "viviana-power-tech-por-transformer-plant",
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "name": "Leased power-transformer plant at Por, Vadodara (up to 20 MVA)",
+   "what": "A leased facility in the parent company making power transformers up to 20 MVA in the 66 kV and 33 kV classes for utilities, solar, BESS and data centres; inaugurated 21 September 2026. Type testing up to 18.5 MVA was planned by the end of FY27; testing capacity about 2,000 MVA this year and 5,000 MVA next (June call). Commercial production not yet confirmed in the filings read",
+   "cost": "Not disclosed",
+   "expectedStart": "Q2 FY27",
+   "adds": "Up to 1,000 MVA a year of transformer output (company); transformer revenue was ₹10–12cr in the June 2026 FY27 plan; no separate revenue figure since",
+   "capacityAdd": "Up to 1,000 MVA a year (transformers up to 20 MVA)",
+   "status": "started",
+   "source": "NSE filing (21 Sep 2026): inaugurated, up to 20 MVA, 66/33 kV, up to 1,000 MVA a year; Q1 FY27 call (6 Aug 2026); Q4 FY26 call (25 Jun 2026)",
+   "updatedOn": "2026-11-16",
+   "revisions": [
+    {
+     "on": "2026-08-06",
+     "text": "The 25 June 2026 call said the plant would start by the end of July 2026 making transformers up to 10 MVA; on 6 August it was to be inaugurated by the end of August; it was inaugurated on 21 September 2026"
+    }
+   ]
+  },
+  {
+   "id": "viviana-power-tech-greenfield-transformer-plant",
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "name": "Greenfield power-transformer plant near Vadodara (phase 1, 132 kV)",
+   "what": "A multi-product power-transformer plant on 14 acres in Vadodara district: phase 1 for 132 kV/63 MVA transformers, then 220 kV/200 MVA and later up to 400 kV, with an in-house 400 kV testing lab. Land identified; construction to start soon (August 2026). Management aims for ₹400–500cr of transformer revenue by FY30",
+   "cost": "About ₹90cr for phase 1 (₹100cr approved overall); ₹3.5–4cr spent by August 2026, about ₹10cr in FY27; CRISIL: ₹50cr debt and ₹40cr equity over FY27–FY29",
+   "expectedStart": "Q4 FY28",
+   "adds": "₹400–500cr of revenue by FY30 (August 2026 call; ₹400–600cr in June) and ₹1,000–1,200cr at full use by FY32 at 9–10% net margin (company)",
+   "capacityAdd": "Transformers up to 132 kV/63 MVA in phase 1; the June 2026 plan speaks of up to 500 MVA, 400 kV by FY30",
+   "status": "planned",
+   "source": "Q1 FY27 call (6 Aug 2026): phase 1 about ₹90cr, ₹3.5–4cr spent, ₹10cr in FY27, 132 kV capability next financial year; Q4 FY26 call (25 Jun 2026): ₹70–80cr phase 1, start by next financial year end; CRISIL (6 Oct 2026)",
+   "updatedOn": "2026-11-16",
+   "revisions": [
+    {
+     "on": "2026-08-06",
+     "text": "The 25 June 2026 call put phase 1 at ₹70–80cr and FY30 transformer revenue at ₹400–600cr; on 6 August phase 1 was about ₹90cr and FY30 transformer revenue ₹400–500cr. June said the capex would come from internal accruals; CRISIL (October) says ₹50cr debt and ₹40cr equity"
+    }
+   ]
+  },
+  {
+   "id": "viviana-power-tech-bess-rajasthan",
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "name": "Rajasthan battery-storage project, 100 MW/200 MWh (RVUNL, own project)",
+   "what": "A standalone battery energy storage system at the 220 kV Bhopalgarh substation, Jodhpur, won from RVUNL under tariff-based bidding with central viability-gap funding, to be built, owned and operated by the company; land received, financial close pending. CRISIL says the BESS orders are on hold",
+   "cost": "₹198cr capex (June 2026 call); order value ₹302.5cr including GST",
+   "expectedStart": "FY28",
+   "adds": "No revenue in FY27; across both BESS projects an analyst's estimate accepted by management was about ₹40cr of revenue a year and about ₹14cr of cash profit before tax, at a single-digit return",
+   "capacityAdd": "100 MW/200 MWh of battery storage",
+   "status": "planned",
+   "source": "Q4 FY26 call (25 Jun 2026): two banks sanctioned, financial close expected the following week; Q1 FY27 call (6 Aug 2026): land received, awaiting further approval; CRISIL (6 Oct 2026): BESS orders of ₹508cr on hold",
+   "updatedOn": "2026-11-16",
+   "revisions": [
+    {
+     "on": "2026-08-06",
+     "text": "On 25 June 2026 financial close was expected within about a week; on 6 August the company was still awaiting approvals, and in October CRISIL described the BESS orders as on hold"
+    }
+   ]
+  },
+  {
+   "id": "viviana-power-tech-bess-gujarat",
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "name": "Gujarat battery-storage project, 65 MW/130 MWh at Asoj (GUVNL, own project)",
+   "what": "A battery energy storage system next to the 400 kV Asoj substation, Vadodara, under GUVNL's tariff-based bidding with viability-gap funding; the storage agreement (BESPA) is signed, about 1,10,000 sq ft of land is being obtained and the company awaits GUVNL's notice to proceed. Held in the subsidiary Asoj Energy Storage System",
+   "cost": "Order value ₹208.7cr including GST; equity for both BESS projects about ₹60cr (June 2026 presentation)",
+   "expectedStart": "FY28",
+   "adds": "Counted in the ₹40cr-a-year estimate for both BESS projects; management says running BESS assets would help it qualify for larger central tenders",
+   "capacityAdd": "65 MW/130 MWh of battery storage",
+   "status": "planned",
+   "source": "Q4 FY26 presentation and call (Jun 2026); Q1 FY27 call (6 Aug 2026): awaiting notice to proceed from GUVNL; CRISIL (6 Oct 2026): on hold",
+   "updatedOn": "2026-11-16"
+  },
+  {
+   "id": "viviana-power-tech-office-building",
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "name": "Purchase of a corporate office building",
+   "what": "An agreement to buy a building on completion and handover; management said on the June 2026 call that the company buys no asset except its corporate office, which is in the Viviana Life Spaces corporate tower in Vadodara (a subsidiary now being sold). The annual report does not name the seller",
+   "cost": "₹48.2cr capital commitment (March 2026)",
+   "expectedStart": "Q4 FY28",
+   "adds": "No revenue; a head office for the company",
+   "capacityAdd": "None (office premises)",
+   "status": "planned",
+   "source": "FY26 annual report note 41 (handover expected within 24 months of March 2026); Q4 FY26 call (25 Jun 2026); CARE (6 Oct 2026): office premises in FY27–FY28 capex",
+   "updatedOn": "2026-11-16"
   }
  ]
 }

@@ -83,7 +83,7 @@ def build(arg):
     for k, v in exp.items():
         if not isinstance(v, dict): continue
         name = k.replace(' %', '').replace(' Cost', '').lower()
-        cost[name] = {y: num(x) for y, x in v.items() if y != 'isExpandable'}
+        cost[name] = {y: num(x) for y, x in v.items() if y != 'isExpandable' and not isinstance(x, dict)}
     qs = [c for c in qt[0][1:]][-13:]
     qsales = row(qt, 'Sales') or row(qt, 'Revenue'); qop = row(qt, 'Operating Profit')
     out = dict(

@@ -48374,6 +48374,114 @@
     "Insulators at full use would bring ₹130–140cr of sales after ₹8–10cr more equipment; powders at about 80% have about a quarter more volume before full use"
    ],
    "source": "Q2 FY27 call (3 Nov 2026), presentation and press release; Q4 FY26 call and presentation (May 2026); FY26 annual report (note 44); Crisil rationale (27 Apr 2026); Screener"
+  },
+  {
+   "company": "Viviana Power Tech",
+   "fingerprint": "ae6530e096801840",
+   "checkedOn": "2026-11-16",
+   "lines": {
+    "heading": "What limits the work (year to July 2026, CARE)",
+    "items": [
+     {
+      "name": "Fund-based bank limits",
+      "size": "Working-capital lines; single-bid limit about ₹110–120cr",
+      "usedPct": 85,
+      "usedLabel": "about 85% used on average",
+      "tight": true,
+      "tightLabel": "99.92% at peak, overdrawn three times",
+      "note": "Bank limits, not people, are the constraint; management said in June 2026 that cash collateral takes 90–95% of its limits"
+     }
+    ]
+   },
+   "money": {
+    "heading": "Money",
+    "items": [
+     {
+      "name": "Leased transformer plant at Por, Vadodara",
+      "sub": "Up to 20 MVA, 66/33 kV, up to 1,000 MVA a year; inaugurated 21 September 2026",
+      "right": "cost not disclosed",
+      "status": "started",
+      "projectId": "viviana-power-tech-por-transformer-plant"
+     },
+     {
+      "name": "Greenfield transformer plant, phase 1 (132 kV/63 MVA)",
+      "sub": "14 acres near Vadodara; ₹3.5–4cr spent by August 2026, about ₹10cr in FY27; CRISIL: ₹50cr debt and ₹40cr equity (June call had said ₹70–80cr from internal accruals)",
+      "total": 90,
+      "right": "about ₹90cr (₹100cr approved overall)",
+      "status": "planned",
+      "projectId": "viviana-power-tech-greenfield-transformer-plant"
+     },
+     {
+      "name": "Rajasthan BESS, 100 MW/200 MWh (RVUNL, own project)",
+      "sub": "Order value ₹302.5cr incl. GST; land received, financial close pending; on hold (CRISIL)",
+      "total": 198,
+      "right": "₹198cr capex",
+      "status": "planned",
+      "projectId": "viviana-power-tech-bess-rajasthan"
+     },
+     {
+      "name": "Gujarat BESS, 65 MW/130 MWh at Asoj (GUVNL, own project)",
+      "sub": "Order value ₹208.7cr incl. GST; storage agreement signed, awaiting notice to proceed; on hold (CRISIL)",
+      "right": "equity about ₹60cr for both BESS projects",
+      "status": "planned",
+      "projectId": "viviana-power-tech-bess-gujarat"
+     },
+     {
+      "name": "Corporate office building",
+      "sub": "Capital commitment at March 2026; in the Viviana Life Spaces tower by management's account",
+      "total": 48.2,
+      "right": "₹48.2cr committed",
+      "status": "planned",
+      "projectId": "viviana-power-tech-office-building"
+     }
+    ]
+   },
+   "timeline": [
+    {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "Por transformer plant inaugurated (21 September 2026)",
+     "sub": "June call had said end of July, August call end of August"
+    },
+    {
+     "when": "Q3 FY27",
+     "tone": "next",
+     "text": "₹150cr rights issue approved (2 November 2026)"
+    },
+    {
+     "when": "Q4 FY27",
+     "tone": "next",
+     "text": "Type testing of transformers up to 18.5 MVA planned",
+     "sub": "FY27 plan (June): ₹10–12cr of transformer revenue"
+    },
+    {
+     "when": "FY28",
+     "tone": "maybe",
+     "text": "Both BESS projects, if they come off hold",
+     "sub": "No BESS revenue in FY27; about ₹40cr a year of revenue once running (analyst's estimate accepted by management)"
+    },
+    {
+     "when": "Q4 FY28",
+     "tone": "later",
+     "text": "Greenfield transformer plant phase 1; office handover (within 24 months of March 2026)"
+    },
+    {
+     "when": "By FY30",
+     "tone": "later",
+     "text": "Transformer revenue target ₹400–500cr",
+     "sub": "₹400–600cr in June; ₹1,000–1,200cr at full use by FY32 at a 9–10% net margin (company)"
+    }
+   ],
+   "notes": [
+    "An EPC contractor, so capacity is mainly how much work its teams, subcontractors and bank limits can carry: revenue ₹529cr in FY26 and ₹630cr over the last four quarters (Screener)",
+    "Order book ₹1,800cr+ on 2 November 2026, of which ₹506cr is BESS on hold, leaving about ₹1,300cr of EPC work including lowest-bid orders: about 2.5 years of FY26 revenue, or about 1.5 years at the ₹840–910cr FY27 target",
+    "Management expects to carry ₹800–900cr of orders into FY28 (November 2026 call, as reported)",
+    "The Por plant had negligible revenue in H1 FY27; its revenue depends on utility type tests and approvals. Testing capacity about 2,000 MVA this year and 5,000 MVA next (June call)",
+    "Later phases of the greenfield plant: 220 kV/200 MVA, then up to 400 kV, with an in-house 400 kV testing lab",
+    "The leased Aarsh Transformers unit (distribution transformers up to 500 kVA) is being sold with that subsidiary",
+    "Capital work in progress ₹2.5cr at September 2026"
+   ],
+   "source": "Q1 FY27 call (6 Aug 2026) and presentation, Q4 FY26 call (25 Jun 2026) and presentation, Q2 FY27 results and press release (2 Nov 2026), NSE filing of 21 Sep 2026, FY26 annual report (note 41), CARE and CRISIL rationales (6 Oct 2026), Screener"
   }
  ]
 }

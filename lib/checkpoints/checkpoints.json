@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -41938,6 +41938,73 @@
    "ifMet": "Cash returned at a modest price lifts the case for own",
    "ifMissed": "Cash keeps going to acquisitions; judge them on the 17–20% return target",
    "createdOn": "2026-11-13",
+   "status": "pending"
+  },
+  {
+   "id": "viviana-power-tech-q3fy27-1",
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "text": "Q3 FY27 revenue at least 40% above Q3 FY26 (₹118cr on Screener). The November call's ₹650cr for H2 is about 47% above H2 FY26 (₹441cr). The company reported half-yearly as an SME until FY26, so check the Q3 FY26 base against the comparatives in its Q3 filing",
+   "metric": "revenueYoY",
+   "op": ">=",
+   "target": 40,
+   "due": "Q3 FY27",
+   "ifMet": "H2 is on course for roughly ₹840cr in FY27",
+   "ifMissed": "FY27 slips further below the ₹875–910cr target; my 15% estimate is at risk",
+   "createdOn": "2026-11-16",
+   "status": "pending"
+  },
+  {
+   "id": "viviana-power-tech-q3fy27-2",
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "text": "Operating margin of at least 12.5% in Q3 FY27, the bottom of the 12.5–15% band the CFO gave in November (August presentation: 14–16% for FY27); Q2 FY27 was 15.4% and Q3 FY26 12% on Screener",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 12.5,
+   "due": "Q3 FY27",
+   "ifMet": "Margins hold as the large distribution orders are executed",
+   "ifMissed": "Bigger, supply-heavy orders are thinning margins faster than guided",
+   "createdOn": "2026-11-16",
+   "status": "pending"
+  },
+  {
+   "id": "viviana-power-tech-q4fy27-1",
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "text": "FY27 revenue growth of at least 59% (about ₹840cr against FY26's ₹529cr), the level implied by the November call's ₹650cr for H2 after ₹189cr in H1; the August 2026 target of ₹875–910cr would be 65–72%",
+   "metric": "fyRevenueGrowth",
+   "op": ">=",
+   "target": 59,
+   "due": "Q4 FY27",
+   "ifMet": "Management's near-term targets are credible",
+   "ifMissed": "A second cut to the FY27 target; the FY30 plan loses credibility",
+   "createdOn": "2026-11-16",
+   "status": "pending"
+  },
+  {
+   "id": "viviana-power-tech-q4fy27-2",
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "text": "Order book of at least ₹1,300cr at March 2027: management expects to carry ₹800–900cr of EPC orders into FY28 (November 2026 call, as reported), plus ₹506cr of BESS orders now on hold",
+   "metric": "orderBook",
+   "op": ">=",
+   "target": 1300,
+   "due": "Q4 FY27",
+   "ifMet": "Order wins are keeping pace with record execution",
+   "ifMissed": "Growth beyond FY27 depends on orders not yet won",
+   "createdOn": "2026-11-16",
+   "status": "pending"
+  },
+  {
+   "id": "viviana-power-tech-q4fy27-3",
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "text": "Positive operating cash flow for FY27 (consolidated), after −₹11cr, −₹3cr, −₹14cr and −₹4cr in FY23–FY26 and −₹7.2cr in H1 FY27; the 2 Nov 2026 press release made receivables and cash flow a stated priority",
+   "due": "Q4 FY27",
+   "ifMet": "First sign that profits turn into cash; could support moving off avoid",
+   "ifMissed": "Five straight years of negative operating cash; the avoid call stands",
+   "createdOn": "2026-11-16",
    "status": "pending"
   }
  ]
