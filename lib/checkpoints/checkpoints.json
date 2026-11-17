@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -15184,7 +15184,10 @@
    "target": 175,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "₹149cr",
+   "resolvedOn": "2026-11-17",
+   "resolvedBy": "auto"
   },
   {
    "id": "scoda-tubes-q4fy27-1",
@@ -15867,7 +15870,10 @@
    "target": 23,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "14.1%",
+   "resolvedOn": "2026-11-17",
+   "resolvedBy": "auto"
   },
   {
    "id": "cmr-green-tech-q4fy27-1",
@@ -19298,7 +19304,10 @@
    "target": 10,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "17.4%",
+   "resolvedOn": "2026-11-17",
+   "resolvedBy": "auto"
   },
   {
    "id": "matrimony-com-q2fy27-3",
@@ -19310,7 +19319,10 @@
    "target": 100,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "162.5%",
+   "resolvedOn": "2026-11-17",
+   "resolvedBy": "auto"
   },
   {
    "id": "matrimony-com-q2fy27-4",
@@ -22392,7 +22404,10 @@
    "due": "Q2 FY27",
    "ifMissed": "Stays pass",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹68cr",
+   "resolvedOn": "2026-11-17",
+   "resolvedBy": "auto"
   },
   {
    "id": "network-people-services-q3fy27-1",
