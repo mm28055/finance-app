@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T20:32:17.227Z",
+ "updated": "2026-11-17T00:05:00.800Z",
  "events": [
   {
    "company": "GSFC",
@@ -11109,15 +11109,6 @@
    "url": "https://nsearchives.nseindia.com/corporate/CEINSYSTECH_07112026132551_SEIntimationofInvestorMeetofCTL17112026.pdf"
   },
   {
-   "company": "DEE Development",
-   "sector": "Industrials",
-   "kind": "call",
-   "date": "2026-11-17",
-   "time": "3:00 pm",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/DDEL_11112026185344_NSEBSE_Earning_Call_Q2H1.pdf"
-  },
-  {
    "company": "Hexagon Nutrition",
    "sector": "Pharma Others",
    "kind": "call",
@@ -11180,6 +11171,24 @@
    "url": "https://nsearchives.nseindia.com/corporate/SKYWAYS_10112026172156_123445.pdf"
   },
   {
+   "company": "Alpex Solar",
+   "sector": "Solar PV Cells EPC",
+   "kind": "call",
+   "date": "2026-11-18",
+   "time": "12:00 Noon",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.in/corporate/ALPEXSOLAR_16112026183119_Intimation-final.pdf"
+  },
+  {
+   "company": "DEE Development",
+   "sector": "Industrials",
+   "kind": "call",
+   "date": "2026-11-18",
+   "time": "3:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.in/corporate/DDEL_16112026221011_NSEBSE_Revised_Earning_Call.pdf"
+  },
+  {
    "company": "ICE Make Refrig.",
    "sector": "Industrials",
    "kind": "call",
@@ -11215,6 +11224,23 @@
    "url": "https://nsearchives.nseindia.in/corporate/APS_14112026111129_ScheduleofMeet19112026.pdf"
   },
   {
+   "company": "Freshara Agro",
+   "sector": "Food Products",
+   "kind": "call",
+   "date": "2026-11-19",
+   "time": "2:00 pm",
+   "url": "https://nsearchives.nseindia.in/corporate/FRESHARA_16112026190115_Earnings_Call_Intimation_H1_FY_2027_signed.pdf"
+  },
+  {
+   "company": "Genus Power",
+   "sector": "Electrical Equipment",
+   "kind": "call",
+   "date": "2026-11-19",
+   "time": "11:00 am",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.in/corporate/GENUSPOWER_16112026215744_Intimation_Earnings_Call.pdf"
+  },
+  {
    "company": "Mishra Dhatu Nigam (MIDHANI)",
    "sector": "Aerospace defence",
    "kind": "call",
@@ -11222,6 +11248,15 @@
    "time": "11:00 hrs",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.in/corporate/MIDHANI_13112026154559_MDN_Concall_Intimation_13112026.pdf"
+  },
+  {
+   "company": "Stallion India Fluor",
+   "sector": "Chemicals",
+   "kind": "call",
+   "date": "2026-11-19",
+   "time": "4:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.in/corporate/STALLION_16112026174820_Earningcallinvitation-Q2FY27-Signed.pdf"
   },
   {
    "company": "United Heat Transfer",
@@ -11239,6 +11274,15 @@
    "time": "4:30 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/WHIRLPOOL_11112026160204_Intimation_of_Date_and_Schedule_signed__2_.pdf"
+  },
+  {
+   "company": "Avanti Feeds",
+   "sector": "Food Products",
+   "kind": "call",
+   "date": "2026-11-20",
+   "time": "4:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.in/corporate/AVANTIFEEDS_16112026163956_AFL_Intimation_Q2_call.pdf"
   },
   {
    "company": "ZF Comm Vehic Contr",
