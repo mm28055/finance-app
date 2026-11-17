@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T08:33:34.224Z",
+ "updated": "2026-11-17T00:14:33.057Z",
  "results": [
   {
    "company": "Aartech Solonics",
@@ -1265,6 +1265,84 @@
    }
   },
   {
+   "company": "RMC Switchgears",
+   "sector": "Electrical Equipment",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-14",
+   "readOn": "2026-11-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 88.81,
+     "yearAgo": 137.08,
+     "prev": 37.24,
+     "yoy": -35.2,
+     "qoq": 138.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 16.68,
+     "yearAgo": 25.12,
+     "prev": 7.75,
+     "yoy": -33.6,
+     "qoq": 115.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 18.78,
+     "yearAgo": 18.33,
+     "prev": 20.81,
+     "yoy": 0.5,
+     "qoq": -2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 8.32,
+     "yearAgo": 15.96,
+     "prev": 2.08,
+     "yoy": -47.9,
+     "qoq": 300
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue fell 35% to ₹89cr, though recovering sharply from a weak Q1.",
+     "Operating profit dropped 34% to ₹17cr, while operating margin held steady at 18.8%.",
+     "Net profit fell 48% to ₹8cr, well behind the 5% growth base case."
+    ],
+    "text": "Revenue fell 35% to ₹89cr, though recovering sharply from a weak Q1. Operating profit dropped 34% to ₹17cr, while operating margin held steady at 18.8%. Net profit fell 48% to ₹8cr, well behind the 5% growth base case.",
+    "checks": [
+     {
+      "text": "Positive operating cash in H1 FY27",
+      "status": "unclear",
+      "why": "Cash flow details not in results snippet"
+     },
+     {
+      "text": "About ₹58cr of retention money collected",
+      "status": "unclear",
+      "why": "Balance sheet details not provided"
+     },
+     {
+      "text": "A first paid PulseBox order",
+      "status": "unclear",
+      "why": "Awaiting management commentary or call"
+     }
+    ],
+    "on": "2026-11-17"
+   }
+  },
+  {
    "company": "Sahasra Electronic",
    "sector": "EMS & Electronics",
    "quarter": "H1 FY27",
@@ -1614,6 +1692,85 @@
    "reviewed": {
     "on": "2026-11-15",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   }
+  },
+  {
+   "company": "TVS Electronics",
+   "sector": "Hardware",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-14",
+   "readOn": "2026-11-17",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 116.16,
+     "yearAgo": 127.5,
+     "prev": 106.04,
+     "yoy": -8.9,
+     "qoq": 9.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 3.44,
+     "yearAgo": 4.77,
+     "prev": -2.39,
+     "yoy": -27.9,
+     "qoq": null
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 2.96,
+     "yearAgo": 3.74,
+     "prev": -2.25,
+     "yoy": -0.8,
+     "qoq": 5.2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": -1.41,
+     "yearAgo": 1.55,
+     "prev": -6.62,
+     "yoy": null,
+     "qoq": null
+    }
+   ],
+   "oneOff": "The year-ago quarter's profit included other income of ₹2cr (159% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Remained in the red with a net loss of ₹1.41cr, missing the turnaround expectation.",
+     "Revenue fell 9% to ₹116cr, well short of targeted double-digit growth.",
+     "Operating profit dropped 28% to ₹3.44cr, leaving operating margin at 3.0%."
+    ],
+    "text": "Remained in the red with a net loss of ₹1.41cr, missing the turnaround expectation. Revenue fell 9% to ₹116cr, well short of targeted double-digit growth. Operating profit dropped 28% to ₹3.44cr, leaving operating margin at 3.0%.",
+    "checks": [
+     {
+      "text": "Return to profit in Q2 after the ₹6.6cr June-quarter loss",
+      "status": "missed",
+      "why": "Net loss was ₹1.41cr"
+     },
+     {
+      "text": "Operating margin above 5% in Q2",
+      "status": "missed",
+      "why": "Operating margin was 2.96%"
+     },
+     {
+      "text": "Circuit-board lines above 40% used, and a results call held",
+      "status": "unclear",
+      "why": "Capacity utilization not disclosed in results"
+     }
+    ],
+    "on": "2026-11-17"
    }
   },
   {
@@ -3150,6 +3307,84 @@
    "reviewed": {
     "on": "2026-11-15",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   }
+  },
+  {
+   "company": "Insolation Energy",
+   "sector": "Solar PV Cells EPC",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-13",
+   "readOn": "2026-11-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 837,
+     "yearAgo": 415,
+     "prev": 741,
+     "yoy": 101.7,
+     "qoq": 13
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 63,
+     "yearAgo": 45,
+     "prev": 72,
+     "yoy": 40,
+     "qoq": -12.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 8,
+     "yearAgo": 11,
+     "prev": 10,
+     "yoy": -3,
+     "qoq": -2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 25,
+     "yearAgo": 37,
+     "prev": 38,
+     "yoy": -32.4,
+     "qoq": -34.2
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue rose 102% to ₹837cr, tracking well ahead of the >60% FY27 guidance.",
+     "Operating margin deteriorated to 8%, falling further away from the 14–15% guidance.",
+     "Operating profit rose 40% to ₹63cr, but net profit dropped 32% to ₹25cr."
+    ],
+    "text": "Revenue rose 102% to ₹837cr, tracking well ahead of the >60% FY27 guidance. Operating margin deteriorated to 8%, falling further away from the 14–15% guidance. Operating profit rose 40% to ₹63cr, but net profit dropped 32% to ₹25cr.",
+    "checks": [
+     {
+      "text": "Q2 operating margin back toward 14–15%",
+      "status": "missed",
+      "why": "fell further to 8%"
+     },
+     {
+      "text": "No more cash to promoter-linked companies",
+      "status": "unclear",
+      "why": "awaits balance sheet details"
+     },
+     {
+      "text": "Frame plant commissioned",
+      "status": "unclear",
+      "why": "not detailed in quarterly results"
+     }
+    ],
+    "on": "2026-11-17"
    }
   },
   {
