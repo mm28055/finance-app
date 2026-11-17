@@ -1,6 +1,15 @@
 {
  "changes": [
   {
+   "date": "2026-11-17",
+   "company": "Viviana Power Tech",
+   "sector": "Construction - Power",
+   "from": null,
+   "to": "avoid",
+   "price": 731.55,
+   "why": "I expect about 15% a year of earnings growth against the {need:Viviana Power Tech|8}% the price needs ({label:Viviana Power Tech|fits}), but the growth has never produced cash, the balance sheet needs new equity and the related-party dealings are unresolved."
+  },
+  {
    "date": "2026-11-13",
    "company": "MMP Industries",
    "sector": "Mining & Metals Recycle",

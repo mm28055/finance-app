@@ -1,5 +1,5 @@
 {
- "date": "2026-11-15",
+ "date": "2026-11-17",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -2078,6 +2078,10 @@
    "sector": "Construction - Power"
   },
   "Vikran Engineering": {
+   "call": "avoid",
+   "sector": "Construction - Power"
+  },
+  "Viviana Power Tech": {
    "call": "avoid",
    "sector": "Construction - Power"
   },
