@@ -906,3 +906,51 @@ What the reviews add:
 - **KNR's** first half includes a ₹578cr sale gain.
 
 No entry had an analysed call, so no checkpoints were judged from this pass. One note: the overnight call summary for Samhi says a ₹750cr equity raise was "shelved", but the transcript does not say so. I relied only on the transcript.
+
+## 18 November 2026 (Wednesday)
+
+**Checks:** the notes check still lists the same 30 problems it showed before I edited anything (companies in a sector with no verdict, such as Allcargo Global, Anawil Wire and Simca Advertising). They were already on master and are not from this run. Type check and picture check are clean. No stranded weekly-review branches: the 30 Sep and 18 Oct branches show as unmerged only because master's history was rewritten; their work is already in master.
+
+**Follow-ups handled: 8. Still open: 505** (345 results calls, 116 automatically settled checkpoints, 25 project follow-ups, 9 call drifts, 5 special calls, 4 "Waiting" entries and HEG's demerger). Most of this run went on the four new "own" results calls and on the filings and results passes. ICICI Bank, CIE Automotive and Ador Welding still have no filed transcript on Screener.
+
+**Calls changed:** none. **Caplin Point Labs stays own, but read the filing below.**
+
+**New results calls, own names (transcripts read):**
+- **Windlas Biotech** (stays own). A 15th record quarter: revenue ₹264cr (+19%), contract manufacturing +34%, and a 13.7% margin before share-option costs (11% as filed). Plant 6 started on 28 September, as promised, and the injectables plant and Plant 4 won EU approval (EU GMP). Trade generics were ₹36cr, still below last year after the codeine ban (checkpoint missed). Net liquidity is ₹223cr. Plant 6 and its milestone are met, and I added two new checkpoints.
+- **Time Technoplast** (stays own). Record revenue of ₹1,996cr (+32%, mostly resin costs passed on) and profit of ₹146cr (+27%). First-half volume grew 13% against the 15% target. Management now guides profit growth above 25% a year for three years. Composites brought ₹430cr in H1, with ₹800–900cr expected for the year. It dropped the Ebullient purchase, so about ₹220cr of share-sale money is still unused. It reports net cash of ₹36cr.
+- **Marksans Pharma** (stays own). Record revenue of ₹940cr (+30.5%, about 25% without acquisitions) at a 22.8% margin. UK and Europe grew 65% and Australia 64%. The 21–22% margin guide is kept, and the targets are now ₹4,000cr of revenue in FY28 and ₹5,000cr in three years. Net cash is ₹1,095cr. More European purchases and an Indian plant are planned within about 12 months (two new checkpoints).
+- **DDev Plastiks** (stays own; the price asks for about 8% a year). Revenue was ₹978cr (+44%) and the FY27 revenue estimate rose to ₹3,800cr, but all of that is resin prices. First-half volume was only 1,02,000 tonnes (+1–2%). Debtors rose to about ₹650cr from ₹400cr and stock to about ₹400cr (cash-cycle checkpoint missed). Battery storage is pushed to about Q1 FY28.
+
+**Call drift:** **Akums Drugs**' price now fits (it needs about 18% against my ~17%), but it stays follow. Most of its cash is a customer's prepayment, the income-tax search is still an audit emphasis, and its API unit still loses money.
+
+**Shareholding:** **Manba Finance's** promoter stake fell from 75% to 69.1% because of dilution, not a sale. On 6 November it allotted shares at ₹135 to outside investors, and the promoters' warrants are not yet converted. The note is corrected; it stays pass.
+
+**Top 12:** **Time Technoplast** met its Q2 checks: volume +13%, profit +25–27% and a composite order book of about ₹210cr. H1 operating cash was about 70% of operating profit, so no break trigger was hit. Working-capital days were not given. Numbers are kept and the checks roll to Q3. **Windlas** (reserve) needed no change.
+
+**Filings pass, 15–17 November** (notes corrected):
+- **Caplin Point Labs (own):** on 17 November the US FDA graded the Gummidipoondi injectables and eye-care plant "Official Action Indicated" (OAI), its most serious grade, after the August inspection. The company says supply continues and expects no material impact. But an OAI usually holds up new US approvals from the plant until it is re-inspected, and it can lead to a warning letter. **I kept own** because Latin America earns most of the profit and the price still fits (it needs about 15.7% against my ~16%). A warning letter or an import alert would make it follow. Note, card and watch items updated. I also fixed a stale card line: the five new injectable lines are now due about August 2027, not March 2027.
+- **Aegis Logistics (follow):** raised ₹3,500cr from institutions at ₹1,210 a share on 16 November, about 8% more shares, out of the ₹6,000cr approved. View, card, money row and watch items updated.
+- **ION Exchange (wait):** CRISIL kept its A+ rating but moved the outlook to Negative. First-half revenue rose only 4.5%, the operating margin was −3.8% after a provision of about ₹90cr on old projects, and CRISIL expects only 4–5% for FY27.
+- **Supreme Petrochem (wait):** signed Versalis technology for a ₹450cr second 70,000-tonne ABS line, mechanically complete by December 2028. Project, capacity and picture updated.
+- **All Time Plastic (wait):** the bamboo board plant near Guwahati started on 16 November, about six weeks after its target (milestone partly met). Project, capacity and picture updated.
+- **Pace Digitek (avoid):** won a ₹2,691cr battery-storage order from NTPC Green; the executable order book is now ₹13,427cr. Card corrected.
+- **Gaudium IVF (avoid):** a postal ballot asks to move the locations of its IPO-funded centres. ₹36.5cr of the ₹50cr was still unspent at September.
+- **Management record:** Carysil's group CFO left on 16 November; no successor named.
+- **Logged only:** Kaynes' H1 profit fell 53% and working capital rose to 169 days (results pass below). Orders were logged at Kalpataru (₹2,610cr), Capacite (₹670cr, about 24% of sales), MV Electrosystems (₹325cr), Hind Rectifiers (₹133cr), Ashoka (L1 at ₹1,465cr) and Advait (₹131cr). Also logged: Happy Forgings' promoters selling up to 3.44% to meet the public-holding rule, Everest Kanto's Egypt plant starting in September, Stallion's helium plant (already recorded), DEE Development's CARE upgrade to A, HEG's non-binding anode MoU, Signatureglobal's ₹194cr Raigad land, Max Estates' launch, Sai Parenterals' Bion stake, Aether's plant for a Baker Hughes unit, Apollo Micro's A-Thon stake, JVs at TCPL and Sigma, promoter purchases at Control Print and NCC, and object-clause changes at Route Mobile, Jain Resource, GK Energy and JNK.
+
+**News pass, 14–17 November:** 15 entries had a clear reason, and none was very important. They were mostly results moves: Allcargo, Brainbees, Belrise, Deepak Fertilisers, Inox Wind, Jeena Sikho, Kaynes, Skyways and TVS Supply Chain. The rest were Amber falling with Kaynes, order moves at MV Electrosystems and Pace (covered above), Sigma's JV and Signatureglobal's land. Pricol's 17.8% fall followed the Warburg Pincus deal already in the note. Nothing else in the notes changed.
+
+**Waiting entries:** nothing new for Ganesh Benzoplast's sale, the UPI merchant fee, the NPPA cancer-drug caps (Beta Drugs, HCG) or HEG's electrode company listing. All are left open with today's date.
+
+**Results pass:** all 21 open entries were reviewed against Screener (Insolation Energy's page was not found, so it is unchecked). I corrected four in place. The evening job had compared them with June 2025 instead of the September 2025 quarter:
+- **Allcargo:** growth was 27%, and the swing was from a ₹30cr loss, not ₹87cr.
+- **Skyways:** revenue +90% and profit +136%, not +105% and +200%.
+- **Behari Lal:** operating profit +26%, not +4%.
+- **TAC Security:** operating profit −14% and profit −8%, not +140% and +267%. Verdict changed from ahead to mixed.
+
+I added a Needs-a-session item to fix how the job picks the year-ago quarter. What the reviews add:
+- Other income was a large share of profit at Oriana (about a fifth) and Maxvolt.
+- **Kaynes'** other income halved, and its tax rate was 39%.
+- **Hexagon's** margin has fallen four quarters running.
+
+No entry had an analysed call, so no checkpoints were judged from this pass.
