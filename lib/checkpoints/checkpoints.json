@@ -2865,7 +2865,10 @@
    "target": 12,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "12.2%",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "auto"
   },
   {
    "id": "suprajit-engineering-q2fy27-3",
@@ -10346,7 +10349,10 @@
    "target": 11,
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "11.7%",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "auto"
   },
   {
    "id": "vinyas-innovativ-h2fy27-1",
@@ -11177,7 +11183,10 @@
    "target": 25,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "25.7%",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "auto"
   },
   {
    "id": "manorama-industries-q2fy27-2",
@@ -14801,7 +14810,10 @@
    "target": 300,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹316cr",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "auto"
   },
   {
    "id": "hind-rectifiers-q2fy27-2",
@@ -14814,7 +14826,10 @@
    "due": "Q2 FY27",
    "ifMet": "Changes the view for the better",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "₹795cr",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "auto"
   },
   {
    "id": "hind-rectifiers-q4fy27-1",
@@ -15780,7 +15795,10 @@
    "target": 10,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "8.6%",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "auto"
   },
   {
    "id": "ardee-industries-q4fy27-1",
@@ -23953,7 +23971,10 @@
    "target": 15,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "15.1%",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "auto"
   },
   {
    "id": "action-const-eq-q4fy27-1",
@@ -24244,7 +24265,10 @@
    "due": "Q2 FY27",
    "ifMissed": "Stays avoid",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "-39.0%",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "auto"
   },
   {
    "id": "ola-electric-q3fy27-1",
@@ -35816,7 +35840,10 @@
    "ifMet": "Store and marketing spending is being absorbed without hurting margins",
    "ifMissed": "Expansion (stores, marketing, new cities) is eating into the margin",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "40.1%",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "auto"
   },
   {
    "id": "rentomojo-q2fy27-3",
