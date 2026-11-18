@@ -560,7 +560,7 @@ export const utilities: SectorOverview = {
         {
             company: 'ION Exchage', rank: 4, stance: 'TURNAROUND', segment: WATERTECH,
             what: "Ion Exchange: resins, membranes and water chemicals, standard treatment plants, large treatment projects, plant servicing and Zero-B home purifiers.",
-            view: "**Good businesses dragged by old contracts and a new plant.** Chemicals earn most of the profit, but that profit fell 52% in Q1 as Roha started, the projects arm lost ₹17cr, and profit after tax was ₹3cr. Borrowings have tripled in two years and operating cash turned negative in FY26. The price needs far more than my ~15% estimate.",
+            view: "**Good businesses dragged by old contracts and a new plant.** Chemicals earn most of the profit, but that profit fell 52% in Q1 as Roha started, the projects arm lost ₹17cr, and profit after tax was ₹3cr. Borrowings have tripled in two years and operating cash turned negative in FY26. On 17 Nov 2026 CRISIL kept its A+ rating but cut the outlook to Negative: first-half revenue rose only 4.5% to ₹1,375cr, the operating margin was −3.8% after a one-time provision of about ₹90cr on old projects, and it expects only 4–5% for FY27. The price needs far more than my ~15% estimate.",
             watch: 'Roha utilisation disclosed after Q2; the chemicals margin back above 15%; the Uttar Pradesh backlog shrinking.',
         },
         {
