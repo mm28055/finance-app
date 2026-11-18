@@ -265,3 +265,20 @@ model ShareholdingQuarter {
   @@unique([companyId, period])
   @@index([companyId, periodEnd])
 }
+
+// Our own visitor log (components/VisitorCounter.tsx -> /api/visit), next to Vercel's counter, which
+// only knows the country. One row per page opened. No names or IP addresses are kept: the visitor id
+// is a random number stored in that visitor's browser, and the city comes from Vercel's IP lookup.
+model SiteVisit {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
+  visitorId String
+  path      String
+  city      String?
+  region    String?
+  country   String?
+  device    String?
+
+  @@index([createdAt])
+  @@index([visitorId])
+}
