@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-18",
  "capacity": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -778,10 +778,10 @@
    "company": "DDev Plastiks",
    "sector": "Chemicals",
    "today": "Cable compounds 3,16,400 t a year (June 2026), of which XLPE 2,14,500 t (incl. the new 48,000 t Bhiwadi plant) and HFFR 10,000 t; the rest PVC, semiconductive and other compounds",
-   "utilisation": "About 66% in Q1 FY27 (77% in FY26); Bhiwadi 20–25% in its first quarter; HFFR near 50%",
+   "utilisation": "About 63% in H1 FY27 (66% in Q1, 77% in FY26); Bhiwadi 25–30% in Q2 (20–25% in Q1), about 50% expected by March 2027; HFFR near 50%",
    "fullUse": "About ₹4,600cr of sales at full use, scaling FY26's ₹2,948cr on 2,01,370 t to today's capacity (FY27 target 2,31,000 t, 73% use)",
-   "capexStatus": "₹150–175cr in FY27 from own cash, including the first battery-storage spending: a medium-voltage compound plant in the East, HFFR doubled to 20,000 t and a new Vapi site (capacity to 3,34,400 t by March 2027); 1 GWh of battery-storage assembly costs ₹150–200cr in all, from FY28",
-   "source": "Q1 FY27 call (11 Aug 2026), Q4 FY26 call (26 May 2026) and sector note"
+   "capexStatus": "About ₹175cr in FY27 from own cash (₹79cr in H1), including the first battery-storage spending: a medium-voltage compound plant in the East, HFFR doubled to 20,000 t and a new Vapi site (capacity to 3,34,400 t by March 2027); ₹50–70cr in FY28; 1 GWh of battery-storage assembly costs ₹150–200cr in all, now due around Q1 FY28",
+   "source": "Q2 FY27 call (13 Nov 2026), Q1 FY27 call (11 Aug 2026), Q4 FY26 call (26 May 2026) and sector note"
   },
   {
    "company": "Himadri Speciality",
@@ -3662,11 +3662,11 @@
   {
    "company": "Windlas Biotech",
    "sector": "Pharma CDMO",
-   "today": "Tablet, capsule and liquid plants (including the Plant 2 extension) and an injectables block with about ₹100cr of revenue capacity; Plant 6 mechanically complete",
+   "today": "Tablet, capsule and liquid plants (including the Plant 2 extension), an injectables block with about ₹100cr of revenue capacity, and Plant 6 (200 million tablets and capsules), commercial since 28 September 2026. Plants 4 and 5 (injectables) are EU GMP certified",
    "utilisation": "About 65% (an analyst's figure, not confirmed by management), near the 60–65% it treats as peak (can stretch to about 70%)",
-   "fullUse": "About ₹1,100cr of revenue once Plant 6 is running, plus 10–15% from debottlenecking",
-   "capexStatus": "Plant 6 is the last big project (commercial by end-H1 FY27); after that only ₹12–15cr a year of maintenance capex, with the next expansion decided in FY28 if demand holds",
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "fullUse": "About ₹1,100cr of revenue with Plant 6, plus up to 10% from debottlenecking",
+   "capexStatus": "Plant 6 done; only maintenance capex (₹12–15cr a year) plus a ₹25–30cr cost-saving project; no new oral or injectable plant until existing ones near peak, and it is looking for an acquisition in a new dosage form",
+   "source": "Q2 FY27 call (6 Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Neuland Laboratories",
@@ -3870,8 +3870,8 @@
    "sector": "Pharma",
    "today": "Three US FDA-approved plants (two in Goa, including Goa Unit 2 bought from Teva, plus Farmingdale, US); about 26bn units a year in all, of which about 18bn is operational now",
    "utilisation": "Group about 50–55%; the ex-Teva Goa plant just under 50% (May 2026)",
-   "capexStatus": "Big capex cycle done (new facility paid for in FY26, capex ₹131cr); Q1 FY27 capex ₹33cr. Spare room inside the Teva plant is being used for new dosage forms; management is looking at land or another plant as it may run short later",
-   "source": "Q4 FY26 call (May 2026), Q1 FY27 call (Aug 2026) and sector note"
+   "capexStatus": "Big capex cycle done (new facility paid for in FY26, capex ₹131cr); H1 FY27 capex ₹46cr (₹33cr in Q1). For ₹5,000cr of revenue in three years it plans new blocks inside the ex-Teva Goa plant and/or to buy another Indian plant (talking to two companies, nothing concrete) within about 12 months",
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Zydus Lifesciences",
@@ -4058,10 +4058,10 @@
   {
    "company": "Time Technoplast",
    "sector": "Plastics",
-   "today": "Many packaging, pipe and composite plants in India and abroad; includes Silvassa IBC plant 150,000 a year, Mora CNG cascade plant 1,080 cascades a year, Bhilad recycling 12,000 t, a fifth US plant in Georgia",
-   "utilisation": "About 80% in India and 85% overseas (Q1 FY27)",
-   "capexStatus": "About ₹350cr in FY27 (₹75cr in Q1: ₹28cr routine and ₹47cr on IBCs and composites) for Silvassa phase 2, Sanand, Cuttack, Chiplun, Dammam and recycling; then ₹200–250cr a year for 15% growth",
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "today": "Many packaging, pipe and composite plants in India and abroad; includes Silvassa IBC plant 150,000 a year, Mora CNG cascade plant 1,080 cascades a year (PESO audit of the new plant done in Q2 FY27), Bhilad recycling 12,000 t, a fifth US plant in Georgia, and a new IBC line at TPL Plastech's Bhuj drum plant (about ₹100cr of sales potential in three years)",
+   "utilisation": "About 83% in India and 86% overseas (Q2 FY27); it starts expanding when a plant stays above 90% for six months",
+   "capexStatus": "About ₹375cr in FY27 (₹174cr in H1) for Silvassa phase 2, Sanand, Cuttack, Chiplun, Dammam, recycling and automation; about ₹250cr net if ₹134cr of non-core assets are sold (₹18cr sold in H1); from FY28 up to ₹250cr a year for maintenance and brownfield",
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Garware Hi-Tech",

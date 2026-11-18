@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -3685,7 +3685,13 @@
    "target": 13,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-18",
+     "text": "Q2 FY27 call (13 Nov): FY27 revenue estimate raised to ₹3,800cr (from ₹3,340cr) on higher resin prices; EBITDA about ₹360cr and volume +10–15% kept"
+    }
+   ]
   },
   {
    "id": "ddev-plastiks-q2fy27-1",
@@ -3694,7 +3700,11 @@
    "text": "Cash cycle back towards 60 days",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Debtors rose to about ₹650cr (from ₹400cr) and stock to about ₹400cr by September on higher resin prices; Q2 interest ₹11.5cr",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "review",
+   "outcome": "Stays own; management says both are easing month by month, so cash stays the main watch item"
   },
   {
    "id": "himadri-speciality-q3fy27-1",
@@ -17278,7 +17288,11 @@
    "text": "Plant 6 opens at the end of Q2 and starts filling from Q3",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Plant 6 commercial on 28 Sep 2026; its full costs land in Q3",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "review",
+   "outcome": "Stays own; filling it is now the test"
   },
   {
    "id": "windlas-biotech-q3fy27-1",
@@ -17296,7 +17310,11 @@
    "text": "Trade generics returning to growth after the codeine ban (−32% in Q1)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "₹36cr in Q2, up from ₹30cr in Q1 but still below last year (management gives no recovery date)",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "review",
+   "outcome": "Stays own; contract revenue (+34%) more than covers the gap"
   },
   {
    "id": "neuland-laboratories-q2fy27-1",
@@ -18134,7 +18152,8 @@
    "status": "met",
    "actual": "22.8%",
    "resolvedOn": "2026-11-16",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own; Q2 margin 22.8% despite dearer stock and doubled freight"
   },
   {
    "id": "marksans-pharma-q4fy27-1",
@@ -18168,6 +18187,28 @@
    "due": "Q2 FY27",
    "ifMissed": "View changes for the worse",
    "createdOn": "2026-09-29",
+   "status": "met",
+   "actual": "Only ₹95cr spent on acquisitions in H1 (QliniQ and ABCnow); net cash rose to ₹1,095cr",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "review",
+   "outcome": "Stays own; more European deals and an Indian plant are planned within 12 months, so the test continues"
+  },
+  {
+   "id": "marksans-pharma-q4fy28-1",
+   "company": "Marksans Pharma",
+   "sector": "Pharma",
+   "text": "Revenue of about ₹4,000cr in FY28, as guided in the Q2 FY27 call",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-18",
+   "status": "pending"
+  },
+  {
+   "id": "marksans-pharma-h1fy28-1",
+   "company": "Marksans Pharma",
+   "sector": "Pharma",
+   "text": "New Indian capacity decided (blocks in the ex-Teva Goa plant or a bought plant) within about 12 months, at a sensible price",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-18",
    "status": "pending"
   },
   {
@@ -18999,7 +19040,11 @@
    "text": "Composite cylinder orders from the oil companies",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "HPCL repeat orders; oil companies offer new LPG connections only in composite cylinders; ₹83cr PSU CNG cascade order; composite order book about ₹210cr",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "review",
+   "outcome": "Stays own"
   },
   {
    "id": "time-technoplast-q4fy27-2",
@@ -19017,7 +19062,13 @@
    "text": "FY27 net profit growth of 23–24% and operating profit growth of 19–20% (raised guide)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-18",
+     "text": "Q2 FY27 call (6 Nov): operating profit growth 'more than 20%' and net profit 'more than 25%' a year for three years at 15% volume; H1 operating profit +17%, net profit +25%"
+    }
+   ]
   },
   {
    "id": "garware-hi-tech-q2fy27-1",
@@ -26033,7 +26084,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "ddev-plastiks-bhiwadi"
+   "project": "ddev-plastiks-bhiwadi",
+   "revisions": [
+    {
+     "on": "2026-11-18",
+     "text": "Q2 FY27 call (13 Nov): Bhiwadi ran at 25–30%; management now expects about 50% by the end of FY27 rather than as the year's average"
+    }
+   ]
   },
   {
    "id": "ddev-plastiks-bess-m1",
@@ -26043,7 +26100,13 @@
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "ddev-plastiks-bess"
+   "project": "ddev-plastiks-bess",
+   "revisions": [
+    {
+     "on": "2026-11-18",
+     "text": "Q2 FY27 call (13 Nov): still at the construction stage; it waited for West Bengal's incentive policy (announced 5 Nov) and now speaks of starting around Q1 FY28"
+    }
+   ]
   },
   {
    "id": "himadri-speciality-lfp-m1",
@@ -32085,8 +32148,34 @@
    "text": "Plant 6 commercial",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "windlas-biotech-plant6"
+   "status": "met",
+   "project": "windlas-biotech-plant6",
+   "actual": "Commercial production from 28 Sep 2026 (200m tablets and capsules)",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "review",
+   "outcome": "Stays own"
+  },
+  {
+   "id": "windlas-biotech-q3fy27-2",
+   "company": "Windlas Biotech",
+   "sector": "Pharma CDMO",
+   "text": "Revenue growth of at least 15% in Q3 FY27 as Plant 6 starts filling",
+   "metric": "revenueYoY",
+   "op": ">=",
+   "target": 15,
+   "due": "Q3 FY27",
+   "ifMissed": "Plant 6 costs arrive before its revenue",
+   "createdOn": "2026-11-18",
+   "status": "pending"
+  },
+  {
+   "id": "windlas-biotech-q4fy27-1",
+   "company": "Windlas Biotech",
+   "sector": "Pharma CDMO",
+   "text": "Trade generics back above last year's quarterly revenue after the codeine loss",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-18",
+   "status": "pending"
   },
   {
    "id": "akums-drugs-baddi-oral-m1",
@@ -32534,7 +32623,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "time-technoplast-mora-cng"
+   "project": "time-technoplast-mora-cng",
+   "revisions": [
+    {
+     "on": "2026-11-18",
+     "text": "Q2 FY27 call (6 Nov): composites ₹430cr in H1; FY27 now estimated at ₹800–900cr, about ₹2,500cr in three years"
+    }
+   ]
   },
   {
    "id": "garware-hi-tech-tpu-m1",

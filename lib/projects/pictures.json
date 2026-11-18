@@ -9901,32 +9901,32 @@
   },
   {
    "company": "DDev Plastiks",
-   "fingerprint": "9928aa4708489a91",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "816ceca0e53065b0",
+   "checkedOn": "2026-11-18",
    "lines": {
-    "heading": "How full each line is (Q1 FY27)",
+    "heading": "How full each line is (H1 FY27)",
     "items": [
      {
       "name": "Overall",
       "size": "3,16,400 t a year (June 2026)",
-      "usedPct": 66,
-      "usedLabel": "about 66% used",
+      "usedPct": 63,
+      "usedLabel": "about 63% used",
       "marker": {
        "pct": 70,
        "label": "FY27 target 2,31,000 t = about 70% of the 3,34,400 t due by March (dashed)"
       },
-      "note": "77% in FY26 on 2,01,370 t; the dip is the new Bhiwadi plant starting up"
+      "note": "66% in Q1 and 77% in FY26 on 2,01,370 t; the dip is the new Bhiwadi plant starting up. 1,02,000 t sold in H1"
      },
      {
       "name": "Bhiwadi XLPE plant",
       "size": "48,000 t a year",
-      "usedPct": 22.5,
-      "usedLabel": "20–25% used",
+      "usedPct": 27.5,
+      "usedLabel": "25–30% used (Q2)",
       "marker": {
        "pct": 50,
-       "label": "about 50% average for FY27 (dashed)"
+       "label": "about 50% by March 2027 (dashed)"
       },
-      "note": "First quarter; fully used in FY28, management says"
+      "note": "20–25% in Q1; the Aug 2026 call had said about 50% on average for FY27; fully used in FY28, management says"
      },
      {
       "name": "HFFR (flame-retardant)",
@@ -9997,15 +9997,15 @@
      {
       "name": "FY27 capacity programme",
       "sub": "medium-voltage plant in the East, HFFR doubling, Vapi site; own cash",
-      "right": "₹150–175cr in FY27, including battery-storage spending",
+      "right": "about ₹175cr in FY27, including battery-storage spending (₹79cr in H1); ₹50–70cr in FY28",
       "status": "building",
       "projectId": "ddev-plastiks-fy27-capex"
      },
      {
       "name": "Battery-storage assembly, 1 GWh",
-      "sub": "containers from imported cells; site moved from Gujarat (Ahmedabad) to West Bengal",
+      "sub": "containers from imported cells; site moved from Gujarat (Ahmedabad) to West Bengal; under construction",
       "right": "₹150–200cr incl. working capital",
-      "status": "planned",
+      "status": "building",
       "projectId": "ddev-plastiks-bess"
      }
     ]
@@ -10018,6 +10018,11 @@
      "sub": "Q4 FY26 call had said 48,000 t from April at ₹80cr"
     },
     {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "Bhiwadi at 25–30%; West Bengal announced its incentive policy on 5 Nov 2026, which the battery-storage plan was waiting for"
+    },
+    {
      "when": "Q4 FY27",
      "tone": "next",
      "text": "Capacity to 3,34,400 t: HFFR doubled to 20,000 t; medium-voltage plant in the East by end of FY27 or Q1 FY28",
@@ -10026,13 +10031,18 @@
      ]
     },
     {
+     "when": "Q1 FY28",
+     "tone": "next",
+     "text": "Battery-storage assembly to start, around Q1 FY28 (Nov 2026 call); orders only once the plant is ready"
+    },
+    {
      "when": "Q4 FY28",
      "tone": "later",
      "text": "Bhiwadi fully used during FY28",
      "milestones": [
       "ddev-plastiks-bess-m1"
      ],
-     "sub": "Battery storage may be delayed a couple of quarters by the move to West Bengal (Aug 2026), and for the 1 GWh business management said to consider mid-FY29; the Q4 FY26 call had targeted 1 GWh and ₹800–900cr of sales in FY28 at 10%+ margin"
+     "sub": "The Aug 2026 call had said battery storage may be delayed a couple of quarters by the move to West Bengal, and for the 1 GWh business to consider mid-FY29; the Q4 FY26 call had targeted 1 GWh and ₹800–900cr of sales in FY28 at 10%+ margin"
     },
     {
      "when": "By FY30",
@@ -10043,10 +10053,10 @@
    "notes": [
     "Rest of capacity is PVC, semiconductive and other compounds",
     "About ₹4,600cr of sales at full use, scaling FY26's ₹2,948cr on 2,01,370 t to today's capacity (FY27 target 2,31,000 t is about 73% of today's capacity)",
-    "Battery storage: about ₹800–900cr of sales per GWh, at 6–8% margin in phase one (supply model); management says EPC and system-integration work can add a few points at each stage later. Management changed this in Aug 2026: may be delayed a couple of quarters by the move to West Bengal, and the margin guide cut from the 10%+ for FY28 guided in May 2026",
-    "FY27 total of ₹150–175cr includes battery-storage spending; the Q4 FY26 call also said about ₹175cr for FY27, of which about ₹70cr toward battery storage"
+    "Battery storage: about ₹800–900cr of sales per GWh, at 6–8% margin in phase one (supply model); management says EPC and system-integration work can add a few points at each stage later. Management changed this in Aug 2026: may be delayed a couple of quarters by the move to West Bengal, and the margin guide cut from the 10%+ for FY28 guided in May 2026. Management changed this again in Nov 2026: start around Q1 FY28 after reviewing West Bengal's new incentive policy",
+    "FY27 total of about ₹175cr includes battery-storage spending (₹150–175cr in the Aug 2026 call); the Q4 FY26 call also said about ₹175cr for FY27, of which about ₹70cr toward battery storage"
    ],
-   "source": "Q1 FY27 call (11 Aug 2026), Q4 FY26 call (26 May 2026) and sector note",
+   "source": "Q2 FY27 call (13 Nov 2026), Q1 FY27 call (11 Aug 2026), Q4 FY26 call (26 May 2026) and sector note",
    "recheck": {
     "changes": [
      "Removed \"opening remarks had said ₹125cr for FY27\": the official Q4 FY26 transcript says ₹175cr there too (the ₹125cr was an AI-copy error); the kept correction to the FY27 programme's source now says so",
@@ -23716,8 +23726,8 @@
   },
   {
    "company": "Marksans Pharma",
-   "fingerprint": "69d5fae153cea4d5",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "72f38c33b77e8cb7",
+   "checkedOn": "2026-11-18",
    "lines": {
     "heading": "How full the plants are (Q4 FY26, May 2026)",
     "items": [
@@ -23741,19 +23751,19 @@
     {
      "when": "FY26",
      "tone": "done",
-     "text": "Big capex cycle done: ₹131cr in FY26, mostly paying for the new facility; Q1 FY27 capex ₹33cr"
+     "text": "Big capex cycle done: ₹131cr in FY26, mostly paying for the new facility; H1 FY27 capex ₹46cr (₹33cr in Q1)"
     },
     {
-     "when": "In 1–2 years",
+     "when": "Within about 12 months",
      "tone": "maybe",
-     "text": "Possibly another unit in India, by purchase or on new land, to meet the 3–5-year plan of doubling sales; 'nothing concrete as of now' (Aug 2026)",
+     "text": "New blocks inside the ex-Teva Goa plant (new dosage forms and some debottlenecking) and/or another Indian plant bought, for ₹5,000cr of revenue in three years; talking to two companies, 'nothing concrete' (Nov 2026). The Aug 2026 call had said one to two years",
      "sub": "No land outside Goa today"
     }
    ],
    "notes": [
     "Some capex inside the Goa Unit 2 plant for dosage forms it does not yet make"
    ],
-   "source": "Q4 FY26 call (May 2026), Q1 FY27 call (Aug 2026) and sector note",
+   "source": "Q2 FY27 call (Nov 2026), Q4 FY26 call (May 2026), Q1 FY27 call (Aug 2026) and sector note",
    "recheck": {
     "changes": []
    }
@@ -38707,22 +38717,22 @@
   },
   {
    "company": "Time Technoplast",
-   "fingerprint": "eaf18f0c062cb14c",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "a1de8b4dd4a235e7",
+   "checkedOn": "2026-11-18",
    "lines": {
-    "heading": "How full the plants are (Q1 FY27)",
+    "heading": "How full the plants are (Q2 FY27)",
     "items": [
      {
       "name": "India",
       "size": "packaging, pipe and composite plants",
-      "usedPct": 80,
-      "usedLabel": "about 80% used"
+      "usedPct": 83,
+      "usedLabel": "about 83% used"
      },
      {
       "name": "Overseas",
       "size": "plants abroad",
-      "usedPct": 85,
-      "usedLabel": "about 85% used"
+      "usedPct": 86,
+      "usedLabel": "about 86% used"
      }
     ]
    },
@@ -38742,7 +38752,7 @@
       }
      ],
      "notes": [
-      "Fully automated plant; phase 1 complete, phase 2 under implementation (Q1 FY27 call)"
+      "Fully automated plant; phase 1 complete, phase 2 under implementation and due by the end of FY27 (Q2 FY27 call)"
      ]
     },
     {
@@ -38760,17 +38770,17 @@
       }
      ],
      "notes": [
-      "Fully automated plant at Mora near Vapi. Composites (LPG and CNG) expected to grow from about ₹600cr to over ₹750cr this year"
+      "Fully automated plant at Mora near Vapi; the PESO audit of the new plant is done and Daman and Silvassa composite equipment will move there (Q2 FY27 call). Composites (LPG and CNG) expected to grow from about ₹600cr to ₹800–900cr this year (raised from over ₹750cr); ₹430cr in H1"
      ]
     }
    ],
    "money": {
-    "heading": "Projects (about ₹350cr of capex in FY27, though the Q1 FY27 call also spoke of about ₹250cr; ₹75cr in Q1: ₹28cr routine and ₹47cr on IBCs and composites)",
+    "heading": "Projects (about ₹375cr of capex in FY27, ₹174cr spent in H1; about ₹250cr net if ₹134cr of non-core assets are sold, ₹18cr sold so far)",
     "items": [
      {
       "name": "FY27 new plants",
       "sub": "PE pipe unit at Sanand; packaging and PE pipes at Cuttack; packaging at Chiplun; a packaging plant in Dammam, Saudi Arabia; more captive recycling units in North and South India",
-      "right": "part of FY27 capex",
+      "right": "part of FY27 capex (₹75cr in Q1, ₹47cr of it on IBCs and composites)",
       "status": "building",
       "projectId": "time-technoplast-fy27-plants"
      },
@@ -38800,6 +38810,11 @@
      "text": "New ₹24cr Bhilad packaging plant (6,000 t a year) starts production; about ₹100cr of sales a year at 90% use"
     },
     {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "PESO audit of the new Mora plant completed; TPL Plastech starts making IBCs at its Bhuj drum plant (about ₹100cr of sales potential in three years)"
+    },
+    {
      "when": "Q4 FY27",
      "tone": "next",
      "milestones": [
@@ -38811,13 +38826,14 @@
     {
      "when": "From FY28",
      "tone": "later",
-     "text": "Capex back to ₹200–250cr a year for 15% growth"
+     "text": "Capex up to ₹250cr a year for maintenance and brownfield, for 15% growth (Q1 FY27 call had said ₹200–250cr)"
     }
    ],
    "notes": [
-    "Silvassa IBC plant 150,000 a year, Mora CNG cascade plant 1,080 cascades a year and Bhilad recycling 12,000 t are among many packaging, pipe and composite plants in India and abroad"
+    "Silvassa IBC plant 150,000 a year, Mora CNG cascade plant 1,080 cascades a year and Bhilad recycling 12,000 t are among many packaging, pipe and composite plants in India and abroad",
+    "Expansion starts when a plant stays above 90% used for six months"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026), Bhilad plant start 17 Sep 2026 (NSE) and sector note"
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026), Bhilad plant start 17 Sep 2026 (NSE) and sector note"
   },
   {
    "company": "Timken India",

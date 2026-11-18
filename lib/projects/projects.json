@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-18",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -2385,8 +2385,8 @@
    "expectedStart": "Q1 FY27",
    "adds": "about ₹500cr of sales at full use",
    "status": "ramping",
-   "source": "Q1 FY27 call (Aug 2026); cost from Q4 FY26 call. Opened late April 2026, ran at 20–25% in Q1",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (13 Nov 2026): 25–30% used in Q2, about 50% expected by the end of FY27. Q1 FY27 call (Aug 2026); cost from Q4 FY26 call. Opened late April 2026, ran at 20–25% in Q1",
+   "updatedOn": "2026-11-18",
    "capacityAdd": "+48,000 t of XLPE a year (+29% on XLPE, about +18% for the company); about ₹500cr of sales at full use"
   },
   {
@@ -2395,10 +2395,10 @@
    "sector": "Chemicals",
    "name": "FY27 capacity programme",
    "what": "A medium-voltage compound plant in the East, HFFR (flame-retardant) capacity doubled from 10,000 to 20,000 tonnes, and a new Vapi site",
-   "cost": "₹150–175cr in FY27 including battery-storage spending, own cash",
+   "cost": "about ₹175cr in FY27 including battery-storage spending (₹79cr spent in H1), own cash; ₹50–70cr in FY28",
    "status": "building",
-   "source": "Sector note (Q1 FY27 call, Aug 2026); the Q4 FY26 call had said about ₹175cr for FY27, including about ₹70cr for battery storage",
-   "updatedOn": "2026-10-23",
+   "source": "Q2 FY27 call (13 Nov 2026): FY27 capex about ₹175cr, HFFR doubled to 20,000 t by year end; Q1 FY27 call (Aug 2026); the Q4 FY26 call had said about ₹175cr for FY27, including about ₹70cr for battery storage",
+   "updatedOn": "2026-11-18",
    "capacityAdd": "HFFR doubled from 10,000 t to 20,000 t (+100%); total capacity to 3,34,400 t by March 2027 (+18,000 t); sizes of the medium-voltage plant and Vapi site not given"
   },
   {
@@ -2409,10 +2409,16 @@
    "what": "Assembly of 1 GWh a year of battery-storage containers from imported cells, moved from Gujarat to West Bengal; 5 GWh long-term plan",
    "cost": "₹150–200cr including working capital",
    "adds": "about ₹800–900cr of sales per GWh, at 6–8% margin in phase one",
-   "status": "planned",
-   "source": "Q1 FY27 call (Aug 2026): may be delayed by a couple of quarters (for the 1 GWh business, 'consider mid-FY29') and margin guide cut; 5 GWh plan from Q4 FY26 call",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "1 GWh a year of battery-storage containers (new line); about ₹800–900cr of sales per GWh"
+   "status": "building",
+   "source": "Q2 FY27 call (13 Nov 2026): at the construction stage, waiting to apply under West Bengal's incentive policy (announced 5 Nov); start now around Q1 FY28, orders only once the plant is ready. Q1 FY27 call (Aug 2026): may be delayed by a couple of quarters (for the 1 GWh business, 'consider mid-FY29') and margin guide cut; 5 GWh plan from Q4 FY26 call",
+   "updatedOn": "2026-11-18",
+   "capacityAdd": "1 GWh a year of battery-storage containers (new line); about ₹800–900cr of sales per GWh",
+   "revisions": [
+    {
+     "on": "2026-11-18",
+     "text": "Q2 FY27 call (13 Nov): start pushed to about Q1 FY28 while it reviews West Bengal's new incentive policy"
+    }
+   ]
   },
   {
    "id": "himadri-speciality-lfp",
@@ -11254,13 +11260,13 @@
    "company": "Windlas Biotech",
    "sector": "Pharma CDMO",
    "name": "Plant 6",
-   "what": "Expansion of its core tablet and capsule contract business; mechanically complete, validations and customer audits under way",
+   "what": "Expansion of its core tablet and capsule contract business: 200 million tablets and capsules a year; commercial production from 28 September 2026",
    "expectedStart": "Q2 FY27",
-   "adds": "total capacity of about ₹1,100cr of revenue, plus 10–15% from debottlenecking",
-   "status": "building",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "Takes total capacity to about ₹1,100cr of revenue, plus 10–15% more from debottlenecking"
+   "adds": "total capacity of about ₹1,100cr of revenue, plus up to 10% from debottlenecking",
+   "status": "started",
+   "source": "Q2 FY27 call (6 Nov 2026)",
+   "updatedOn": "2026-11-18",
+   "capacityAdd": "Takes total capacity to about ₹1,100cr of revenue, plus up to 10% more from debottlenecking"
   },
   {
    "id": "akums-drugs-baddi-oral",
@@ -11947,8 +11953,8 @@
    "what": "Second phase of the fully automated Silvassa plant for IBCs (1,000-litre caged tanks), doubling it from 150,000 to 300,000 a year",
    "expectedStart": "Q4 FY27",
    "status": "building",
-   "source": "Q4 FY26 call (May 2026); Q1 FY27 call (Aug 2026) says phase 2 is under implementation",
-   "updatedOn": "2026-09-29",
+   "source": "Q4 FY26 call (May 2026); Q2 FY27 call (Nov 2026): IBC phase to be completed by the end of FY27",
+   "updatedOn": "2026-11-18",
    "capacityAdd": "+150,000 IBCs a year (Silvassa from 150,000 to 300,000, doubles it)"
   },
   {
@@ -11957,11 +11963,11 @@
    "sector": "Plastics",
    "name": "FY27 new plants (Sanand, Cuttack, Chiplun, Dammam, recycling)",
    "what": "PE pipe unit at Sanand; packaging and PE pipes at Cuttack; packaging at Chiplun; a packaging plant in Dammam, Saudi Arabia; more captive recycling units in North and South India (India plants run at about 80%)",
-   "cost": "part of FY27 capex (₹75cr spent in Q1, ₹47cr of it on IBCs and composites)",
+   "cost": "part of FY27 capex of about ₹375cr (₹174cr spent in H1; ₹75cr in Q1, ₹47cr of it on IBCs and composites)",
    "expectedStart": "Q4 FY27",
    "status": "building",
-   "source": "Q4 FY26 call (May 2026) listed these for completion in FY27; the note puts FY27 capex at ₹350cr, while the Q1 FY27 call spoke of about ₹250cr",
-   "updatedOn": "2026-09-29"
+   "source": "Q4 FY26 call (May 2026) listed these for completion in FY27; Q2 FY27 call (Nov 2026) puts FY27 capex at ₹375cr, about ₹250cr net of ₹134cr of non-core asset sales",
+   "updatedOn": "2026-11-18"
   },
   {
    "id": "time-technoplast-mora-cng",
@@ -11970,10 +11976,10 @@
    "name": "Mora CNG cascade plant",
    "what": "Fully automated CNG cascade plant at Mora near Vapi with 1,080 cascades a year (Daman's 480 moved in plus 600 new)",
    "expectedStart": "Q4 FY26",
-   "adds": "composites expected to grow from about ₹600cr to over ₹750cr this year",
+   "adds": "composites expected to grow from about ₹600cr to ₹800–900cr this year (raised from over ₹750cr)",
    "status": "ramping",
-   "source": "Q4 FY26 call (May 2026); commissioned after trials",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (6 Nov 2026): plant complete and the PESO audit of the new plant done; Daman and Silvassa composite equipment to be consolidated there. Q4 FY26 call (May 2026)",
+   "updatedOn": "2026-11-18",
    "capacityAdd": "+600 CNG cascades a year (480 moved from Daman; 1,080 total, more than double)"
   },
   {
