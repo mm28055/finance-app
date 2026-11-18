@@ -410,7 +410,7 @@ const profiles: BusinessProfile[] = [
         },
         "moat": "A known brand in Delhi with a doctor-led, standardised process and early use of AI embryology tools. Larger, better-funded chains compete in every city, and the company is still small.",
         "salesDrivers": [
-            "**New hubs**: 10 in FY27, 8 in FY28 and 1 in FY29 from IPO money; each is said to break even in about three months.",
+            "**New hubs**: 10 in FY27, 8 in FY28 and 1 in FY29 from IPO money; each is said to break even in about three months. A postal ballot (voting to 16 Dec 2026) asks to move several of the planned locations; ₹36.5cr of the ₹50cr set aside was still unspent at September 2026.",
             "**Market growth**: about 27.5 million infertile couples but only about 3 lakh IVF cycles a year in India.",
             "**Regulation**: the ART Act should squeeze small unregistered clinics as states implement it, over about another year.",
             "**Medical tourism**: IVF in India costs about a fifth of the US price.",
