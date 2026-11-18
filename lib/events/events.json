@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T23:05:51.811Z",
+ "updated": "2026-11-18T22:46:17.198Z",
  "events": [
   {
    "company": "GSFC",
@@ -11285,6 +11285,14 @@
    "url": "https://nsearchives.nseindia.in/corporate/AVANTIFEEDS_16112026163956_AFL_Intimation_Q2_call.pdf"
   },
   {
+   "company": "Sahasra Electronic",
+   "sector": "EMS & Electronics",
+   "kind": "call",
+   "date": "2026-11-21",
+   "time": "2:00 pm",
+   "url": "https://nsearchives.nseindia.in/corporate/SAHASRA_18112026151839_intimation_of_concall.pdf"
+  },
+  {
    "company": "ZF Comm Vehic Contr",
    "sector": "Auto Related",
    "kind": "call",
@@ -11292,6 +11300,15 @@
    "time": "10:30 Hrs. (IST)",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.in/corporate/WABCOINDIA_17112026183603_sdSEearningscallintimation.pdf"
+  },
+  {
+   "company": "Precision Camshafts",
+   "sector": "Auto Related",
+   "kind": "call",
+   "date": "2026-11-24",
+   "time": "12:00 Noon",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.in/corporate/PRECAMS_18112026115106_PCL_Q2_Earning_Call_FY-27.pdf"
   },
   {
    "company": "RACL Geartech",
