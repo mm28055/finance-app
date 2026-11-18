@@ -679,6 +679,11 @@
    "read": "positive",
    "change": "Management introduced explicit forward guidance, targeting 300+ towers for FY27 and 500+ for FY28, whereas no guidance was provided in the previous call.",
    "on": "2026-11-17"
+  },
+  "Premier Explosives|Special call 13 Nov 2026": {
+   "read": "positive",
+   "change": "Execution rebounded sharply from a disastrous Q1 with Q2 revenue surging 92% YoY to ₹145.28 Cr, though management set a new, lower gross margin expectation of 20-25% due to import reliance.",
+   "on": "2026-11-18"
   }
  }
 }
