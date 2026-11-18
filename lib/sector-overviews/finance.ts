@@ -544,7 +544,7 @@ export const finance: SectorOverview = {
         {
             company: 'Manba Finance', rank: 8, stance: 'SCALEUP', segment: NBFC,
             what: "A small non-bank lender making two-wheeler loans through 1,700+ dealers (Q1 FY27 call), mainly in Maharashtra, Gujarat and Rajasthan, now adding three-wheeler, used-vehicle, personal, small-business and property loans.",
-            view: "**Fast approvals, weak cushion, stretched targets.** The highest bad loans in the group (3.41% on managed loans, 3.60% on its own book), only 26% provided for, 57% of loans in Maharashtra and a flat Q1 book. Its ₹100cr issue at ₹135 restores capital but dilutes holders by about 13%, and its 3.5% return-on-assets target compares with about 2.7% in Q1. The price needs about {need:Manba Finance|9}% a year against my ~12%; loan quality is the reason to pass.",
+            view: "**Fast approvals, weak cushion, stretched targets.** The highest bad loans in the group (3.41% on managed loans, 3.60% on its own book), only 26% provided for, 57% of loans in Maharashtra and a flat Q1 book. Its ₹100cr issue at ₹135 (shares allotted to outside investors on 6 Nov 2026, so the promoters' stake is 69.1% until their warrants convert) restores capital but dilutes holders by about 13%, and its 3.5% return-on-assets target compares with about 2.7% in Q1. The price needs about {need:Manba Finance|9}% a year against my ~12%; loan quality is the reason to pass.",
             watch: 'Loans reaching ₹2,000cr by December; own-book bad loans below 3.7%; borrowing cost back under 10.8%.',
         },
     ],
