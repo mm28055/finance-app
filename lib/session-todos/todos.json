@@ -14,7 +14,7 @@
   },
   {
    "id": "project-followups-nov",
-   "text": "About twenty project follow-ups raised 1–6 November (plant starts and new capex at Quality Power, Madhya Bharat, Aarti Industries, Studds, Narayana, OBSC, Balaji Amines, Saatvik, Century Ply, Gopal Snacks, KIMS, Sai Parenterals, Nelcast, HEG, Amara Raja, Medanta, Exide, Windlas, M&B, Happy Forgings, KSH) are still open behind the 40-a-run limit; give them a batch session to update projects, milestones and capacity pictures.",
+   "text": "About twenty project follow-ups raised 1–6 November (plant starts and new capex at Quality Power, Madhya Bharat, Aarti Industries, Studds, Narayana, OBSC, Balaji Amines, Saatvik, Century Ply, Gopal Snacks, KIMS, Sai Parenterals, Nelcast, HEG, Amara Raja, Medanta, Exide, M&B, Happy Forgings, KSH) are still open behind the 40-a-run limit; give them a batch session to update projects, milestones and capacity pictures.",
    "addedOn": "2026-11-08"
   },
   {
@@ -31,6 +31,11 @@
    "id": "q2-calls-backlog",
    "text": "About 233 Q2 FY27 results-call follow-ups (and 69 automatically settled checkpoints) are still open: 339 follow-ups in all after the 13 Nov run handled 24. At up to 40 a run this takes two weeks or more, so consider a backlog session for the follow and wait names.",
    "addedOn": "2026-11-11"
+  },
+  {
+   "id": "results-yearago-column",
+   "text": "The evening results job compared Q2 FY27 with June 2025 instead of September 2025 when Screener's table skips a quarter (Allcargo Global, Skyways, Behari Lal, TAC Security on 18 Nov; corrected by hand): fix how it picks the year-ago column.",
+   "addedOn": "2026-11-18"
   }
  ]
 }

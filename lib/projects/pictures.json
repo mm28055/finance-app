@@ -2837,8 +2837,8 @@
   },
   {
    "company": "All Time Plastic",
-   "fingerprint": "a3b86a0fce2266d1",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "999c3e6b733ca587",
+   "checkedOn": "2026-11-18",
    "lines": {
     "heading": "How full the moulding plants are (Q1 FY27)",
     "items": [
@@ -2890,10 +2890,10 @@
      },
      {
       "name": "Guwahati bamboo board plant",
-      "sub": "leased 75,000 sq ft at Madanpur; 3,000 cubic metres a year in phase 1, finishing at Khatalwada; about ₹60cr of revenue at full use",
+      "sub": "leased 75,700 sq ft at Madanpur, North Guwahati; 3,000 cubic metres a year in phase 1, finishing at Khatalwada; about ₹60cr of revenue at full use; operating since 16 Nov 2026",
       "total": 15,
       "right": "₹15cr; may rise slightly for special machines",
-      "status": "building",
+      "status": "started",
       "projectId": "all-time-plastic-bamboo"
      }
     ]
@@ -2923,7 +2923,8 @@
      "milestones": [
       "all-time-plastic-khatalwada-m2"
      ],
-     "sub": "The 14 machines arrive in Q3"
+     "sub": "The 14 machines arrive in Q3",
+     "text": "Guwahati bamboo board plant began operating on 16 Nov 2026 (75,700 sq ft leased at Madanpur, 3,000 cubic metres a year)"
     },
     {
      "when": "Q4 FY27",
@@ -2935,7 +2936,7 @@
      "sub": "The 4,000 t may also arrive by end of Q4 if ordered. First bamboo revenue a quarter later than planned (the May call had pointed to output from H2)"
     }
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
+   "source": "NSE filing 16 Nov 2026, Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
    "recheck": {
     "changes": []
    }
@@ -36750,8 +36751,8 @@
   },
   {
    "company": "Supreme Petrochem",
-   "fingerprint": "078eb7b289b82a38",
-   "checkedOn": "2026-11-04",
+   "fingerprint": "8f47d118791dde22",
+   "checkedOn": "2026-11-18",
    "lines": {
     "heading": "How full the lines run (ABS in Q2 FY27; EPS in FY26)",
     "items": [
@@ -36820,7 +36821,7 @@
      "caveat": "Today's 72,000 cubic metres of XPS is from the stored note; the calls don't restate it"
     },
     {
-     "heading": "What the second ABS line adds (by March 2029)",
+     "heading": "What the second ABS line adds (mechanically complete by December 2028)",
      "projectId": "supreme-petrochem-abs-line2",
      "bars": [
       {
@@ -36832,6 +36833,9 @@
        "addLabel": "+70,000 t",
        "right": "+100%"
       }
+     ],
+     "notes": [
+      "Versalis technology (agreement signed 17 Nov 2026); the existing line runs at about 60%"
      ]
     },
     {
@@ -36874,10 +36878,11 @@
      },
      {
       "name": "Second ABS line",
-      "sub": "Phase 2 ABS, to 1.4 lakh t",
-      "right": "part of about ₹900cr of projects",
+      "sub": "70,000 t mABS line with Versalis technology, to 1.4 lakh t",
+      "right": "₹450cr from internal cash",
       "status": "planned",
-      "projectId": "supreme-petrochem-abs-line2"
+      "projectId": "supreme-petrochem-abs-line2",
+      "total": 450
      },
      {
       "name": "ABS line recovery",
@@ -36929,13 +36934,8 @@
      "milestones": [
       "supreme-petrochem-ps-line5-m1"
      ],
-     "sub": "By December 2028"
-    },
-    {
-     "when": "Q4 FY29",
-     "tone": "later",
-     "text": "Second ABS line: all new capacities on board by March 2029",
-     "sub": "Q4 FY26 call had aimed for FY28"
+     "sub": "By December 2028 for both. The Q1 FY27 call had said all new capacities by March 2029; the Q4 FY26 call had aimed for FY28 for ABS",
+     "text": "Second ABS line mechanically complete by December 2028 (Versalis technology agreement signed 17 Nov 2026)"
     },
     {
      "when": "Undecided",
@@ -36947,7 +36947,7 @@
     "Today: polystyrene 3 lakh t a year at Amdoshi; EPS 1.43 lakh t; ABS 70,000 t; XPS boards 72,000 cubic metres; compounding 50,000 t",
     "Polystyrene runs full in peak months (no figure given)"
    ],
-   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026) and sector note"
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026) and sector note; ABS line 2 technology agreement (NSE, 17 Nov 2026)"
   },
   {
    "company": "Supreme Power",

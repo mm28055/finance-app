@@ -27964,8 +27964,12 @@
    "text": "Bamboo machinery installed",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "all-time-plastic-bamboo"
+   "status": "partly",
+   "project": "all-time-plastic-bamboo",
+   "actual": "Plant began operating on 16 Nov 2026 (Q3), about six weeks after the end-September installation target",
+   "resolvedOn": "2026-11-18",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; first revenue (due Q4 FY27) is the next test"
   },
   {
    "id": "all-time-plastic-bamboo-m2",

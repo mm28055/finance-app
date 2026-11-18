@@ -73,6 +73,10 @@
      }
     ],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Nothing material the points miss; the overnight verdict stands."
    }
   },
   {
@@ -156,7 +160,7 @@
    "view": "consolidated",
    "periods": {
     "now": "Sep 2026",
-    "yearAgo": "Jun 2025",
+    "yearAgo": "Sep 2025",
     "prev": "Jun 2026"
    },
    "rows": [
@@ -164,16 +168,16 @@
      "label": "Revenue",
      "unit": "cr",
      "now": 4320,
-     "yearAgo": 3330,
+     "yearAgo": 3393,
      "prev": 3522,
-     "yoy": 29.7,
+     "yoy": 27.3,
      "qoq": 22.7
     },
     {
      "label": "Operating profit",
      "unit": "cr",
      "now": 122,
-     "yearAgo": -32,
+     "yearAgo": -4,
      "prev": 28,
      "yoy": null,
      "qoq": 335.7
@@ -182,16 +186,16 @@
      "label": "Operating margin",
      "unit": "%",
      "now": 2.8,
-     "yearAgo": -1,
+     "yearAgo": -0.1,
      "prev": 0.8,
-     "yoy": 3.8,
+     "yoy": 2.9,
      "qoq": 2
     },
     {
      "label": "Net profit",
      "unit": "cr",
      "now": 32,
-     "yearAgo": -87,
+     "yearAgo": -30,
      "prev": -28,
      "yoy": null,
      "qoq": null
@@ -200,12 +204,12 @@
    "take": {
     "verdict": "ahead",
     "points": [
-     "Revenue grew 30% to ₹4,320cr, rising 23% over previous quarter.",
+     "Revenue grew 27% to ₹4,320cr, rising 23% over the previous quarter.",
      "Operating profit surged to ₹122cr from ₹28cr QoQ, well ahead of expectations.",
-     "Operating margin expanded to 2.8% from negative 1% a year ago.",
-     "Net profit turned positive to ₹32cr from a loss of ₹87cr."
+     "Operating margin expanded to 2.8% from about zero a year ago.",
+     "Net profit turned positive to ₹32cr from a loss of ₹30cr."
     ],
-    "text": "Revenue grew 30% to ₹4,320cr, rising 23% over previous quarter. Operating profit surged to ₹122cr from ₹28cr QoQ, well ahead of expectations. Operating margin expanded to 2.8% from negative 1% a year ago. Net profit turned positive to ₹32cr from a loss of ₹87cr.",
+    "text": "Revenue grew 27% to ₹4,320cr, rising 23% over the previous quarter. Operating profit surged to ₹122cr from ₹28cr QoQ, well ahead of expectations. Operating margin expanded to 2.8% from about zero a year ago. Net profit turned positive to ₹32cr from a loss of ₹30cr.",
     "checks": [
      {
       "text": "Operating profit in Q2 FY27 at least Q1's ₹28cr",
@@ -219,6 +223,10 @@
      }
     ],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Corrected in place: the job compared with Jun 2025, not the Sep 2025 quarter (revenue ₹3,393cr, a ₹30cr loss), so growth is 27%, not 30%, and the swing is from a ₹30cr loss, not ₹87cr. Tax took 48% of pre-tax profit. Verdict stands."
    }
   },
   {
@@ -281,6 +289,10 @@
     "text": "Revenue rose 37% to ₹74cr, lagging far behind guided ~170% FY27 growth. Operating profit jumped 74% to ₹33cr as operating margin expanded 9 pts to 44%. Net profit grew 69% to ₹22cr, well ahead of base-case expectations.",
     "checks": [],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Nothing material the points miss; the overnight verdict stands."
    }
   },
   {
@@ -292,7 +304,7 @@
    "view": "standalone",
    "periods": {
     "now": "Sep 2026",
-    "yearAgo": "Jun 2025",
+    "yearAgo": "Sep 2025",
     "prev": "Jun 2026"
    },
    "rows": [
@@ -300,47 +312,47 @@
      "label": "Revenue",
      "unit": "cr",
      "now": 154,
-     "yearAgo": 128,
+     "yearAgo": 127,
      "prev": 152,
-     "yoy": 20.3,
+     "yoy": 21.3,
      "qoq": 1.3
     },
     {
      "label": "Operating profit",
      "unit": "cr",
      "now": 24,
-     "yearAgo": 23,
+     "yearAgo": 19,
      "prev": 28,
-     "yoy": 4.3,
+     "yoy": 26.3,
      "qoq": -14.3
     },
     {
      "label": "Operating margin",
      "unit": "%",
      "now": 16,
-     "yearAgo": 18,
+     "yearAgo": 15,
      "prev": 18,
-     "yoy": -2,
+     "yoy": 1,
      "qoq": -2
     },
     {
      "label": "Net profit",
      "unit": "cr",
      "now": 17,
-     "yearAgo": 15,
+     "yearAgo": 14,
      "prev": 19,
-     "yoy": 13.3,
+     "yoy": 21.4,
      "qoq": -10.5
     }
    ],
    "take": {
     "verdict": "mixed",
     "points": [
-     "Revenue grew 20% year-on-year to ₹154cr, but operating profit rose just 4% to ₹24cr.",
-     "Operating margin slipped 2 percentage points year-on-year and sequentially to 16%.",
-     "Net profit rose 13% year-on-year to ₹17cr, but fell 11% quarter-on-quarter."
+     "Revenue grew 21% year-on-year to ₹154cr and operating profit 26% to ₹24cr.",
+     "Operating margin rose 1 point year-on-year to 16% but fell 2 points from Q1's 18%.",
+     "Net profit rose 21% year-on-year to ₹17cr, but fell 11% quarter-on-quarter."
     ],
-    "text": "Revenue grew 20% year-on-year to ₹154cr, but operating profit rose just 4% to ₹24cr. Operating margin slipped 2 percentage points year-on-year and sequentially to 16%. Net profit rose 13% year-on-year to ₹17cr, but fell 11% quarter-on-quarter.",
+    "text": "Revenue grew 21% year-on-year to ₹154cr and operating profit 26% to ₹24cr. Operating margin rose 1 point year-on-year to 16% but fell 2 points from Q1's 18%. Net profit rose 21% year-on-year to ₹17cr, but fell 11% quarter-on-quarter.",
     "checks": [
      {
       "text": "High-value products at 60%+ of revenue with profit per tonne near ₹13,500",
@@ -349,6 +361,10 @@
      }
     ],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Corrected in place: the job compared with Jun 2025, not Sep 2025; against the right quarter operating profit rose 26% (not 4%) and the margin rose a point. The weakness is only against Q1, so 'mixed' stands."
    }
   },
   {
@@ -417,6 +433,10 @@
      }
     ],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Still a loss after ₹40cr of other income; the odd 230% tax rate is a loss-quarter effect."
    }
   },
   {
@@ -561,6 +581,10 @@
      }
     ],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Nothing material the points miss; the overnight verdict stands."
    }
   },
   {
@@ -623,6 +647,10 @@
     "text": "Revenue reached ₹254cr, trailing the full-year target of ₹575cr Operating margin slipped to 11% from 13% in the prior period Operating profit rose to ₹29cr, while net profit came in at ₹21cr",
     "checks": [],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Against H1 FY26 (₹134cr revenue, ₹15cr profit on Screener), revenue rose about 90% and profit about 40%, at a lower margin; H1 is 44% of the ₹575cr full-year target."
    }
   },
   {
@@ -845,6 +873,10 @@
      }
     ],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "The margin has fallen four quarters running, from 15.4% to 10.9%; a lower 20% tax rate kept profit flat on the quarter."
    }
   },
   {
@@ -919,6 +951,10 @@
      }
     ],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Other income turned negative (−₹2cr after ₹14cr in Q1), adding to the profit fall."
    }
   },
   {
@@ -981,6 +1017,10 @@
     "text": "Revenue grew just 5% to ₹953cr, far behind the guided ~30%+ growth rate. Operating profit fell 18% to ₹120cr as margin shrank 3 points to 13%. Net profit slumped 66% to ₹40cr, down from ₹116cr a year ago.",
     "checks": [],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Other income fell from ₹42cr to ₹19cr and tax took 39% of pre-tax profit. The results filing also shows working capital up to 169 days from 123 and debt at 0.4x equity (0.2x), while the order book rose 31% to ₹10,625cr."
    }
   },
   {
@@ -1054,6 +1094,10 @@
      }
     ],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "The profit jump came from margin (18% against 12%), not volume; 'mixed' is cautious but fair until the second half shows the margin holds."
    }
   },
   {
@@ -1122,6 +1166,10 @@
      }
     ],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Nothing material the points miss; the overnight verdict stands."
    }
   },
   {
@@ -1184,6 +1232,10 @@
     "text": "Revenue grew 87% to ₹243cr, beating the 50–70% full-year growth guidance. Operating profit rose 61% to ₹29cr, though operating margin fell 2 points to 12%. Net profit rose 54% to ₹20cr, well above the 20% base-case expectation.",
     "checks": [],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Other income of ₹5cr was about a fifth of pre-tax profit."
    }
   },
   {
@@ -1340,6 +1392,10 @@
      }
     ],
     "on": "2026-11-17"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Quarters swing widely (₹143cr in Q4, ₹37cr in Q1), so the full year matters more than this quarter."
    }
   },
   {
@@ -1496,7 +1552,7 @@
    "view": "consolidated",
    "periods": {
     "now": "Sep 2026",
-    "yearAgo": "Jun 2025",
+    "yearAgo": "Sep 2025",
     "prev": "Jun 2026"
    },
    "rows": [
@@ -1504,18 +1560,18 @@
      "label": "Revenue",
      "unit": "cr",
      "now": 1311,
-     "yearAgo": 639,
+     "yearAgo": 689,
      "prev": 1217,
-     "yoy": 105.2,
+     "yoy": 90.3,
      "qoq": 7.7
     },
     {
      "label": "Operating profit",
      "unit": "cr",
      "now": 58,
-     "yearAgo": 27,
+     "yearAgo": 30,
      "prev": 50,
-     "yoy": 114.8,
+     "yoy": 93.3,
      "qoq": 16
     },
     {
@@ -1531,20 +1587,20 @@
      "label": "Net profit",
      "unit": "cr",
      "now": 33,
-     "yearAgo": 11,
+     "yearAgo": 14,
      "prev": 27,
-     "yoy": 200,
+     "yoy": 135.7,
      "qoq": 22.2
     }
    ],
    "take": {
     "verdict": "in line",
     "points": [
-     "Revenue doubled to ₹1,311cr, up 105% year-on-year.",
-     "Operating profit rose 115% to ₹58cr, with margins holding at 4.4%.",
-     "Net profit tripled to ₹33cr from ₹11cr a year ago."
+     "Revenue nearly doubled to ₹1,311cr, up 90% year-on-year.",
+     "Operating profit rose 93% to ₹58cr, with margins holding at 4.4%.",
+     "Net profit more than doubled to ₹33cr from ₹14cr a year ago."
     ],
-    "text": "Revenue doubled to ₹1,311cr, up 105% year-on-year. Operating profit rose 115% to ₹58cr, with margins holding at 4.4%. Net profit tripled to ₹33cr from ₹11cr a year ago.",
+    "text": "Revenue nearly doubled to ₹1,311cr, up 90% year-on-year. Operating profit rose 93% to ₹58cr, with margins holding at 4.4%. Net profit more than doubled to ₹33cr from ₹14cr a year ago.",
     "checks": [
      {
       "text": "Air cargo volume growth close to Q1's 23%",
@@ -1553,6 +1609,10 @@
      }
     ],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Corrected in place: the job compared with Jun 2025, not Sep 2025 (revenue ₹689cr, profit ₹14cr), so growth is 90% and profit +136%, not 105% and +200%. 'In line' stands."
    }
   },
   {
@@ -1564,7 +1624,7 @@
    "view": "consolidated",
    "periods": {
     "now": "Sep 2026",
-    "yearAgo": "Jun 2025",
+    "yearAgo": "Sep 2025",
     "prev": "Jun 2026"
    },
    "rows": [
@@ -1572,47 +1632,47 @@
      "label": "Revenue",
      "unit": "cr",
      "now": 26,
-     "yearAgo": 10,
+     "yearAgo": 20,
      "prev": 20,
-     "yoy": 160,
+     "yoy": 30,
      "qoq": 30
     },
     {
      "label": "Operating profit",
      "unit": "cr",
      "now": 12,
-     "yearAgo": 5,
+     "yearAgo": 14,
      "prev": 10,
-     "yoy": 140,
+     "yoy": -14.3,
      "qoq": 20
     },
     {
      "label": "Operating margin",
      "unit": "%",
      "now": 47,
-     "yearAgo": 47,
+     "yearAgo": 70,
      "prev": 48,
-     "yoy": 0,
+     "yoy": -23,
      "qoq": -1
     },
     {
      "label": "Net profit",
      "unit": "cr",
      "now": 11,
-     "yearAgo": 3,
+     "yearAgo": 12,
      "prev": 8,
-     "yoy": 266.7,
+     "yoy": -8.3,
      "qoq": 37.5
     }
    ],
    "take": {
-    "verdict": "ahead",
+    "verdict": "mixed",
     "points": [
-     "Revenue jumped 160% to ₹26cr, ahead of the ₹24cr expected.",
-     "Operating profit grew 140% to ₹12cr, with margin holding steady at 47%.",
-     "Net profit surged 267% to ₹11cr, rising 38% quarter-on-quarter."
+     "Revenue rose 30% to ₹26cr, ahead of the ₹24cr expected.",
+     "Operating profit fell 14% to ₹12cr as the margin came down from 70% a year ago to 47%.",
+     "Net profit fell 8% to ₹11cr, though it rose 38% quarter-on-quarter."
     ],
-    "text": "Revenue jumped 160% to ₹26cr, ahead of the ₹24cr expected. Operating profit grew 140% to ₹12cr, with margin holding steady at 47%. Net profit surged 267% to ₹11cr, rising 38% quarter-on-quarter.",
+    "text": "Revenue rose 30% to ₹26cr, ahead of the ₹24cr expected. Operating profit fell 14% to ₹12cr as the margin came down from 70% a year ago to 47%. Net profit fell 8% to ₹11cr, though it rose 38% quarter-on-quarter.",
     "checks": [
      {
       "text": "Q2 total income of about ₹24cr",
@@ -1626,6 +1686,10 @@
      }
     ],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Corrected in place: the job compared with Jun 2025, not Sep 2025. Against Sep 2025 (revenue ₹20cr, operating profit ₹14cr at 70%, profit ₹12cr) revenue rose 30% but operating profit fell 14% and profit 8%, so the verdict is changed from ahead to mixed."
    }
   },
   {
@@ -1771,6 +1835,10 @@
      }
     ],
     "on": "2026-11-17"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Nothing material the points miss; the overnight verdict stands."
    }
   },
   {
@@ -2321,6 +2389,10 @@
      }
     ],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Nothing material the points miss; the overnight verdict stands."
    }
   },
   {
@@ -3389,6 +3461,10 @@
      }
     ],
     "on": "2026-11-17"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Not checked against Screener this run (its page was not found under the stored ticker); the points read consistently with the figures stored."
    }
   },
   {
@@ -4110,6 +4186,10 @@
     "text": "Revenue grew 28% to ₹1,000cr, falling short of 40–50% guidance. Operating profit rose 19% to ₹215cr as margins fell 2 pts to 21%. Net profit rose 11% to ₹135cr, well below guided 40–50% growth.",
     "checks": [],
     "on": "2026-11-16"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Other income rose to ₹34cr from ₹8cr, about a fifth of pre-tax profit, so core profit grew less than the 11% headline."
    }
   },
   {
@@ -5369,6 +5449,10 @@
     "text": "Revenue up 50% to ₹32.19cr, ahead of the 30–35% growth watched for. Operating profit rose 48% to ₹3.81cr, with operating margin steady at 11.84%. Net profit reached ₹1.47cr; year-ago profit was distorted by ₹1cr other income.",
     "checks": [],
     "on": "2026-11-15"
+   },
+   "reviewed": {
+    "on": "2026-11-18",
+    "text": "Nothing material the points miss; the overnight verdict stands."
    }
   },
   {
