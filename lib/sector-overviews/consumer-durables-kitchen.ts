@@ -435,7 +435,7 @@ export const consumerDurablesKitchen: SectorOverview = {
                 },
                 {
                     label: 'Growth driver: pens, bamboo and new categories',
-                    text: "**Cello's** pens grew 52% in Q1, helped by the Cello pen brand it bought back in 2025; in May management targeted over ₹500cr of pen sales in FY27, from ₹368cr, but it did not repeat the figure in August, when it withdrew its FY27 guidance. **All Time Plastics** is setting up a ₹15cr bamboo-products plant in Guwahati with ₹60cr of revenue potential, now due in Q4 FY27, and wants its own brand to rise from 12–13% to 22–25% of sales. **Carysil** is opening bath stores and a stone-fabrication unit in India. **My view: pens are Cello's one proven new engine this year.**",
+                    text: "**Cello's** pens grew 52% in Q1, helped by the Cello pen brand it bought back in 2025; in May management targeted over ₹500cr of pen sales in FY27, from ₹368cr, but it did not repeat the figure in August, when it withdrew its FY27 guidance. **All Time Plastics** started its ₹15cr bamboo-board plant near Guwahati (3,000 cubic metres a year, ₹60cr of revenue potential) on 16 Nov 2026, with first revenue expected in Q4 FY27, and wants its own brand to rise from 12–13% to 22–25% of sales. **Carysil** is opening bath stores and a stone-fabrication unit in India. **My view: pens are Cello's one proven new engine this year.**",
                 },
                 {
                     label: 'Delivering or beating',
