@@ -31,7 +31,6 @@ Order of work (at most 40 follow-ups per run; the rest wait for the next run —
 4. The filings pass (below).
 5. The news pass (below).
 6. The results pass (below).
-7. The Top 12 pass (below).
 
 For each entry, by its `subject`/`why`:
 
@@ -154,17 +153,6 @@ quarter, by the Checkpoints rules below, from the call transcript (NSE/BSE filin
 the results presentation. Do not wait for a "New results call" follow-up: that one is raised only by the weekday
 evening job, so a call heard on a Friday would otherwise sit unjudged for days. Segment figures that only the call or
 presentation gives (a segment's loss or margin) count. Only a checkpoint the call truly leaves open stays pending.
-
-**Top 12 pass.** `lib/top-ideas/top-ideas.json` holds twelve ideas for the owner's own portfolio (about 25% a year,
-held to March 2030) and a reserve list; the dashboard shows only the twelve names (its "★ Top 12" filter), so price moves alone need nothing.
-For each Top 12 or reserve company touched by this run's work (a new call, a results entry, a filing, a call change): check the
-idea's `breaksIt` triggers and `nextChecks` against the new facts. If a trigger is hit, or the facts move FY30 profit or
-the exit P/E, update that idea's numbers and text (FY30 profit, exit P/E, bad case, conviction, the checks) using the
-same rules as before (the exit-P/E scale in its method text; each idea's full research and the method are in
-`ops/top12-research/2026-10-16/`), or move it to the reserve list and promote the best
-reserve name that now earns about 20%+ a year at today's price. Change only on facts, never on price alone. Add one
-dated line per change to `changes` (newest first) and list it in the log. If nothing touched a Top 12 or reserve name,
-change nothing.
 
 Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you found and did>"`. Never delete entries.
 

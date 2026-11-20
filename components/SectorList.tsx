@@ -10,13 +10,10 @@ import { meetsGuidanceThreshold, GUIDANCE_GROWTH_THRESHOLD } from '@/lib/guidanc
 import { isPortfolioSector } from '@/lib/portfolio';
 import { useTags } from '@/context/TagsContext';
 import themesStore from '@/lib/themes/themes.json';
-import { TOP_IDEAS } from '@/lib/top-ideas';
 import type { ThemesStore, ThemeCompany } from '@/lib/themes/types';
 
 // Investment themes (lib/themes): companies whose own calls show something concrete behind the theme.
 const THEMES = (themesStore as unknown as ThemesStore);
-// The twelve ideas for about 25% a year to March 2030 (lib/top-ideas, rechecked in each review).
-const TOP_12 = new Set(TOP_IDEAS.ideas.map(i => i.company));
 import { livePriceCheck, CALLS, type Call, type NoteIndex } from '@/lib/sector-overviews/shared';
 
 export const COLOR_THEMES = {
@@ -217,8 +214,6 @@ export const SectorList = ({ sectors, noteIndex, toolbarExtras }: { sectors: Sec
     const [bigMoveOnly, setBigMoveOnly] = useState(false);
     // Keeps only the companies with a shareholding warning (lib/shareholding.ts).
     const [holdingOnly, setHoldingOnly] = useState(false);
-    // Keeps only the Top 12 ideas.
-    const [top12Only, setTop12Only] = useState(false);
     // The owner's own tags: keeps only the companies carrying the chosen tag.
     const { allTags, companiesWith } = useTags();
     const [tagFilter, setTagFilter] = useState('');
@@ -305,14 +300,6 @@ export const SectorList = ({ sectors, noteIndex, toolbarExtras }: { sectors: Sec
             })).filter(sector => sector.companies.length > 0);
         }
 
-        // 5c. The Top 12 ideas
-        if (top12Only) {
-            result = result.map(sector => ({
-                ...sector,
-                companies: sector.companies.filter(co => TOP_12.has(co.name))
-            })).filter(sector => sector.companies.length > 0);
-        }
-
         // 6. Owner's tag
         if (activeTag) {
             const ids = companiesWith(activeTag);
@@ -341,7 +328,7 @@ export const SectorList = ({ sectors, noteIndex, toolbarExtras }: { sectors: Sec
         // 7b. While searching or filtering, ZPortfolio would only repeat companies
         // already shown under their own sector, so it is left out.
         const filtering = !!searchQuery.trim() || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null
-            || bigMoveOnly || holdingOnly || top12Only || !!activeTag || !!activeTheme || !!callFilter;
+            || bigMoveOnly || holdingOnly || !!activeTag || !!activeTheme || !!callFilter;
         if (filtering) result = result.filter(sector => !isPortfolioSector(sector.sector));
 
         // 8. Sort
@@ -361,7 +348,7 @@ export const SectorList = ({ sectors, noteIndex, toolbarExtras }: { sectors: Sec
             });
             return { ...sector, companies: sortedCompanies };
         });
-    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand, bigMoveOnly, holdingOnly, top12Only, activeTag, companiesWith, callFilter, calls, activeTheme, themeBy]);
+    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand, bigMoveOnly, holdingOnly, activeTag, companiesWith, callFilter, calls, activeTheme, themeBy]);
 
     // Every company once (ZPortfolio repeats them), so a sector note can still find a
     // company that has been moved to another sector.
@@ -466,13 +453,6 @@ export const SectorList = ({ sectors, noteIndex, toolbarExtras }: { sectors: Sec
                             ? 'bg-purple-500 text-white border-purple-500'
                             : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                     >± 20 Score Move</button>
-                    <button
-                        onClick={() => setTop12Only(v => !v)}
-                        title="Only the twelve ideas for about 25% a year, held to March 2030"
-                        className={`px-2 py-0.5 text-[10px] font-medium rounded border transition-all ${top12Only
-                            ? 'bg-amber-500 text-white border-amber-500'
-                            : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
-                    >★ Top 12</button>
                     <select
                         value={callFilter}
                         onChange={e => setCallFilter(e.target.value as Call | '')}
@@ -542,7 +522,7 @@ export const SectorList = ({ sectors, noteIndex, toolbarExtras }: { sectors: Sec
                     count={s.companies.length}
                     companies={s.companies}
                     allCompanies={allCompanies}
-                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly || holdingOnly || top12Only || !!activeTag || !!callFilter || !!activeTheme}
+                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly || holdingOnly || !!activeTag || !!callFilter || !!activeTheme}
                 >
                     {s.companies.map(co => {
                         const rowKey = `${s.sector}:${co.ticker}`;
