@@ -684,6 +684,11 @@
    "read": "positive",
    "change": "Execution rebounded sharply from a disastrous Q1 with Q2 revenue surging 92% YoY to ₹145.28 Cr, though management set a new, lower gross margin expectation of 20-25% due to import reliance.",
    "on": "2026-11-18"
+  },
+  "EIH|Special call 16 Nov 2026": {
+   "read": "positive",
+   "change": "EBITDA growth accelerated to 19% YoY, reversing the previous quarter's margin contraction, alongside the return of 249 renovated Mumbai keys to inventory and the resolution of the Wildflower Hall dispute.",
+   "on": "2026-11-20"
   }
  }
 }
