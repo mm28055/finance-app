@@ -1,0 +1,49 @@
+name: Catch up call transcripts
+
+# Run by hand to pick up calls the nightly fetch missed over a longer stretch (the nightly run
+# reads only the last seven days of NSE filings). Calls already held are left alone. Added
+# 20 Nov 2026, when 92 companies were missing their Q2 FY27 call (CEAT's of 15 Oct among them).
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        description: 'First filing date (DD-MM-YYYY)'
+        required: true
+      to:
+        description: 'Last filing date (DD-MM-YYYY, blank for today)'
+        required: false
+      source:
+        description: 'nse, screener or both'
+        required: false
+        default: 'both'
+
+# Shares the nightly job's lock, so the two never store the same call at once.
+concurrency:
+  group: daily-filings-digest
+  cancel-in-progress: false
+
+jobs:
+  catch-up:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - name: Fetch, store and analyse the missed calls
+        run: >-
+          npx tsx scripts/sync-exchange-transcripts.ts
+          --from="${{ inputs.from }}"
+          ${{ inputs.to && format('--to="{0}"', inputs.to) || '' }}
+          --source="${{ inputs.source }}"
+          --screener-cap=400
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
+          GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}

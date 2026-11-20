@@ -607,6 +607,43 @@ async function main() {
             where: { companyId: { in: visible.map(c => c.id) } },
             select: { companyId: true, quarter: { select: { name: true } } },
         })).map(t => `${t.companyId}|${t.quarter.name}`));
+        // The quarterly figures are written by the call analysis itself, so a missed call
+        // left a company's newest figures on the quarter before, and the backstop never saw
+        // the gap (20 Nov 2026: 92 companies were missing their Q2 FY27 call, CEAT's of
+        // 15 Oct among them). The results calendar (lib/events/events.json) knows the
+        // quarter whose results are out; companies that held a results call in one of the
+        // two quarters before are read for it, until 90 days after the results.
+        const calendar = new Map<string, { quarter: string; date: Date }>();
+        try {
+            const ev = JSON.parse(fs.readFileSync(require('path').join(__dirname, '../lib/events/events.json'), 'utf8'));
+            for (const e of ev.events || []) {
+                if (e.kind !== 'results' || !/^Q[1-4] FY\d{2}$/.test(e.quarter || '') || !e.date) continue;
+                const date = new Date(`${e.date}T12:00:00+05:30`);
+                if (date.getTime() > Date.now() || date.getTime() < Date.now() - 90 * DAY) continue;
+                const k = String(e.company).trim().toLowerCase();
+                const cur = calendar.get(k);
+                if (!cur || quarterScore(e.quarter) > quarterScore(cur.quarter)) calendar.set(k, { quarter: e.quarter, date });
+            }
+        } catch (e: any) { console.warn(`Results calendar unreadable (${e.message}) — backstop uses stored figures only`); }
+        const previousQuarters = (q: string) => {
+            const [n, fy] = [parseInt(q[1], 10), parseInt(q.slice(-2), 10)];
+            const p1 = n > 1 ? `Q${n - 1} FY${fy}` : `Q4 FY${fy - 1}`;
+            const [m, fy1] = [parseInt(p1[1], 10), parseInt(p1.slice(-2), 10)];
+            return [p1, m > 1 ? `Q${m - 1} FY${fy1}` : `Q4 FY${fy1 - 1}`];
+        };
+        let fromCalendar = 0;
+        for (const co of visible) {
+            const c = calendar.get(co.name.trim().toLowerCase());
+            if (!c) continue;
+            const cur = newest.get(co.id);
+            if (cur && quarterScore(cur) >= quarterScore(c.quarter)) continue;
+            if (!previousQuarters(c.quarter).some(p => held.has(`${co.id}|${p}`))) continue; // holds no calls
+            newest.set(co.id, c.quarter);
+            const prev = resultsFiledOn.get(co.id);
+            if (!prev || c.date > prev) resultsFiledOn.set(co.id, c.date);
+            fromCalendar++;
+        }
+        if (fromCalendar) console.log(`Results calendar: ${fromCalendar} companies have newer results out than their stored figures`);
         const recentCutoff = Date.now() - 3 * DAY;
         let tooFresh = 0;
         const backstop: Company[] = [];
