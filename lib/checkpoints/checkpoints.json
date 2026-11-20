@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-20",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -9689,7 +9689,10 @@
    "target": 100,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "21.0%",
+   "resolvedOn": "2026-11-20",
+   "resolvedBy": "auto"
   },
   {
    "id": "inox-wind-q4fy27-2",
@@ -15093,7 +15096,10 @@
    "due": "Q2 FY27",
    "ifMet": "With NPC at run-rate, changes the view for the better",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "15.2%",
+   "resolvedOn": "2026-11-20",
+   "resolvedBy": "auto"
   },
   {
    "id": "man-industries-i-q2fy27-3",
@@ -15105,7 +15111,10 @@
    "target": 1300,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹1,210cr",
+   "resolvedOn": "2026-11-20",
+   "resolvedBy": "auto"
   },
   {
    "id": "man-industries-i-q4fy27-1",
@@ -17064,7 +17073,10 @@
    "target": 150,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹159cr",
+   "resolvedOn": "2026-11-20",
+   "resolvedBy": "auto"
   },
   {
    "id": "ngl-fine-chem-q2fy27-2",
@@ -17076,7 +17088,10 @@
    "target": 15,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "17.6%",
+   "resolvedOn": "2026-11-20",
+   "resolvedBy": "auto"
   },
   {
    "id": "ngl-fine-chem-q2fy27-3",
@@ -19713,7 +19728,10 @@
    "target": 350,
    "due": "Q2 FY27",
    "createdOn": "2026-09-30",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹342cr",
+   "resolvedOn": "2026-11-20",
+   "resolvedBy": "auto"
   },
   {
    "id": "turtlemint-fintech-q2fy27-2",
@@ -19725,7 +19743,10 @@
    "target": -33,
    "due": "Q2 FY27",
    "createdOn": "2026-09-30",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹-26cr",
+   "resolvedOn": "2026-11-20",
+   "resolvedBy": "auto"
   },
   {
    "id": "turtlemint-fintech-q2fy27-3",
@@ -36069,7 +36090,10 @@
    "ifMet": "The margin recovery from Q3–Q4 FY26 lows is continuing",
    "ifMissed": "Higher costs are eating the freight-rate windfall",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "missed",
+   "actual": "1.2%",
+   "resolvedOn": "2026-11-20",
+   "resolvedBy": "auto"
   },
   {
    "id": "glottis-q3fy27-1",
@@ -37069,7 +37093,10 @@
    "ifMet": "Q1's jump was a new base, not a one-off",
    "ifMissed": "Q1 was flattered; the doubling guide gets harder",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹272cr",
+   "resolvedOn": "2026-11-20",
+   "resolvedBy": "auto"
   },
   {
    "id": "bluewater-q4fy27-1",
