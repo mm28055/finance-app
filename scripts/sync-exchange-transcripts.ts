@@ -138,7 +138,13 @@ function sameText(a: string, b: string): boolean {
 async function fetchPdf(url: string): Promise<Buffer | null> {
     try {
         const res = await fetch(url, { headers: { 'User-Agent': NSE_UA }, redirect: 'follow' });
-        if (!res.ok) return null;
+        if (!res.ok) {
+            // BSE keeps a new filing under AttachLive for its first days and moves it to
+            // AttachHis later; Screener links go to AttachHis, which is a 404 until then
+            // (20 Nov 2026: AXISCADES and Astra Microwave transcripts filed that week).
+            if (/\/AttachHis\//.test(url)) return fetchPdf(url.replace('/AttachHis/', '/AttachLive/'));
+            return null;
+        }
         return Buffer.from(await res.arrayBuffer());
     } catch {
         return null;
