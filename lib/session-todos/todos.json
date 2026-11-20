@@ -1,25 +1,3 @@
 {
- "items": [
-  {
-   "id": "heg-graphite-listing",
-   "text": "HEG Graphite (renamed HEG Limited on 12 October 2026) lists in late October: once it trades, give it a business card with its call, and track its ₹650cr electrode expansion to 115,000 tonnes (due early 2028) as a project. No sector-note main page work. Checked 7 Nov 2026: not listed yet.",
-   "addedOn": "2026-09-29",
-   "notBefore": "2026-10-20"
-  },
-  {
-   "id": "project-followups-nov",
-   "text": "About twenty project follow-ups raised 1–6 November (plant starts and new capex at Quality Power, Madhya Bharat, Aarti Industries, Studds, Narayana, OBSC, Balaji Amines, Saatvik, Century Ply, Gopal Snacks, KIMS, Sai Parenterals, Nelcast, HEG, Amara Raja, Medanta, Exide, M&B, Happy Forgings, KSH) are still open behind the 40-a-run limit; give them a batch session to update projects, milestones and capacity pictures.",
-   "addedOn": "2026-11-08"
-  },
-  {
-   "id": "q2-calls-backlog",
-   "text": "About 345 Q2 FY27 results-call follow-ups and 116 automatically settled checkpoints are still open after the 18 Nov run (505 follow-ups in all; that run handled 8, mostly own names). At up to 40 a run this takes weeks, so consider a backlog session for the follow and wait names.",
-   "addedOn": "2026-11-11"
-  },
-  {
-   "id": "results-yearago-column",
-   "text": "The evening results job compared Q2 FY27 with June 2025 instead of September 2025 when Screener's table skips a quarter (Allcargo Global, Skyways, Behari Lal, TAC Security on 18 Nov; corrected by hand): fix how it picks the year-ago column.",
-   "addedOn": "2026-11-18"
-  }
- ]
+ "items": []
 }
