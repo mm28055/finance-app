@@ -113,8 +113,7 @@ owner or a full session and you cannot do it within this run's rules: a company 
 add that needs a new note section you had no room for, a data source failing for more than a week, anything left over
 after the 40-entry limit for a week of runs, a question only the owner can answer. Each item: `id` (short slug),
 `text` (one plain sentence, what to do), `addedOn`, and `notBefore` if it only applies from a date. Remove items that
-are done or no longer apply. Sectors due their season refresh appear there by themselves (90% of the new quarter's
-calls in); do not add those.
+are done or no longer apply. Do not add sector season-refresh items: the write-up is hidden (charts only).
 
 **Filings pass.** For each filing of the week that changes the investment case of a company covered by a note — a
 large order against sales, a fund-raise or dilution, a CEO/CFO/MD exit, a rating change, an acquisition or disposal,
