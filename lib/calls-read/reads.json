@@ -689,6 +689,16 @@
    "read": "positive",
    "change": "EBITDA growth accelerated to 19% YoY, reversing the previous quarter's margin contraction, alongside the return of 249 renovated Mumbai keys to inventory and the resolution of the Wildflower Hall dispute.",
    "on": "2026-11-20"
+  },
+  "RateGain Travel Tech|AGM 24 Sep 2026": {
+   "read": "neutral",
+   "change": "Nothing new versus the Q1 FY27 call.",
+   "on": "2026-11-21"
+  },
+  "KSB|Special call 17 Nov 2026": {
+   "read": "concerning",
+   "change": "Management revealed that NPCIL has diluted qualification criteria to allow competitors into the nuclear space, breaking KSB's monopoly, and further delayed the first nuclear pump testing beyond this financial year.",
+   "on": "2026-11-21"
   }
  }
 }
