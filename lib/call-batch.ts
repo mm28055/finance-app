@@ -85,7 +85,7 @@ async function collect<T>(key: string, idOf: (i: T) => string, handle: (item: T,
     const list = await readPending<T>(key);
     if (!list.length) { console.log(`No ${key === CALLS ? 'call' : 'profile'} batches waiting.`); return; }
     const keep: Pending<T>[] = [];
-    for (const b of list) {
+    for (const [bi, b] of list.entries()) {
         let j: any;
         try { j = await google(b.name); } catch (e: any) { console.log(`${b.name}: could not be read (${e.message}); tried again next time`); keep.push(b); continue; }
         const state: string = (j.metadata?.state || j.state || '').replace('BATCH_STATE_', '').toLowerCase();
@@ -99,10 +99,15 @@ async function collect<T>(key: string, idOf: (i: T) => string, handle: (item: T,
         console.log(`${b.name}: ${state}, ${answers.length} of ${b.items.length} answers`);
         // Counted under the job that sent the batch (call briefs or profile refreshes), at batch price.
         for (const a of answers) if (a?.response) recordGeminiUsage(a.response, PRO_MODEL, true, key === CALLS ? 'call-briefs-batch' : 'profiles-batch');
-        for (const item of b.items) {
+        for (const [ii, item] of b.items.entries()) {
             const a = byId.get(idOf(item));
             const text = a && !a.error ? textOf(a.response) : '';
             await handle(item, text, a?.error ? `batch error: ${a.error.message || 'unknown'}` : `batch ${state}`);
+            // Record progress after every item, so a run cut off by its time limit resumes where it
+            // stopped instead of saving the whole batch again (20 Nov 2026: a two-night batch timed
+            // out at 90 minutes and would have restarted from the top every run).
+            const rest = b.items.slice(ii + 1);
+            await writePending(key, [...keep, ...(rest.length ? [{ ...b, items: rest }] : []), ...list.slice(bi + 1)]);
         }
     }
     await writePending(key, keep);
