@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T22:39:30.481Z",
+ "updated": "2026-11-21T08:37:46.919Z",
  "results": [
   {
    "company": "Aartech Solonics",
@@ -4156,6 +4156,10 @@
    "reviewed": {
     "on": "2026-11-15",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "Management maintained its full-year volume guidance, attributing the margin pressure to temporary notional inventory write-downs and treasury losses that should reverse in Q3, while highlighting a 30% surge in the order book to ₹2,200 crore. This keeps the verdict cautious and on the watchlist rather than positive, dampened by erratic flip-flops over reviving a three-way demerger and an evasive management tone on capital allocation.",
+    "on": "2026-11-21"
    }
   },
   {
@@ -8766,6 +8770,10 @@
    "reviewed": {
     "on": "2026-11-15",
     "text": "Corrected to Screener: operating profit ₹148cr (+29%) at a 13% margin and net profit ₹136cr (+11%), not ₹181cr and ₹158cr; profit grew less than the 14% base case, so the verdict moves from ahead to mixed."
+   },
+   "call": {
+    "text": "Management maintained full-year revenue and margin guidance, clarifying that the net profit lag was driven by higher deferred taxes and lower other income rather than operational weakness, while data center leasing was intentionally paused to target larger AI hyperscaler contracts. This shifts the \"mixed\" verdict to positive, as core execution remains exceptionally strong with an unexecuted order book exceeding ₹10,100 crore.",
+    "on": "2026-11-21"
    }
   },
   {
@@ -29783,6 +29791,10 @@
    "reviewed": {
     "on": "2026-11-04",
     "text": "Nothing material the points miss; the overnight verdict stands. Guidance and checkpoints wait for the call."
+   },
+   "call": {
+    "text": "The call reaffirmed conservative full-year guidance of 23–25% AUM growth and steady ~9.3% NIMs, explaining that borrowing cost pressures were successfully countered by benchmark rate hikes and a shift toward higher-yielding direct-to-customer loans. It also ruled out any equity dilution for the next 18–24 months, firmly reinforcing the initial positive verdict.",
+    "on": "2026-11-21"
    }
   },
   {
@@ -47837,6 +47849,10 @@
    "reviewed": {
     "on": "2026-10-28",
     "text": "Misses that the CFO resigned the same day; the 18% margin is far from the 27–30% H2 aim."
+   },
+   "call": {
+    "text": "Management maintained its full-year guidance of a single-digit revenue decline and mid-20s EBITDA margins, explaining that profitability was suppressed by a ₹61cr FX hedge loss, zero Zoetis offtake, and deliberate cuts to low-margin contracts. Driven by sequential margin recovery and securing the first commercial contract for the US Bayview facility, the analyst verdict was upgraded from \"thesis breaking\" to \"watchlist,\" though the CFO's resignation and ongoing FX drag keep the outlook cautious.",
+    "on": "2026-11-21"
    }
   },
   {
