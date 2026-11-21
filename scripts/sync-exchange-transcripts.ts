@@ -633,8 +633,22 @@ async function main() {
         };
         let fromCalendar = 0;
         for (const co of visible) {
-            const c = calendar.get(co.name.trim().toLowerCase());
-            if (!c) continue;
+            let c = calendar.get(co.name.trim().toLowerCase());
+            if (!c) {
+                // Not in the calendar (it reads NSE board meetings; on 20 Nov 2026 Kilburn, WPIL,
+                // Nirlon and three more were missing from it): once the filing deadline for the
+                // quarter after the newest one held has passed (45 days, 60 for Q4), its results
+                // are taken as out.
+                const cur = newest.get(co.id);
+                if (!cur || !held.has(`${co.id}|${cur}`)) continue;
+                const [n, fy] = [parseInt(cur[1], 10), parseInt(cur.slice(-2), 10)];
+                const next = n < 4 ? `Q${n + 1} FY${fy}` : `Q1 FY${fy + 1}`;
+                const end = quarterEndDate(next);
+                if (!end) continue;
+                const due = new Date(end.getTime() + (next.startsWith('Q4') ? 60 : 45) * DAY);
+                if (due.getTime() > Date.now() || due.getTime() < Date.now() - 90 * DAY) continue;
+                c = { quarter: next, date: due };
+            }
             const cur = newest.get(co.id);
             if (cur && quarterScore(cur) >= quarterScore(c.quarter)) continue;
             if (!previousQuarters(c.quarter).some(p => held.has(`${co.id}|${p}`))) continue; // holds no calls
