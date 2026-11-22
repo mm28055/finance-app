@@ -12938,17 +12938,17 @@
   },
   {
    "company": "Fiem Industries",
-   "fingerprint": "19da499f157c405f",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "6cc14b8a8f498dce",
+   "checkedOn": "2026-11-22",
    "lines": {
-    "heading": "How full the plants are (Q4 FY26)",
+    "heading": "How full the plants are (Q2 FY27)",
     "items": [
      {
       "name": "Overall",
       "size": "nine plants: two-wheeler lamps, mirrors and plastic parts (no unit capacity disclosed)",
-      "usedPct": 75,
-      "usedLabel": "about 75% used",
-      "note": "At full use about ₹3,700cr of sales (worked out: FY26 sales of about ₹2,790cr at about 75% use); plants turn about 4.7 times their cost into revenue"
+      "usedPct": 78,
+      "usedLabel": "75–80% used, closer to 80%",
+      "note": "Counted after the new capex (Q2 FY27 call); about 75% in the Q4 FY26 call. At about 75% use, FY26 sales of about ₹2,790cr imply about ₹3,700cr at full use (worked out); plants turn about 4.7 times their cost into revenue"
      }
     ]
    },
@@ -12956,8 +12956,8 @@
     "items": [
      {
       "name": "Hosur capacity expansion",
-      "sub": "bigger footprint at both Hosur plants (Kelamangalam and Thally Road) for TVS and Hero Vida electric models; debottlenecking, no new greenfield plant",
-      "right": "most of about ₹100cr FY27 capex; ₹41cr spent company-wide in Q1; ₹200cr over FY27–FY28",
+      "sub": "bigger footprint at both Hosur plants (Kelamangalam and Thally Road) for TVS and Hero Vida electric models, plus new moulding and metallising lines at Hosur and Mysore; no new greenfield plant",
+      "right": "most of about ₹150cr FY27 capex; ₹91cr spent company-wide in H1; about the same again in FY28",
       "status": "building",
       "projectId": "fiem-industries-hosur"
      }
@@ -12970,9 +12970,9 @@
      "text": "₹108cr spent, mostly debottlenecking lines"
     },
     {
-     "when": "Q1 FY27",
+     "when": "H1 FY27",
      "tone": "done",
-     "text": "₹41cr spent; Hosur footprint being enlarged at both plants"
+     "text": "₹91cr spent (₹41cr in Q1, ₹50cr in Q2); Hosur footprint being enlarged at both plants"
     },
     {
      "when": "Q2 FY27",
@@ -12982,21 +12982,22 @@
      ]
     },
     {
-     "when": "FY27–FY28",
+     "when": "H2 FY27",
      "tone": "next",
-     "text": "About ₹100cr in FY27, ₹200cr over the two years; no greenfield plant envisaged",
-     "sub": "For lamps as TVS lifts output from 6.8 to 8.3 million bikes a year by year-end and Hero triples Vida from 15,000 to 45,000 a month"
+     "text": "About ₹50–60cr more, taking FY27 to about ₹150cr",
+     "sub": "Management changed this on 13 Nov 2026: FY27 capex was about ₹100cr (Q1 FY27 call), with ₹200cr over FY27–FY28"
+    },
+    {
+     "when": "FY28",
+     "tone": "later",
+     "text": "About the same capex again, for new lines in South India",
+     "sub": "For lamps as TVS lifts output from 6.8 to 8.3 million bikes a year and Hero triples Vida from 15,000 to 45,000 a month (Q1 FY27 call); asset turn on new capex about 3 times"
     }
    ],
    "notes": [
-    "Hosur (Kelamangalam and Thally Road) serves TVS and Hero Vida"
+    "Hosur (Kelamangalam and Thally Road) serves TVS and Hero Vida; Mysore lines added in the Q2 FY27 call"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (Jun 2026) and sector note",
-   "recheck": {
-    "changes": [
-     "All figures found in the official transcripts (75%, ₹2,790cr, ₹108cr, ₹100cr, ₹41cr, ₹200cr over two years, 6.8→8.3m, 15,000→45,000) or the stored facts (₹3,700cr, 4.7x, nine plants); the ₹3,700cr is now labelled as worked out (₹2,790cr at 75% use), since no call states it"
-    ]
-   }
+   "source": "Q2 FY27 call (13 Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (Jun 2026) and sector note"
   },
   {
    "company": "Fineotex Chemical",
@@ -19333,43 +19334,43 @@
   },
   {
    "company": "Jeena Sikho Lifecare",
-   "fingerprint": "86b2d2abebc7d881",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "e273988949a36bdd",
+   "checkedOn": "2026-11-22",
    "lines": {
-    "heading": "How full the beds are (Q1 FY27)",
+    "heading": "How full the beds are (Q2 FY27)",
     "items": [
      {
       "name": "Hospital beds",
-      "size": "about 2,400 operating beds in 58 Ayurvedic hospitals (117 facilities in all, May 2026)",
-      "usedPct": 59,
-      "usedLabel": "59% occupied",
+      "size": "about 2,424 operating beds in 62 Ayurvedic hospitals (September 2026)",
+      "usedPct": 55,
+      "usedLabel": "55% occupied",
       "marker": {
        "pct": 77.5,
        "label": "long-term aim 75–80% (dashed at the 77.5% midpoint)"
       },
-      "note": "Breaks even even at 35% occupancy; discounted beds for Ayushman and BPL patients to fill smaller hospitals"
+      "note": "57% in H1 and 59% in Q1; breaks even even at 35% occupancy; half-price beds for Ayushman card holders in smaller hospitals in Q2"
      }
     ]
    },
    "adds": [
     {
-     "heading": "What the new beds add (by end-FY27; 7,000–10,000 in 3–5 years)",
+     "heading": "What the new beds add (by March 2027; 7,000–10,000 in 3–5 years)",
      "projectId": "jeena-sikho-lifecare-beds",
      "bars": [
       {
        "name": "Operating beds",
-       "sub": "to 3,000–3,500 by end-FY27",
-       "base": 2400,
-       "add": 600,
-       "baseLabel": "today about 2,400",
-       "addLabel": "+600–1,100 beds",
-       "right": "about +25–46%"
+       "sub": "to about 3,000 by March 2027",
+       "base": 2424,
+       "add": 576,
+       "baseLabel": "today about 2,424",
+       "addLabel": "+about 576 beds",
+       "right": "about +24%"
       }
      ],
      "notes": [
-      "Mostly in leased buildings at ₹3–4 lakh a bed; management says it can add 2,000 beds within a year whenever it wants"
-     ],
-     "caveat": "Only 100 beds were added in Q1 FY27, so reaching 3,000 needs about 600 more in three quarters"
+      "Mostly in leased buildings at ₹3–4 lakh a bed; Lucknow and Ahmedabad (150 beds each) from January; 460 beds in the pipeline",
+      "Management changed this on 16 Nov 2026: about 3,000 by March (Q1 FY27 call: 3,000–3,500 by end-FY27)"
+     ]
     }
    ],
    "money": {
@@ -19392,12 +19393,17 @@
      "sub": "Q4 FY26 call (June 2026) had said 2,800–3,000 beds within 3–4 months"
     },
     {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "Three clinics added, beds about 2,424; bed growth slowed while it waits for the Ayushman scheme"
+    },
+    {
      "when": "Q3 FY27",
      "tone": "next",
      "milestones": [
       "jeena-sikho-lifecare-beds-m1"
      ],
-     "sub": "Premium wellness centre (Jeena Sikho Premium) in a leased property; slipped a month to September–October 2026 to meet Himachal rules; little revenue until March"
+     "sub": "Manali premium wellness centre (108 rooms, leased) in dry runs; charging from 15 December 2026 once imported machines arrive (was September–October)"
     },
     {
      "when": "Q4 FY27",
@@ -19405,7 +19411,7 @@
      "milestones": [
       "jeena-sikho-lifecare-beds-m2"
      ],
-     "sub": "Q1 FY27 call: 'will definitely cross 3,000 this year', target 3,000–3,500"
+     "sub": "Lucknow and Ahmedabad (150 beds each) from January; about 3,000 beds by 31 March"
     },
     {
      "when": "Waiting on approvals",
@@ -19418,7 +19424,7 @@
      "text": "7,000–10,000 beds at 75–80% occupancy"
     }
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (Jun 2026) and sector note"
+   "source": "Q2 FY27 call (16 Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (Jun 2026) and sector note"
   },
   {
    "company": "JG Chemicals",
@@ -22511,24 +22517,24 @@
   },
   {
    "company": "Lemon Tree Hotels",
-   "fingerprint": "5f16b427f5fb17b9",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "2b44c1cc39946522",
+   "checkedOn": "2026-11-22",
    "lines": {
-    "heading": "How full the hotels are (Q1 FY27)",
+    "heading": "How full the hotels are (Q2 FY27)",
     "items": [
      {
       "name": "Overall occupancy",
-      "size": "11,946 rooms open in about 135 hotels",
-      "usedPct": 75.7,
-      "usedLabel": "75.7% occupied",
-      "note": "Up 3.1 points on a year ago"
+      "size": "12,131 rooms open in 130 hotels",
+      "usedPct": 76.1,
+      "usedLabel": "76.1% occupied",
+      "note": "Up 6.3 points on a year ago; 75.7% in Q1"
      },
      {
       "name": "Keys hotels",
-      "size": "the Keys portfolio, being renovated",
-      "usedPct": 67,
-      "usedLabel": "67% occupied",
-      "note": "Up 3.5 points; room rate up 13%"
+      "size": "the Keys portfolio, about 80% renovated",
+      "usedPct": 69.7,
+      "usedLabel": "69.7% occupied",
+      "note": "Up 9.8 points; room rate up 11%"
      }
     ]
    },
@@ -22549,22 +22555,22 @@
       {
        "name": "All open rooms",
        "sub": "owned, leased, managed and franchised",
-       "base": 11946,
+       "base": 12131,
        "add": 2500,
-       "baseLabel": "today 11,946",
+       "baseLabel": "today 12,131",
        "addLabel": "+about 2,500",
        "right": "about +21%"
       }
      ],
      "notes": [
       "Operating hotels bought at 6–8 times operating profit, plus brownfield and greenfield sites; each room pays Lemon Tree a fee",
-      "Fleur is also building 850–900 rooms (572 of them at Aurika Nehru Place); with the 2,500 that is about 3,300 rooms more, which management says lifts Fleur's rooms by over 50% by about FY30",
-      "23,381 rooms open or signed in all; an MoU with Omaxe (16 Oct 2026, not binding) to run about 4,000 more keys takes the pipeline to nearly 16,000"
+      "Fleur is also building owned hotels: Aurika Nehru Place (now about 610 rooms), Lemon Tree Premier Bandra East (about 172) and Aurika Shimla (90); with the 2,500 that lifts Fleur's rooms by over 50% by about FY30 (management, Q1 FY27)",
+      "24,061 rooms open or signed in all (September 2026); an MoU with Omaxe (16 Oct 2026, not binding) to run about 4,000 more keys"
      ]
     }
    ],
    "money": {
-    "heading": "Owned capex about ₹90–100cr a year; Warburg is putting ₹960cr into Fleur",
+    "heading": "Owned capex about ₹90–100cr a year (about ₹200cr in H1 FY27 with the Bandra land); Warburg is putting ₹960cr into Fleur",
     "items": [
      {
       "name": "Fleur's ~2,500-room drive",
@@ -22575,7 +22581,7 @@
      },
      {
       "name": "Portfolio renovation programme",
-      "sub": "Keys about two-thirds done at June 2026; ₹9.8cr spent on renovation in Q1 FY27",
+      "sub": "Keys about 80% done at September 2026; 'more or less fully upgraded' by end-FY27",
       "total": 450,
       "right": "about ₹450cr including capex",
       "status": "building",
@@ -22584,16 +22590,23 @@
      {
       "name": "Aurika Naldhera, Shimla",
       "sub": "owned 90-room upscale resort",
-      "right": "about ₹108cr spent by June 2026; total not given",
+      "right": "about ₹108cr spent by June 2026; total not given; ₹50–70cr spent on Shimla and Shillong together in H1",
       "status": "building",
       "projectId": "lemon-tree-hotels-aurika-shimla"
      },
      {
       "name": "Aurika Nehru Place, Delhi",
-      "sub": "572 rooms; designs finalised, final approvals pending",
+      "sub": "about 610 rooms (was 572); drawings ready, Ridge Board and tree-felling approvals pending",
       "right": "best guess about ₹700cr (May 2026), 60% of it in the last 18 months of building; the August call said the cost will be announced in due course",
       "status": "planned",
       "projectId": "lemon-tree-hotels-aurika-nehru-place"
+     },
+     {
+      "name": "Lemon Tree Premier Bandra East, Mumbai",
+      "sub": "owned, about 172 rooms next to BKC",
+      "right": "land about ₹120cr; roughly ₹2cr a room in all (management)",
+      "status": "planned",
+      "projectId": "lemon-tree-hotels-ltp-bandra"
      }
     ]
    },
@@ -22605,17 +22618,24 @@
     },
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "lemon-tree-hotels-aurika-shimla-m1"
      ],
-     "sub": "Q4 FY26 call said 2 of 3 blocks by Q2 FY27; in August the hotel was at final finishing and licences, 'expected to open shortly'. Not yet reported open"
+     "sub": "Q4 FY26 call said 2 of 3 blocks by Q2 FY27; management changed this on 13 Nov 2026: opens in Q3 FY27"
     },
     {
      "when": "Sep–Oct 2026",
      "tone": "done",
-     "text": "Fleur bought land in Bandra East, Mumbai, for ₹120cr for a 172-key Lemon Tree Premier; MoU with Omaxe for about 4,000 managed keys",
+     "text": "Fleur bought land in Bandra East, Mumbai, for ₹120cr; MoU with Omaxe for about 4,000 managed keys",
      "sub": "Filings 24 Sep and 16 Oct 2026"
+    },
+    {
+     "when": "Q3 FY27",
+     "tone": "next",
+     "milestones": [
+      "lemon-tree-hotels-aurika-shimla-m2"
+     ]
     },
     {
      "when": "Q4 FY27",
@@ -22628,20 +22648,29 @@
     {
      "when": "FY28",
      "tone": "later",
-     "text": "Those costs to about 3.7% of revenue, renovation spend toward about 1%; margin toward 50%. Aurika Shillong (leased, 165 rooms) due in H2 FY28; Aurika Varanasi (leased, 47 rooms) in FY29"
+     "text": "Those costs to about 3.7% of revenue; renovation spend about 1.2% of revenue (13 Nov 2026; was 'about 1%'), adding about 1.5 points; margin toward 50%. Aurika Shillong (leased, 165 rooms) due in FY28; Aurika Varanasi (leased, 47 rooms, piling begun) in FY29"
     },
     {
      "when": "Next few quarters",
      "tone": "maybe",
-     "text": "Fleur hopes to close deals for about 2,500 rooms; none announced yet"
+     "text": "Fleur hopes to close deals for about 2,500 rooms; acquisitions in due diligence, none announced yet"
     },
     {
-     "when": "FY30 or later",
+     "when": "FY30",
+     "tone": "later",
+     "milestones": [
+      "lemon-tree-hotels-ltp-bandra-m1"
+     ],
+     "sub": "Room rate of about ₹12,000 expected at opening, 12–13% return on capital"
+    },
+    {
+     "when": "CY2031",
      "tone": "maybe",
-     "text": "Aurika Nehru Place (572 rooms) opens, once final approvals come; DDA extended the award letter by a year"
+     "text": "Aurika Nehru Place (about 610 rooms) opens once approvals come",
+     "sub": "Management changed this on 13 Nov 2026: was 572 rooms, on or after FY30; DDA extended the award letter to August 2027"
     }
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026), filings of 24 Sep and 16 Oct 2026 (NSE) and sector note",
+   "source": "Q2 FY27 call (13 Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026), filings of 24 Sep and 16 Oct 2026 (NSE) and sector note",
    "recheck": {
     "changes": []
    }
@@ -28041,8 +28070,8 @@
   },
   {
    "company": "Power Mech Proj.",
-   "fingerprint": "8a2d0512315eaa60",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "d95381230d6ef6dd",
+   "checkedOn": "2026-11-22",
    "lines": {
     "heading": "How full boiler erection runs (Q1 FY27 call)",
     "items": [
@@ -28060,8 +28089,8 @@
     "items": [
      {
       "name": "Tasra coal-washing plant",
-      "sub": "for the Tasra mine it develops and runs for SAIL; mining output there waits on the plant (washery tonnage not given); paid without debt",
-      "right": "about ₹400cr of capex, plus about ₹400cr inside the Tasra project company (coal-handling plant and rail siding)",
+      "sub": "for the Tasra mine it develops and runs for SAIL; mining output there waits on the plant (washery tonnage not given); 85% built by November 2026, part-funded by equipment loans",
+      "right": "about ₹400cr of capex, plus about ₹400cr inside the Tasra project company (coal-handling plant and rail siding); about ₹600cr spent on Tasra by November 2026, ₹300cr more by March",
       "status": "building",
       "projectId": "power-mech-proj-tasra-washery"
      }
@@ -28070,21 +28099,24 @@
    "timeline": [
     {
      "when": "Q3 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "power-mech-proj-tasra-washery-m1"
      ],
-     "sub": "Hot commissioning November–December (Q1 FY27 call); materials were on site and erection had started by May"
+     "sub": "Hot commissioning November–December (Q1 FY27 call); management changed this on 13 Nov 2026: 85% built, construction by end-January"
     },
     {
      "when": "Q4 FY27",
      "tone": "next",
-     "text": "Washed coal from Tasra from Q4. Mining revenue about ₹500cr in FY27: KBP mine ₹350cr (about 3 million t) and Tasra ₹150cr (about 1.2–1.3 million t)"
+     "milestones": [
+      "power-mech-proj-tasra-washery-m2"
+     ],
+     "text": "Trial runs in February; about one month of washed-coal revenue this year. Mining revenue about ₹500cr in FY27: KBP mine ₹350cr (about 3 million t targeted, 2.5 million t in the guide; ₹119cr and about 0.7 million t in H1) and Tasra ₹150cr (about ₹50cr in H1)"
     },
     {
      "when": "FY28",
      "tone": "later",
-     "text": "Mining revenue ₹1,100–1,200cr at about 15–17% margins: Tasra towards its rated 3.5–4 million t, KBP to 4–4.2 million t",
+     "text": "Mining revenue ₹1,100–1,200cr at about 15–17% margins: Tasra towards its rated 3.5–4 million t (about 2 million t in FY28, Q2 FY27 call), KBP to 4–4.2 million t",
      "sub": "Q4 FY26 call had said about ₹1,250cr (KBP ₹500cr, Tasra ₹750cr); an analyst there recalled ₹1,800–1,900cr said in February 2026"
     },
     {
@@ -28094,11 +28126,11 @@
     }
    ],
    "notes": [
-    "Service contractor, so capacity is people and execution: about 50,000 workers and 4,000 engineers; executable order book ₹16,229cr (about 2.7 years of work), ₹55,398cr with long mining contracts",
-    "Runs the KBP coal mine (started November 2025) and a 16 MW solar plant in Bihar",
-    "Capex: about ₹400cr for the Tasra coal-washing plant plus about ₹400cr inside the Tasra project company"
+    "Service contractor, so capacity is people and execution: about 50,000 workers and 4,000 engineers; executable order book ₹17,486cr excluding mining (about 2.4 years of work), ₹56,729cr with long mining contracts (September 2026); works in about 38,500 MW of operating plants",
+    "Runs the KBP coal mine (started November 2025) and the Tasra mine (50,000–60,000 t a month before washing), and a 16 MW solar plant in Bihar",
+    "Capex: about ₹400cr for the Tasra coal-washing plant plus about ₹400cr inside the Tasra project company; Tasra project revenue about ₹150cr in FY27"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026), both official transcripts (NSE), and sector note",
+   "source": "Q2 FY27 call (13 Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026), official transcripts, and sector note",
    "recheck": {
     "changes": []
    }
@@ -35723,58 +35755,59 @@
   },
   {
    "company": "Steelcast",
-   "fingerprint": "39e223264aea401e",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "74839745e2fc2473",
+   "checkedOn": "2026-11-22",
    "lines": {
-    "heading": "How full the foundry is (Q1 FY27)",
+    "heading": "How full the foundry is (Q2 FY27)",
     "items": [
      {
       "name": "Bhavnagar steel foundry",
       "size": "29,000 t a year of castings",
-      "usedPct": 64.5,
-      "usedLabel": "about 63–66% used",
+      "usedPct": 57,
+      "usedLabel": "57% used",
       "marker": {
        "pct": 90,
        "label": "FY29 aim: 90% (dashed)"
       },
-      "note": "48% in FY26; the Q4 FY26 call expected about 63–64% for FY27"
+      "note": "Q1 FY27 about 63–66% (stock built then sold in Q2); about 60% expected for FY27; 48% in FY26"
      }
     ]
    },
    "adds": [
     {
-     "heading": "What the new foundry adds (by 31 March 2028; extra volumes from FY29)",
+     "heading": "What the new foundry adds (about 1 April 2028; extra volumes from FY29)",
      "projectId": "steelcast-new-foundry",
      "bars": [
       {
        "name": "Castings",
-       "sub": "to 37,500 t a year",
+       "sub": "to 40,750 t a year",
        "base": 29000,
-       "add": 8500,
+       "add": 11750,
        "baseLabel": "today 29,000 t",
-       "addLabel": "+8,500 t",
-       "right": "+29%"
+       "addLabel": "+11,750 t",
+       "right": "+41%"
       }
      ],
      "notes": [
-      "Board-approved greenfield foundry for castings of 5–1,000 kg, built because the existing plant is heading to 90% use; about ₹300cr of sales at peak"
+      "Board-approved greenfield foundry for castings of 5–1,000 kg, built because the existing plant is heading to 90% use; the first 8,500 t is put at about ₹300cr of sales at peak",
+      "Management changed this on 13 Nov 2026: 3,250 t added (₹31cr) for heavier castings up to about 3.5 tonnes (from 2.5 tonnes), for construction, mining and earthmoving; was 8,500 t by 31 March 2028"
      ]
     }
    ],
    "money": {
     "items": [
      {
-      "name": "New 8,500 t foundry",
-      "sub": "over two years, from own cash",
-      "total": 120,
-      "right": "₹120cr",
+      "name": "New foundry (8,500 + 3,250 t)",
+      "sub": "over FY27–FY28, from own cash",
+      "total": 151,
+      "right": "₹151cr (₹120cr + ₹31cr added on 13 Nov 2026)",
       "status": "planned",
       "projectId": "steelcast-new-foundry"
      },
      {
       "name": "3.8 MW solar and wind power",
-      "sub": "a 2.4 MW wind-solar hybrid plant and a 1.4 MW solar plant, to cut gas and power costs as it moves from gas to electricity; no production capacity",
-      "right": "cost not given",
+      "sub": "a 2.4 MW wind-solar hybrid plant and a 1.4 MW solar plant, under commissioning, to cut gas and power costs as it moves from gas to electricity; no production capacity",
+      "right": "cost not given; saves about ₹4.5cr a year",
       "status": "building",
       "projectId": "steelcast-renewables"
      }
@@ -35787,14 +35820,20 @@
      "milestones": [
       "steelcast-renewables-m1"
      ],
-     "sub": "The Q4 FY26 call had the hybrid plant due by June 2026"
+     "sub": "The Q4 FY26 call had the hybrid plant due by June 2026; 9.5 MW of renewable power already running"
+    },
+    {
+     "when": "FY28",
+     "tone": "later",
+     "text": "Land being bought for about 6 MW more renewable power for today's plant and 15 MW for the new one (aim: 80% captive)"
     },
     {
      "when": "Q4 FY28",
      "tone": "later",
      "milestones": [
       "steelcast-new-foundry-m1"
-     ]
+     ],
+     "sub": "Commissioning targeted around 1 April 2028, earlier if feasible"
     },
     {
      "when": "FY29",
@@ -35802,7 +35841,7 @@
      "text": "Today's plant at about 90% use; aim to double FY26 sales (₹423cr) on it"
     }
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (Jun 2026) and sector note"
+   "source": "Q2 FY27 call (13 Nov 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (Jun 2026) and sector note"
   },
   {
    "company": "Sterling Tools",

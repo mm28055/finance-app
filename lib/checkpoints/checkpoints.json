@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-22",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -1380,7 +1380,11 @@
    "text": "LED share of lighting revenue moves above 64%",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "About 64% of lighting in Q2 FY27 (LED 49.1% vs conventional 27.4% of automotive revenue, presentation), up from about 63.5% in Q1: only just above",
+   "resolvedOn": "2026-11-22",
+   "resolvedBy": "review",
+   "outcome": "Stays own; LED share barely moved, so the 70% target is still far off"
   },
   {
    "id": "lumax-industries-q2fy27-1",
@@ -6172,7 +6176,8 @@
    "status": "met",
    "actual": "14.9%",
    "resolvedOn": "2026-11-20",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own; margin held at 14.9% in Q2 FY27 with revenue +15%"
   },
   {
    "id": "power-mech-proj-q4fy27-1",
@@ -6182,7 +6187,13 @@
    "due": "Q4 FY27",
    "ifMet": "View improves",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): guide restated as at least 11.6% before other income and 12.25–12.5% including it (company basis); Q2 was 11.6% (11.55% company basis)"
+    }
+   ]
   },
   {
    "id": "power-mech-proj-q4fy27-2",
@@ -6203,7 +6214,11 @@
    "text": "Tasra coal-washing plant commissioned by about December 2026",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Not by December: on 13 Nov 2026 the washery was 85% built, with construction by end-January and commissioning about March 2027",
+   "resolvedOn": "2026-11-22",
+   "resolvedBy": "review",
+   "outcome": "Stays own; a quarter late, new checkpoint for March"
   },
   {
    "id": "power-mech-proj-q4fy27-3",
@@ -11640,7 +11655,11 @@
    "ifMet": "Supports staying own",
    "ifMissed": "The raised 25–30% volume guide is in trouble",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "4,370 tonnes in Q2 FY27 (+28%; H1 8,406 t, about +20%)",
+   "resolvedOn": "2026-11-22",
+   "resolvedBy": "review",
+   "outcome": "Stays own on thin fit; volume guide behind, revenue guide (~30%) kept"
   },
   {
    "id": "steelcast-q2fy27-2",
@@ -11655,7 +11674,8 @@
    "status": "partly",
    "actual": "24.6%",
    "resolvedOn": "2026-11-20",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own; margin fell to 24.5% on new-part trials, early hiring and a cost-pass-through lag, and the FY27 margin aim was cut to 26–27%"
   },
   {
    "id": "steelcast-q4fy27-1",
@@ -11665,7 +11685,13 @@
    "due": "Q4 FY27",
    "ifMissed": "My ~20% earnings growth estimate needs the new guide broadly met",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): guide restated as about 30% revenue growth for FY27; H1 tonnes about +20%"
+    }
+   ]
   },
   {
    "id": "steelcast-q4fy27-2",
@@ -11677,7 +11703,13 @@
    "target": 28.5,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): management now talks of a 26–27% margin for FY27, with Q3 under pressure from pass-through timing"
+    }
+   ]
   },
   {
    "id": "neetu-yoshi-h1fy27-1",
@@ -13125,7 +13157,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Check the own case: price is the weak spot",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Room rate ₹6,751, up 8% (occupancy 76.1%, RevPAR +18%)",
+   "resolvedOn": "2026-11-22",
+   "resolvedBy": "review",
+   "outcome": "Rates beat the budget, but moved own → follow on price (needs ~21% against my ~18%)"
   },
   {
    "id": "lemon-tree-hotels-q3fy27-1",
@@ -13144,7 +13180,13 @@
    "text": "About 2,000 managed rooms opened in FY27 (334 in Q1)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): 2,000 gross openings still on track, but about 1,500 net after some hotels were dropped (about 550 net in H1)"
+    }
+   ]
   },
   {
    "id": "lemon-tree-hotels-q4fy27-2",
@@ -17883,7 +17925,11 @@
    "due": "Q2 FY27",
    "ifMissed": "View changes for the worse if growth stays near 17%",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Operating profit fell 22% in Q2 FY27 (₹72cr against ₹92cr; margin 31%)",
+   "resolvedOn": "2026-11-22",
+   "resolvedBy": "review",
+   "outcome": "Moved own → follow; growth estimate cut from 20% to 16%"
   },
   {
    "id": "jeena-sikho-lifecare-q2fy27-2",
@@ -17898,7 +17944,8 @@
    "status": "missed",
    "actual": "30.6%",
    "resolvedOn": "2026-11-20",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Moved own → follow; margin 31% on half-price Ayushman beds, shorter packages and ₹13.4cr more advertising"
   },
   {
    "id": "jeena-sikho-lifecare-q4fy27-1",
@@ -17907,7 +17954,13 @@
    "text": "Operating beds cross 3,000 by March 2027, as now promised",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (16 Nov 2026): now about 3,000 beds by 31 March 2027 (Lucknow and Ahmedabad from January); about 2,424 at September"
+    }
+   ]
   },
   {
    "id": "jeena-sikho-lifecare-q4fy27-2",
@@ -17916,7 +17969,17 @@
    "text": "FY27 profit of at least ₹300cr, as promised in June (Q1 pace about ₹240–265cr)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (16 Nov 2026): the founder called ₹300cr for FY27 “very difficult” and hoped to reach it in FY28; H1 profit was ₹102cr"
+    }
+   ],
+   "actual": "Withdrawn in effect: H1 FY27 profit ₹102cr, and management called ₹300cr “very difficult” on 16 Nov 2026",
+   "resolvedOn": "2026-11-22",
+   "resolvedBy": "review",
+   "outcome": "Moved own → follow"
   },
   {
    "id": "hexagon-nutrition-q2fy27-1",
@@ -27546,8 +27609,18 @@
    "text": "Tasra washing plant commissioned (about November–December)",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "power-mech-proj-tasra-washery"
+   "status": "missed",
+   "project": "power-mech-proj-tasra-washery",
+   "actual": "Moved to about March 2027 (85% built; trials in February)",
+   "resolvedOn": "2026-11-22",
+   "resolvedBy": "review",
+   "outcome": "Stays own; new milestone added",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): construction by end-January 2027, trials in February, commissioning about March 2027"
+    }
+   ]
   },
   {
    "id": "ncc-smart-meters-m1",
@@ -29354,7 +29427,13 @@
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "steelcast-new-foundry"
+   "project": "steelcast-new-foundry",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): project enlarged to 11,750 tonnes (₹151cr); commissioning targeted around 1 April 2028"
+    }
+   ]
   },
   {
    "id": "steelcast-renewables-m1",
@@ -29921,8 +30000,18 @@
    "text": "Two of three blocks of Aurika Shimla open",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "lemon-tree-hotels-aurika-shimla"
+   "status": "missed",
+   "project": "lemon-tree-hotels-aurika-shimla",
+   "actual": "Not open in Q2; the Q2 FY27 call says it opens in Q3 FY27",
+   "resolvedOn": "2026-11-22",
+   "resolvedBy": "review",
+   "outcome": "A quarter late; new milestone added",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): opening moved to Q3 FY27"
+    }
+   ]
   },
   {
    "id": "lemon-tree-hotels-renovation-m1",
@@ -42320,6 +42409,89 @@
    "ifMet": "First sign that profits turn into cash; could support moving off avoid",
    "ifMissed": "Five straight years of negative operating cash; the avoid call stands",
    "createdOn": "2026-11-16",
+   "status": "pending"
+  },
+  {
+   "id": "fiem-industries-q3fy27-2",
+   "company": "Fiem Industries",
+   "sector": "Auto Related",
+   "text": "Debtors back to normal in Q3 FY27 after the Q2 jump, as management said on 13 Nov 2026 (collection periods unchanged)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-22",
+   "status": "pending"
+  },
+  {
+   "id": "lemon-tree-hotels-aurika-shimla-m2",
+   "company": "Lemon Tree Hotels",
+   "sector": "Hotels and Travels",
+   "text": "Aurika Shimla (90 rooms) opens, as now scheduled",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-22",
+   "status": "pending",
+   "project": "lemon-tree-hotels-aurika-shimla"
+  },
+  {
+   "id": "lemon-tree-hotels-ltp-bandra-m1",
+   "company": "Lemon Tree Hotels",
+   "sector": "Hotels and Travels",
+   "text": "Lemon Tree Premier Bandra East (about 172 rooms) opens",
+   "due": "Q4 FY30",
+   "createdOn": "2026-11-22",
+   "status": "pending",
+   "project": "lemon-tree-hotels-ltp-bandra"
+  },
+  {
+   "id": "power-mech-proj-tasra-washery-m2",
+   "company": "Power Mech Proj.",
+   "sector": "Construction",
+   "text": "Tasra washing plant commissioned by about March 2027 (construction done by January, trials in February)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-22",
+   "status": "pending",
+   "project": "power-mech-proj-tasra-washery"
+  },
+  {
+   "id": "power-mech-proj-q4fy27-4",
+   "company": "Power Mech Proj.",
+   "sector": "Construction",
+   "text": "FY27 operating margin of at least 11.6% before other income, as restated on 13 Nov 2026 (H1 11.2%)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-22",
+   "status": "pending"
+  },
+  {
+   "id": "j-kumar-infra-q4fy27-3",
+   "company": "J Kumar Infra",
+   "sector": "Construction",
+   "text": "FY27 order wins of ₹8,000–10,000cr, as guided (₹5,540cr in H1)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-22",
+   "status": "pending"
+  },
+  {
+   "id": "steelcast-q4fy27-3",
+   "company": "Steelcast",
+   "sector": "Forging",
+   "text": "FY27 operating margin of 26–27% (excluding other income), as management now guides",
+   "metric": "fyEbitdaMargin",
+   "op": ">=",
+   "target": 26,
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-22",
+   "status": "pending"
+  },
+  {
+   "id": "jeena-sikho-lifecare-q4fy27-3",
+   "company": "Jeena Sikho Lifecare",
+   "sector": "Pharma Others",
+   "text": "Operating margin back to 35–40% in Q4 FY27, as the founder promised on 16 Nov 2026 (Q2: 31%)",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 35,
+   "due": "Q4 FY27",
+   "ifMet": "Could support moving back to own",
+   "ifMissed": "Follow at best; consider wait",
+   "createdOn": "2026-11-22",
    "status": "pending"
   }
  ]

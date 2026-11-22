@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-22",
  "capacity": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -281,10 +281,10 @@
    "company": "Fiem Industries",
    "sector": "Auto Related",
    "today": "Nine plants making two-wheeler lamps, mirrors and plastic parts (no unit capacity disclosed); Hosur (Kelamangalam and Thally Road) serves TVS and Hero Vida",
-   "utilisation": "About 75% (Q4 FY26 call)",
+   "utilisation": "About 80% (75–80%, Q2 FY27 call, after counting the new capex); about 75% in the Q4 FY26 call",
    "fullUse": "About ₹3,700cr of sales at full use (FY26 sales about ₹2,790cr at about 75% use); plants turn about 4.7 times their cost into revenue",
-   "capexStatus": "About ₹100cr in FY27 (₹41cr in Q1), mostly Hosur debottlenecking for TVS and Hero electric models; ₹200cr over FY27–FY28; no greenfield plant (FY26 ₹108cr)",
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call and sector note"
+   "capexStatus": "About ₹150cr in FY27 (raised from ₹100cr on 13 Nov 2026; ₹91cr spent in H1), for new lines at Hosur and Mysore; about the same expected in FY28; no greenfield plant (FY26 ₹108cr); asset turn on new capex about 3 times",
+   "source": "Q2 FY27 call (13 Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call and sector note"
   },
   {
    "company": "Lumax Industries",
@@ -1315,18 +1315,18 @@
   {
    "company": "J Kumar Infra",
    "sector": "Construction",
-   "today": "Contractor, so capacity is execution: order book ₹22,246cr (about 3.9 years of work) against FY26 revenue of ₹5,694cr; own tunnel-boring machines (GMLR twin tunnel, Chennai) and fleet, gross block about ₹2,450cr",
-   "utilisation": "Revenue flat for two years as big jobs waited for land, tree-cutting and design approvals",
-   "capexStatus": "About ₹150cr a year for FY27–28 including maintenance (₹34cr in Q1), after about ₹400cr in FY26 and ₹280cr in FY25 on TBMs and Chennai",
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call and sector note"
+   "today": "Contractor, so capacity is execution: order book ₹22,711cr at September 2026 (about 3.8 years of work) against FY26 revenue of ₹5,694cr; own tunnel-boring machines (GMLR twin tunnel, both launched by November 2026; Chennai) and fleet, gross block about ₹2,450cr",
+   "utilisation": "Revenue flat for two years as big jobs waited for land, tree-cutting and design approvals; H1 FY27 +8% (Q2 +15%)",
+   "capexStatus": "About ₹150cr a year for FY27–28 including maintenance (₹80cr in H1 FY27), after about ₹400cr in FY26 and ₹280cr in FY25 on TBMs and Chennai",
+   "source": "Q2 FY27 call (16 Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call and sector note"
   },
   {
    "company": "Power Mech Proj.",
    "sector": "Construction",
-   "today": "Service contractor, so capacity is people and execution: about 50,000 workers and 4,000 engineers; executable order book ₹16,229cr (about 2.7 years of work), ₹55,398cr with long mining contracts; runs the KBP coal mine; a 16 MW solar plant in Bihar",
+   "today": "Service contractor, so capacity is people and execution: about 50,000 workers and 4,000 engineers; executable order book ₹17,486cr excluding mining (about 2.4 years of work), ₹56,729cr with long mining contracts (September 2026); runs the KBP and Tasra coal mines; works in about 38,500 MW of operating plants; a 16 MW solar plant in Bihar",
    "utilisation": "Erection capacity effectively full at 14–15 large boilers at once",
-   "capexStatus": "About ₹400cr for the Tasra coal-washing plant plus about ₹400cr inside the Tasra project company",
-   "source": "Q1 FY27 call, Q4 FY26 call and sector note"
+   "capexStatus": "Tasra coal-washing plant 85% built (November 2026), commissioning about March 2027; about ₹600cr spent on Tasra so far and ₹300cr more by March, against about ₹400cr for the washery plus about ₹400cr inside the project company",
+   "source": "Q2 FY27 call (13 Nov 2026), Q1 FY27 call, Q4 FY26 call and sector note"
   },
   {
    "company": "NCC",
@@ -2410,10 +2410,10 @@
    "company": "Steelcast",
    "sector": "Forging",
    "today": "One steel foundry at Bhavnagar, Gujarat: 29,000 t a year of castings",
-   "utilisation": "48% in FY26; about 63–66% in Q1 FY27; aims for 90% by FY29",
+   "utilisation": "48% in FY26; about 63–66% in Q1 FY27 and 57% in Q2 (Q1 stock sold in Q2); about 60% expected for FY27; aims for 90% by FY29",
    "fullUse": "Management aims to double FY26 sales by FY29 on today's plant at about 90% use",
-   "capexStatus": "New 8,500 t greenfield foundry, about ₹120cr over two years from own cash, due by 31 March 2028; 3.8 MW of solar and wind power by December 2026",
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call and sector note"
+   "capexStatus": "New greenfield foundry of 11,750 t (8,500 t plus 3,250 t added on 13 Nov 2026), about ₹151cr over FY27–FY28 from own cash, commissioning about 1 April 2028, taking capacity to 40,750 t; 3.8 MW of solar and wind power by December 2026 (9.5 MW already running), and about 6 MW more for the old plant and 15 MW for the new one being planned",
+   "source": "Q2 FY27 call (13 Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call and sector note"
   },
   {
    "company": "Neetu Yoshi",
@@ -2751,10 +2751,10 @@
   {
    "company": "Lemon Tree Hotels",
    "sector": "Hotels and Travels",
-   "today": "11,946 rooms open in about 135 hotels: just under 6,000 owned or leased through Fleur Hotels, the rest managed or franchised; 23,381 open or signed",
-   "utilisation": "Occupancy 75.7% in Q1 FY27 (up 3.1 points)",
-   "capexStatus": "Renovation programme (about ₹450cr including capex) ends in FY27, then renovation spend falls toward 1% of revenue; owned capex about ₹90–100cr a year; Fleur plans to buy about 2,500 rooms with ₹960cr from Warburg",
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call and sector note"
+   "today": "12,131 rooms open in 130 hotels (September 2026): just under 6,000 owned or leased through Fleur Hotels, the rest managed or franchised; 24,061 open or signed in 285 hotels",
+   "utilisation": "Occupancy 76.1% in Q2 FY27 (up 6.3 points); 75.7% in Q1",
+   "capexStatus": "Renovation programme (about ₹450cr including capex) ends in FY27, then renovation spend about 1.2% of revenue; owned capex about ₹90–100cr a year, about ₹200cr in H1 FY27 including ₹130cr for the Bandra land and a Mumbai buyout; Fleur plans to buy about 2,500 rooms with ₹960cr from Warburg",
+   "source": "Q2 FY27 call (13 Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call and sector note"
   },
   {
    "company": "Samhi Hotels",
@@ -3786,10 +3786,10 @@
   {
    "company": "Jeena Sikho Lifecare",
    "sector": "Pharma Others",
-   "today": "About 2,400 operating beds in 58 Ayurvedic hospitals (117 facilities in all), mostly in leased buildings; Panvel stuck at 49 of a planned 250 beds",
-   "utilisation": "Beds 59% full in Q1 FY27; breakeven even at 35% occupancy",
-   "capexStatus": "Asset-light growth: beds added in leased buildings at ₹3–4 lakh a bed (₹42cr added to fixed assets in FY26); target 3,000–3,500 beds by end-FY27, but only 100 added in Q1",
-   "source": "Q1 FY27 call, Q4 FY26 call (June 2026) and sector note"
+   "today": "About 2,424 operating beds in 62 Ayurvedic hospitals and 60 clinics and day-care centres in 23 states (September 2026), mostly in leased buildings; 52 hospitals NABH-accredited; Panvel stuck at 49 of a planned 250 beds",
+   "utilisation": "Beds 55% full in Q2 FY27 (57% in H1, 59% in Q1); breakeven even at 35% occupancy",
+   "capexStatus": "Asset-light growth: beds added in leased buildings at ₹3–4 lakh a bed (₹42cr added to fixed assets in FY26); about 3,000 beds by March 2027 (Lucknow and Ahmedabad, 150 each, from January), 460 in the pipeline",
+   "source": "Q2 FY27 call (16 Nov 2026), Q1 FY27 call, Q4 FY26 call (June 2026) and sector note"
   },
   {
    "company": "Hexagon Nutrition",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-22",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -753,12 +753,18 @@
    "company": "Fiem Industries",
    "sector": "Auto Related",
    "name": "Hosur capacity expansion",
-   "what": "Bigger footprint at both Hosur plants (Kelamangalam and Thally Road) for TVS and Hero Vida electric models; debottlenecking, no new greenfield plant",
-   "cost": "most of about ₹100cr FY27 capex (₹41cr spent in Q1); ₹200cr over FY27–FY28",
+   "what": "Bigger footprint at both Hosur plants (Kelamangalam and Thally Road) for TVS and Hero Vida electric models, plus new moulding and metallising lines at Hosur and Mysore near customers; no new greenfield plant",
+   "cost": "most of about ₹150cr FY27 capex (₹91cr spent company-wide in H1); about the same again in FY28",
    "adds": "lamps for TVS's rise to 8.3 million bikes a year and Hero Vida's tripling to 45,000 a month",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (13 Nov 2026); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-22",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): FY27 capex raised from about ₹100cr to about ₹150cr, with Mysore added, and a similar amount expected in FY28 (was ₹200cr over FY27–FY28)"
+    }
+   ]
   },
   {
    "id": "lumax-industries-bengaluru",
@@ -4181,9 +4187,15 @@
    "expectedStart": "Q3 FY27",
    "adds": "Mining revenue guided at ₹500cr in FY27 and ₹1,100–1,200cr in FY28, at 21–23% margins at peak",
    "status": "building",
-   "source": "Q1 FY27 call, as recorded in the sector note",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "Unlocks Tasra mining: mining revenue from ₹500cr in FY27 to ₹1,100–1,200cr in FY28 (washery tonnage not given)"
+   "source": "Q2 FY27 call (13 Nov 2026); Q1 FY27 call",
+   "updatedOn": "2026-11-22",
+   "capacityAdd": "Unlocks Tasra mining: mining revenue from ₹500cr in FY27 to ₹1,100–1,200cr in FY28 (washery tonnage not given)",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): washery 85% built; construction to finish by end-January 2027, trial runs in February and commissioning about March 2027 (was about November–December 2026), a delay from the client's side. About ₹600cr spent on Tasra so far, ₹300cr more by March; FY27 Tasra revenue projected at about ₹150cr"
+    }
+   ]
   },
   {
    "id": "ncc-smart-meters",
@@ -6775,15 +6787,21 @@
    "id": "steelcast-new-foundry",
    "company": "Steelcast",
    "sector": "Forging",
-   "name": "New 8,500-tonne foundry",
-   "what": "Board-approved greenfield steel foundry for castings of 5–1,000 kg, built because the existing 29,000-tonne plant is heading to 90% use",
-   "cost": "₹120cr over two years, from own cash",
+   "name": "New foundry (8,500 + 3,250 tonnes)",
+   "what": "Board-approved greenfield steel foundry for castings of 5–1,000 kg, enlarged on 13 Nov 2026 with 3,250 tonnes for heavier castings up to about 3.5 tonnes (from 2.5 tonnes), for construction, mining and earthmoving",
+   "cost": "₹151cr over FY27–FY28 from own cash (₹120cr approved first, ₹31cr added on 13 Nov 2026)",
    "expectedStart": "Q4 FY28",
-   "adds": "about ₹300cr of sales at peak; extra volumes from FY29",
+   "adds": "about ₹300cr of sales at peak from the first 8,500 tonnes (no figure yet for the extra 3,250); extra volumes from FY29",
    "status": "planned",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+8,500 t a year (+29% on today's 29,000 t); about ₹300cr of sales at peak"
+   "source": "Q2 FY27 call (13 Nov 2026); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-22",
+   "capacityAdd": "+11,750 t a year (+41% on today's 29,000 t, to 40,750 t); first 8,500 t estimated at about ₹300cr of sales at peak",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): board added 3,250 tonnes for ₹31cr, taking the project to 11,750 tonnes and ₹151cr; commissioning targeted around 1 April 2028 (was by 31 March 2028), earlier if feasible"
+    }
+   ]
   },
   {
    "id": "steelcast-renewables",
@@ -6794,8 +6812,8 @@
    "expectedStart": "Q3 FY27",
    "adds": "lower energy cost as it moves from gas to electricity",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026); the hybrid plant was due by June 2026 on the Q4 FY26 call, now by 31 Dec 2026",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (13 Nov 2026): both plants under commissioning, targeted by 31 Dec 2026, saving about ₹4.5cr a year; 9.5 MW already running; Q1 FY27 call; the hybrid plant was due by June 2026 on the Q4 FY26 call",
+   "updatedOn": "2026-11-22",
    "capacityAdd": "3.8 MW of captive power (2.4 MW hybrid, 1.4 MW solar); no production capacity"
   },
   {
@@ -7792,41 +7810,59 @@
    "status": "planned",
    "source": "Q1 FY27 call (Aug 2026); no deal announced yet",
    "updatedOn": "2026-09-29",
-   "capacityAdd": "+about 2,500 rooms (+about 40% on Fleur's roughly 6,000; +21% on 11,946 open)"
+   "capacityAdd": "+about 2,500 rooms (+about 40% on Fleur's roughly 6,000; +21% on 12,131 open)"
   },
   {
    "id": "lemon-tree-hotels-aurika-shimla",
    "company": "Lemon Tree Hotels",
    "sector": "Hotels and Travels",
    "name": "Aurika Naldhera, Shimla",
-   "what": "Owned upscale Aurika resort at Naldhera, Shimla, opening block by block",
+   "what": "Owned 90-room upscale Aurika resort at Naldhera, Shimla, opening block by block",
    "expectedStart": "Q2 FY27",
    "status": "building",
-   "source": "Q4 FY26 call (May 2026) said 2 of 3 blocks by Q2 FY27; the note says it is late",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (13 Nov 2026): opens in Q3 FY27; Q4 FY26 call (May 2026) had said 2 of 3 blocks by Q2 FY27",
+   "updatedOn": "2026-11-22",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): now scheduled to open in Q3 FY27, a quarter after the Q2 FY27 target"
+    }
+   ]
   },
   {
    "id": "lemon-tree-hotels-aurika-nehru-place",
    "company": "Lemon Tree Hotels",
    "sector": "Hotels and Travels",
    "name": "Aurika Nehru Place, Delhi",
-   "what": "New owned upscale 572-room Aurika hotel at Nehru Place, Delhi; designs finalised",
+   "what": "New owned upscale Aurika hotel at Nehru Place, Delhi, now planned at about 610 rooms (was 572); drawings ready",
    "status": "planned",
-   "source": "Q1 FY27 call (Aug 2026): final approvals pending, opening on or after FY30, cost to be announced; Q4 FY26 call: 572 rooms, best guess about ₹700cr",
-   "updatedOn": "2026-10-23",
-   "cost": "best guess about ₹700cr, 60% of it in the last 18 months of building"
+   "source": "Q2 FY27 call (13 Nov 2026): ~610 rooms, opening CY2031, approvals pending; Q4 FY26 call: best guess about ₹700cr for 572 rooms",
+   "updatedOn": "2026-11-22",
+   "cost": "best guess about ₹700cr, 60% of it in the last 18 months of building",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): about 610 rooms instead of 572 after clarity on floor area and height; opening now expected in CY2031 (was on or after FY30); DDA extended the award letter to August 2027 while Ridge Management Board and tree-felling approvals are awaited"
+    }
+   ]
   },
   {
    "id": "lemon-tree-hotels-renovation",
    "company": "Lemon Tree Hotels",
    "sector": "Hotels and Travels",
    "name": "Portfolio renovation programme",
-   "what": "Renovation of owned hotels (Keys about two-thirds done at June 2026) that has weighed on margins",
+   "what": "Renovation of owned hotels (Keys about 80% done at September 2026) that has weighed on margins",
    "cost": "about ₹450cr including capex",
    "adds": "renovation, technology and GST costs to fall from 5.8% of revenue to 4.8% and then 3.7%; margin toward 50% in FY28",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026); renovation spend to fall to about 1% of revenue from next year",
-   "updatedOn": "2026-10-23"
+   "source": "Q2 FY27 call (13 Nov 2026); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-22",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (13 Nov 2026): portfolio 'more or less fully upgraded' by the end of FY27; ongoing renovation then about 1.2% of revenue a year (was 'about 1%'), adding about 1.5 points of margin"
+    }
+   ]
   },
   {
    "id": "samhi-hotels-pipeline",
@@ -11362,13 +11398,19 @@
    "company": "Jeena Sikho Lifecare",
    "sector": "Pharma Others",
    "name": "New Ayurvedic hospital beds",
-   "what": "Adding beds, mostly in leased buildings at ₹3–4 lakh a bed, from about 2,400 now; Manali hospital slipped a month, to September–October 2026 and Panvel is stuck at 49 of a planned 250 beds awaiting approvals",
+   "what": "Adding beds, mostly in leased buildings at ₹3–4 lakh a bed, from about 2,424 at September 2026 (62 hospitals); Lucknow and Ahmedabad (150 beds each) from January 2027; the Manali premium wellness centre (108 rooms) is in dry runs and starts charging on 15 December 2026; Panvel is stuck at 49 of a planned 250 beds awaiting approvals",
    "cost": "small; ₹42cr added to fixed assets in FY26",
-   "adds": "3,000–3,500 beds by end-FY27 and 7,000–10,000 in 3–5 years",
+   "adds": "about 3,000 beds by March 2027 (Q2 FY27 call; was 3,000–3,500) and 7,000–10,000 in 3–5 years",
    "status": "building",
-   "source": "Q1 FY27 call; note",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "+600–1,100 beds by end-FY27 (2,400 to 3,000–3,500, +25–45%); 7,000–10,000 beds in 3–5 years"
+   "source": "Q2 FY27 call (16 Nov 2026); Q1 FY27 call; note",
+   "updatedOn": "2026-11-22",
+   "capacityAdd": "+about 600 beds by March 2027 (about 2,424 to about 3,000, about +24%); 7,000–10,000 beds in 3–5 years",
+   "revisions": [
+    {
+     "on": "2026-11-22",
+     "text": "Q2 FY27 call (16 Nov 2026): about 3,000 beds by 31 March 2027 (was 3,000–3,500, and 2,800–3,000 within 3–4 months in June); bed growth slowed in the last two quarters while it waits for the Ayushman scheme; 460 beds in the pipeline. Manali opened for dry runs, charging from 15 December, as imported machines arrive late"
+    }
+   ]
   },
   {
    "id": "accent-microcell-unit3-p1",
@@ -16493,6 +16535,19 @@
    "status": "planned",
    "source": "FY26 annual report note 41 (handover expected within 24 months of March 2026); Q4 FY26 call (25 Jun 2026); CARE (6 Oct 2026): office premises in FY27–FY28 capex",
    "updatedOn": "2026-11-16"
+  },
+  {
+   "id": "lemon-tree-hotels-ltp-bandra",
+   "company": "Lemon Tree Hotels",
+   "sector": "Hotels and Travels",
+   "name": "Lemon Tree Premier Bandra East, Mumbai",
+   "what": "Owned upscale hotel of about 172 rooms on land next to BKC bought by Fleur; its seventh Mumbai hotel",
+   "cost": "land about ₹120cr; management puts the whole investment at roughly ₹2cr a room",
+   "expectedStart": "FY30",
+   "adds": "about 172 rooms; management expects a room rate of about ₹12,000 and a 12–13% return on capital from opening",
+   "status": "planned",
+   "source": "Q2 FY27 call (13 Nov 2026); land filing of 24 Sep 2026",
+   "updatedOn": "2026-11-22"
   }
  ]
 }
