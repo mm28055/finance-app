@@ -644,7 +644,7 @@ export const pharmaOthers: SectorOverview = {
             company: 'Sudeep Pharma', rank: 6, stance: 'PRICED', segment: INGREDIENTS,
             what: "Makes mineral-based excipients and nutrition ingredients (phosphates, carbonates, bisglycinates) for drug, food and infant-formula makers, and is building a battery-materials business.",
             view: "**A strong niche, weak cash, priced for a new business.** A steady 35% margin and costs passed on, but only about 30% of FY26 profit became cash, stock covers 356 days and its main segment earned less than a year earlier. Q2 FY27 brought record revenue (₹197cr, +21%) at a 37.2% margin and H1 operating cash of ₹43.5cr (47% of profit), but working capital is still 214 days and the binding battery update has moved to Q4 (29 Oct 2026 call). The battery plant has 44 prospects and no binding contract. On 26 October 2026 the new 51,200-tonne Nandesari plant got its Gujarat FDA approval, with supplies due in H2 FY27. The price needs about {need:Sudeep Pharma|29}% a year against my ~18%.",
-            watch: 'A binding battery contract with price terms, now promised in Q4; margin holding near 37%; working capital falling from 214 days.',
+            watch: 'A binding battery contract with price terms, now promised in Q4; the Gujarat pollution board lifting its 19 Nov 2026 closure order on the Sudeep Nutrition unit at Poicha (untreated wastewater; the company says repairs are under way); margin holding near 37%; working capital falling from 214 days.',
         },
         {
             company: 'Q-Line Biotech', rank: 7, stance: 'SCALEUP', segment: ANIMAL,
