@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-22",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -3274,11 +3274,11 @@
    "company": "Menon Bearings",
    "sector": "Auto Related",
    "style": "Promoter-run",
-   "styleNote": "Promoter Nitin Menon is Executive Chairman. Day-to-day running is with MD Arun Aradhye, a long-serving professional who replaced 83-year-old R. D. Dixit in March 2026. The Menon family owns 68.44%: Nitin 27.56%, the family company Menon United 24.30%, his wife Sucheta 5.00%, and Aditya and Anshul Nitin Menon 5.79% each. Anshul, a relative of the chairman, works in the company as Executive Assistant to the Chairman.",
+   "styleNote": "Promoter Nitin Menon was Executive Chairman until his death on 21 November 2026; no successor has been named. Day-to-day running is with MD Arun Aradhye, a long-serving professional who replaced 83-year-old R. D. Dixit in March 2026. The Menon family owns 68.44%: Nitin 27.56%, the family company Menon United 24.30%, his wife Sucheta 5.00%, and Aditya and Anshul Nitin Menon 5.79% each. Anshul, a relative of the chairman, works in the company as Executive Assistant to the Chairman.",
    "people": [
     {
      "name": "Nitin Menon",
-     "role": "Executive Chairman",
+     "role": "Executive Chairman (died 21 November 2026)",
      "since": "With the company since 1992; board since Apr 1995",
      "family": true,
      "relation": "Promoter; Anshul Nitin Menon (Executive Assistant to Chairman) is his relative per the annual report",
@@ -3304,13 +3304,14 @@
      "bio": "A commerce graduate (B.Com) with about 30 years of experience. Before joining in October 2020 he worked at Mani Auto Components, Kolhapur. He was appointed CFO from 4 March 2026, when Arun Aradhye moved up to MD."
     }
    ],
-   "changes": "MD R. D. Dixit resigned on 3 Mar 2026 because of his age; Arun Aradhye became MD and Chandrakant Ghatge CFO from 4 Mar 2026. Independent director M. L. Shinde resigned on 1 Oct 2025. Prof. Rajendra Sonkawade joined as a non-executive director on 14 May 2026.",
+   "changes": "Executive Chairman and promoter Nitin Menon died on 21 Nov 2026 (heart attack); no successor named yet. MD R. D. Dixit resigned on 3 Mar 2026 because of his age; Arun Aradhye became MD and Chandrakant Ghatge CFO from 4 Mar 2026. Independent director M. L. Shinde resigned on 1 Oct 2025. Prof. Rajendra Sonkawade joined as a non-executive director on 14 May 2026.",
    "sources": [
     "https://www.bseindia.com/xml-data/corpfiling/AttachHis/de806def-20b9-434f-85af-a00cb0667a00.pdf (Annual Report FY26, incl. AGM notice)",
     "https://scanx.trade/stock-market-news/stocks/menon-bearings-announces-leadership-transition-new-managing-director-and-cfo-appointed/34068417",
-    "https://menonbearings.in/leadership-team/"
+    "https://menonbearings.in/leadership-team/",
+    "https://nsearchives.nseindia.in/corporate/MENONBE_21112026185623_Intimation_Signed.pdf (intimation of the chairman's death, 21 Nov 2026)"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-22"
   },
   {
    "company": "RACL Geartech",
@@ -26047,13 +26048,13 @@
     },
     {
      "name": "Varun Gupta",
-     "role": "President & Chief Financial Officer",
+     "role": "President & Chief Financial Officer (resigned; leaves 30 November 2026)",
      "since": "Aug 2024",
      "family": false,
      "bio": "A chartered accountant (2005, all-India rank 43) who also completed an executive general management course at IIM Bangalore. After a short stint at Ernst & Young in risk advisory, he spent about 18 years at Unilever, starting as a management trainee at Hindustan Unilever and holding finance and commercial roles in India and abroad; his last job was head of finance for personal care, Unilever South Asia. He became CFO on 12 August 2024."
     }
    ],
-   "changes": "No executive changes since the annual report. During FY26 Arjun Shanker Bhartia left the board (Jul 2025) and his sister Aashti Bhartia joined as a non-executive director (Aug 2025).",
+   "changes": "President & CFO Varun Gupta resigned on 19 Nov 2026 for a better opportunity, effective 30 Nov 2026; no successor named yet. During FY26 Arjun Shanker Bhartia left the board (Jul 2025) and his sister Aashti Bhartia joined as a non-executive director (Aug 2025).",
    "sources": [
     "https://www.jubilantingrevia.com/Uploads/pdf/annual-report-2025-26.pdf",
     "https://www.jubilantingrevia.com/about-us/executive-leadership-team",
@@ -26061,9 +26062,10 @@
     "https://www.capitalmarket.com/markets/news/corporate-news/jubilant-ingrevia-appoints-varun-gupta-as-cfo/1522043",
     "https://www.indianchemicalnews.com/people/jubilant-ingrevia-appoints-vijay-srivastava-as-chief-of-operations-23791",
     "https://www.jubilantpharmova.com/about-us/management/board-of-directors/hari-s-bhartia",
-    "https://www.screener.in/company/JUBLINGREA/consolidated/"
+    "https://www.screener.in/company/JUBLINGREA/consolidated/",
+    "https://nsearchives.nseindia.in/corporate/JUBLINGREA_19112026113312_SE_Intimation_Resignation_of_CFO.pdf (CFO resignation, 19 Nov 2026)"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-22"
   },
   {
    "company": "Onesource Specialty",
@@ -30437,7 +30439,7 @@
    "company": "Vedant Fashions (Manyavar)",
    "sector": "Retail",
    "style": "Promoter-run",
-   "styleNote": "A family business. The founder Ravi Modi is Chairman & MD, his wife Shilpi Modi is a whole-time director, and their son Vedant Modi, after whom the company is named, is Chief Revenue Officer. The family (mainly the Ravi Modi Family Trust at 57.2% and Ravi Modi HUF at 16.0%) owns about 74.9%. Hired executives run marketing, retail and product; the CFO is leaving in November 2026.",
+   "styleNote": "A family business. The founder Ravi Modi is Chairman & MD, his wife Shilpi Modi is a whole-time director, and their son Vedant Modi, after whom the company is named, is Chief Revenue Officer. The family (mainly the Ravi Modi Family Trust at 57.2% and Ravi Modi HUF at 16.0%) owns about 74.9%. Hired executives run marketing, retail and product; a new CFO, Vineet Poddar, joins on 23 November 2026.",
    "people": [
     {
      "name": "Ravi Modi",
@@ -30478,17 +30480,25 @@
      "since": "13 November 2025",
      "family": false,
      "bio": "Joined as Chief Retail Officer in November 2025 to run retail operations and the international business. The company's filings give no details of his education or past employers."
+    },
+    {
+     "name": "Vineet Poddar",
+     "role": "Chief Financial Officer (from 23 November 2026)",
+     "since": "23 Nov 2026",
+     "family": false,
+     "bio": "Appointed CFO and key managerial person by the board on 19 Nov 2026; he was previously CFO of Safari Industries (board outcome filing, 19 Nov 2026). No further background is given in the filing."
     }
    ],
-   "changes": "CFO Rahul Murarka resigned on 15 September 2026 and leaves on 14 November 2026; no successor named yet. Chief Human Resources Officer Arunangshu Chatterjee left in May 2025. Independent director Abanti Mitra died in July 2026; Nihir Parikh and Neetu Kashiramka joined as independents in September 2026 and Tarun Puri stepped down.",
+   "changes": "CFO Rahul Murarka resigned on 15 September 2026 and left on 14 November 2026; Vineet Poddar, formerly CFO of Safari Industries, takes over from 23 November 2026. Chief Human Resources Officer Arunangshu Chatterjee left in May 2025. Independent director Abanti Mitra died in July 2026; Nihir Parikh and Neetu Kashiramka joined as independents in September 2026 and Tarun Puri stepped down.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_31471_MANYAVAR_2025_2026_A_9558228_04092026234746.pdf",
     "https://nsearchives.nseindia.com/corporate/MANYAVAR_15092026200221_VFLIntiResignation15092026.pdf",
     "https://nsearchives.nseindia.com/corporate/MANYAVAR_12112025191644_SE_Intimation_CIM_12112025.pdf",
     "https://nsearchives.nseindia.com/corporate/MANYAVAR_03092023153259_VFLIntimation.pdf",
-    "https://www.forbesindia.com/article/2022-billionaires/the-untold-story-of-how-ravi-modi-built-vedant-fashionsthe-makers-of-manyavarinto-a-35-billion-behemoth/75741/1"
+    "https://www.forbesindia.com/article/2022-billionaires/the-untold-story-of-how-ravi-modi-built-vedant-fashionsthe-makers-of-manyavarinto-a-35-billion-behemoth/75741/1",
+    "https://nsearchives.nseindia.in/corporate/MANYAVAR_19112026120352_OutcomeofBM19112026.pdf (CFO appointment, 19 Nov 2026)"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-22"
   },
   {
    "company": "Brainbees Solutions",

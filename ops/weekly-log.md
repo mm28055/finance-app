@@ -954,3 +954,36 @@ I added a Needs-a-session item to fix how the job picks the year-ago quarter. Wh
 - **Hexagon's** margin has fallen four quarters running.
 
 No entry had an analysed call, so no checkpoints were judged from this pass.
+
+## 22 November 2026 (Sunday)
+
+**Checks:** the notes check lists the same 30 problems it showed before I edited anything (companies in a sector with no verdict, such as Anawil Wire and Simca Advertising). They were already on master and are not from this run. The type check and picture check are clean. The two old branches (weekly-review/2026-09-30 and 2026-10-18) still show as unmerged only because master's history was rebuilt; their work is already in master.
+
+**Follow-ups handled: 9. Still open: 659** (451 results calls, 154 automatically settled checkpoints, 25 project follow-ups, 14 call drifts, special calls, 4 "Waiting" entries and HEG's demerger). The backlog keeps growing faster than 40 a run can clear. The Needs-a-session list was cleared on 20 November, so I have not added a backlog item again. This run covered the own names whose Q2 transcripts are filed. **ICICI Bank, CIE Automotive, Ador Welding, Talbros and CMS Info Systems** still have no filed transcript on Screener, so they stay open.
+
+**Calls changed:**
+- **Lemon Tree Hotels: own → follow, on price only.** The business did what I asked. The Q2 room rate rose 8% (management had budgeted 5–6%), occupancy was 76.1% and RevPAR rose 18%. But the price now needs about 21% a year of earnings growth against my ~18%. Profit (+90%) was helped by about ₹25cr of other income, so I did not raise my estimate. **Samhi** now ranks first in the note.
+- **Jeena Sikho Lifecare: own → follow, and my growth estimate goes from 20% to 16%.** Q2 operating profit fell 22% and profit 39%, and the margin dropped to 31% from 48%. The causes were half-price beds for Ayushman card holders, shorter preventive packages and ₹13.4cr more advertising. The founder apologised and called the "minimum ₹300cr" FY27 profit "very difficult". The price still fits, but I want Q4 to show the promised 35–40% margin before owning it again.
+
+**New results calls, own names (transcripts read):**
+- **Fiem Industries** (stays own). Its best quarter: revenue ₹932cr (+31%), margin 14.1%, profit +32%. Management aims for the top of its 15–20% guide this year and expects 15–20% again in FY28. Capex rises to about ₹150cr, for new lines at Hosur and Mysore. Cash was ₹163cr after a ₹105cr dividend. It admits it is not on some Honda models moving to LED next year. The LED-share checkpoint was only just met (about 64%), and I added a checkpoint on debtors.
+- **Power Mech** (stays own). Revenue ₹1,609cr (+30%) and margin 11.6%. The FY27 guides were kept: about ₹7,300cr of revenue and at least an 11.6% margin before other income. H1 orders were ₹4,801cr against ₹12,000cr. The Tasra washing plant has slipped from December to about March 2027 (checkpoint missed; new milestone added). Net debt rose about ₹425cr on that spending.
+- **J Kumar Infra** (stays own). Revenue ₹1,539cr (+15%), margin 14.9% (checkpoint met), profit +25% and net cash of ₹69cr. H1 grew only 8%, but the 15% FY27 guide stands. Delhi Metro cancelled the ₹1,500cr job where it was lowest bidder and will re-tender it.
+- **Steelcast** (stays own, but the fit is thin: it needs about 21.7% against my 20%). Revenue rose 29%, but volume was 4,370 tonnes, below the 4,500 I wanted (checkpoint missed). The margin fell to 24.5% and profit was flat. Management now talks of a 26–27% margin for FY27 instead of 28.5–29%. It kept about 30% revenue growth for the year and enlarged the new foundry to 11,750 tonnes (₹151cr, about April 2028).
+- Also for these companies: projects, capacity and pictures were updated for Fiem, Lemon Tree (Shimla slips to Q3; a Bandra East hotel is added for FY30; Nehru Place is now about 610 rooms, in 2031), Power Mech, Steelcast and Jeena Sikho. J Kumar's capacity entry was updated too.
+
+**Filings pass, 18–21 November** (notes corrected):
+- **Menon Bearings (wait):** Executive Chairman and promoter Nitin Menon died on 21 November. His personal guarantee backs the company's loans. Management record, card and watch items updated.
+- **Jubilant Ingrevia (wait):** CFO Varun Gupta resigned, effective 30 November, with no successor named. **Vedant Fashions (wait):** Vineet Poddar (ex-Safari) is CFO from 23 November. Both management records are updated. EPack's and GMM Pfaudler's new CFOs were already recorded.
+- **Urban Company (wait):** raised ₹2,500cr at ₹156 a share (about 10% more shares).
+- **Premier Explosives (pass):** won a ₹311cr export defence order, about 74% of a year's sales.
+- **Sudeep Pharma (wait):** the Gujarat pollution board ordered its Sudeep Nutrition unit at Poicha closed over untreated wastewater. The company says repairs are under way. The filing does not say how much of sales the unit makes.
+- **Godavari Power (follow):** got tree-felling permission for Ari Dongri, so the mine can return to 6 million tonnes a year after 3–4 weeks of clearing.
+- **ESDS (pass):** cut its profit estimate on the Australian GPU deal to US$4–5m a month (14–17%).
+- **Logged only:** rating changes at IRB (CRISIL upgrade to AA), Sobha (India Ratings upgrade to AA), Genus (outlook Positive; buyback done), Sanghvi Movers and Pace Digitek (outlook Positive). No note text quoted the old ratings. Also logged: fund-raises at Aimtron (₹205cr preferential issue) and Raymond (₹215cr of warrants to Minerva) and Viviana's ₹150cr rights draft. GST searches took place at Cosmo First, IG Petrochem, Supreme Petrochem and Waterways, and Interarch got an ₹11.46cr tax notice. US FDA "VAI" closures came at Natco (Vizag) and Cohance (Shamshabad). Orders were logged at Viviana, Krystal, Dilip Buildcon, Texmaco and others. Also logged: LT Foods' small US brand purchase, Stylam's Haripur Kraft stake, Beta's Algeria JV, Voltas's compressor JV with Atomberg, Oriana's ₹750cr biogas plan, Cyient's GlobalFoundries investment, promoter buying at Arisinfra and Thomas Cook, Zota's 1.8% pledge and Stallion crossing 5% in Jeena Sikho.
+
+**News pass, 18–21 November:** 14 entries had a clear reason, and none was very important. AC makers rose on cheaper copper (Voltas, Blue Star, PG Electroplast, Amber). MobiKwik fell on a press report of a further UPI merchant-fee delay, which is not an official notice. Maize prices for Regaal rose more than 50%. The other entries were Tata Technologies' 2030 target, Azad's promoter sale (press only), Caplin (covered last run), Greaves, Greenlam, NDR, Arisinfra and Om Power. No note changed.
+
+**Waiting entries:** nothing new for HEG's electrode company listing, Ganesh Benzoplast's sale, the UPI merchant fee or the NPPA cancer-drug caps (Beta Drugs, HCG). All are left open with today's date.
+
+**Results pass:** no unreviewed entries.
