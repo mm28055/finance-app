@@ -742,7 +742,7 @@ export const chemicalsIngredients: SectorOverview = {
             company: 'Premier Explosives', rank: 10, stance: 'TURNAROUND', segment: SERV,
             what: "Missile propellants, rocket motors, chaff and flares, high explosives and mining explosives for DRDO, the armed forces, ISRO and export buyers; being taken over by Apollo Micro Systems.",
             view: "**Valuable licences, broken execution, a takeover price.** It is the sole domestic supplier of chaff and flares and holds a ₹1,393cr order book, but Q1 revenue fell 28% at a 5.7% margin, FY26 profit rested on one-off supplier discounts, four people died in a 2025 blast and the auditor qualified its internal controls. The price needs about {need:Premier Explosives|34}% a year against my ~20%, and is held near Apollo's ₹698 offer.",
-            watch: 'Apollo’s open offer closing in Q3 FY27; quarterly revenue above ₹150cr at 15%+ margin; export licences granted.',
+            watch: 'Apollo’s open offer closing in Q3 FY27; quarterly revenue above ₹150cr at 15%+ margin; delivery of the ₹311cr export defence order won on 21 Nov 2026 (about 74% of a year’s sales, due within 12 months) and the export licences it needs.',
         },
         {
             company: 'Oriental Aromatics', rank: 11, stance: 'TURNAROUND', segment: FRAG,
