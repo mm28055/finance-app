@@ -436,8 +436,8 @@ export const constructionDiversified: SectorOverview = {
                     caption: 'Q1 FY27 cash and capital, as stated on the calls',
                     columns: ['Company', 'What management said', 'Balance sheet'],
                     rows: [
-                        ['J Kumar Infra', 'Net cash fell to ₹45cr as the last tunnel-machine instalment was paid; gross debt below ₹800cr by March 2027; buybacks ‘on our cards’ but not imminent', 'Net cash ₹72cr (Screener); fund-based lines 39% used, guarantee lines 65%'],
-                        ['Power Mech Proj.', 'Working-capital lines support up to ₹10,000cr of revenue; about ₹400cr of capex for the Tasra washery', 'Net debt ₹171cr (Screener); CARE A+'],
+                        ['J Kumar Infra', 'Net cash ₹69cr at September 2026 (₹45cr at June after the last tunnel-machine instalment); working capital 100 days; gross debt below ₹800cr by March 2027; buybacks ‘on our cards’ but not imminent', 'Net cash ₹72cr at March (Screener); fund-based lines 39% used, guarantee lines 65%'],
+                        ['Power Mech Proj.', 'Working-capital lines support up to ₹10,000cr of revenue; about ₹400cr invested in the washery and other new assets by September; Tasra about ₹600cr spent, ₹300cr more by March', 'Net debt ₹171cr at March (Screener), up about ₹425cr by September on equipment loans and working capital; CARE A+'],
                         ['NCC', 'Standalone debt ‘more or less’ flat at about ₹2,250cr by March 2027, depending on water-scheme collections; ₹271cr group loan to be recovered by December', 'Net debt ₹3,513cr consolidated at June (company), of which ₹1,461cr smart-meter project loans'],
                         ['GPT Infraprojects', '‘We don’t anticipate any addition to the debt position’; about ₹200cr of contract assets billed and collected since June', 'Net debt ₹254cr (Screener); CRISIL A'],
                         ['Cemindia Projects', '₹1,400cr QIP sold on 19 Oct 2026 at ₹1,108 a share (of up to ₹5,000cr approved) for machines, acquisitions and working capital; management said it was not needed for the current book', 'Gross debt about ₹1,000cr, net about ₹700cr (company); Screener net debt ₹52cr'],
@@ -457,7 +457,7 @@ export const constructionDiversified: SectorOverview = {
             points: [
                 {
                     label: 'Growth driver: city transport',
-                    text: "Mumbai is the largest single market: J Kumar's management sees ₹50,000cr–₹1 lakh crore of bids in the region in the next nine to twelve months, including the Uttan–Virar sea link and four metro lines, and it is lowest bidder on ₹1,500cr of Delhi Metro work. **Afcons** has started both tunnel-boring machines on its high-speed rail tunnel, with main drives from about November. **Cemindia** has bought new tunnel-boring machines for the Pune and Delhi metros and is bidding for road tunnels. **My view: this is the most certain demand in the group, because the agencies are well funded and pay on time; the constraint is site handover.**",
+                    text: "Mumbai is the largest single market: J Kumar's management sees ₹50,000cr–₹1 lakh crore of bids in the region in the next nine to twelve months, including the Uttan–Virar sea link and four metro lines, and it expects to bid about ₹30,000cr of work in the next six months; the ₹1,500cr of Delhi Metro work where it was lowest bidder was cancelled in Q2 FY27 for a re-tender limited to the original bidders. **Afcons** has started both tunnel-boring machines on its high-speed rail tunnel, with main drives from about November. **Cemindia** has bought new tunnel-boring machines for the Pune and Delhi metros and is bidding for road tunnels. **My view: this is the most certain demand in the group, because the agencies are well funded and pay on time; the constraint is site handover.**",
                 },
                 {
                     label: 'Growth driver: power in every form',
@@ -485,7 +485,7 @@ export const constructionDiversified: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**Power Mech** kept its 12.5% FY27 margin guide at Q1 but delivered 10.8%. **Cemindia** kept its 25% growth guide but grew 6% in Q1, blaming no work at the Vadhvan port, a ₹10,000–12,000cr block of new orders still in design and the war; and it reversed its ‘no plan’ on raising money within three months. **GPT** raised its FY27 margin guide to 14–15% and beat its FY26 order target, but its 30% revenue target needs about 55% growth over the rest of the year.",
+                    text: "**Power Mech** kept its 12.5% FY27 margin guide at Q1 but delivered 10.8%; Q2 reached 11.6%, and the guide is now stated as at least 11.6% before other income (12.25–12.5% with it), and the Tasra washery moved from about December to about March. **Cemindia** kept its 25% growth guide but grew 6% in Q1, blaming no work at the Vadhvan port, a ₹10,000–12,000cr block of new orders still in design and the war; and it reversed its ‘no plan’ on raising money within three months. **GPT** raised its FY27 margin guide to 14–15% and beat its FY26 order target, but its 30% revenue target needs about 55% growth over the rest of the year.",
                 },
                 {
                     label: 'My outlook',
@@ -514,8 +514,8 @@ export const constructionDiversified: SectorOverview = {
                     badgeColumn: 3,
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
-                        ['J Kumar Infra', 'FY27 revenue +15%, mostly in the second half; margin 14–15%; orders ₹8,000–10,000cr (was ₹9,000–10,000cr)', 'About ₹150cr a year (was ₹200–250cr)', '**Walked back**: FY26 growth about 1% against 15%; ₹7,500cr target moved to FY28; order goal trimmed'],
-                        ['Power Mech Proj.', 'FY27 revenue about ₹7,300cr (+21%); margin 12.5%; orders ₹12,000cr', 'About ₹400cr for the Tasra washery plus about ₹400cr in the project company', '**Mixed**: Q1 revenue +26%; margin 10.8% against 12.5%; FY26 revenue and orders missed'],
+                        ['J Kumar Infra', 'FY27 revenue +15%, kept on 16 Nov 2026 after H1 +8%; margin 14–15%, rising to 15–16% in one or two years; orders ₹8,000–10,000cr (₹5,540cr in H1); ₹10,000cr revenue by FY30', 'About ₹150cr a year (was ₹200–250cr); ₹80cr in H1', '**Walked back**: FY26 growth about 1% against 15%; ₹7,500cr target moved to FY28; order goal trimmed; Q2 +15% on guide'],
+                        ['Power Mech Proj.', 'FY27 revenue about ₹7,300cr (+21%), kept on 13 Nov 2026; margin at least 11.6% before other income (12.25–12.5% with it), +0.25–0.5 points in FY28; orders ₹12,000cr; mining ₹500cr', 'Tasra about ₹600cr spent, ₹300cr more by March; washery construction by January 2027, commissioning about March', '**Mixed**: H1 revenue +28%; Q2 margin 11.6%; H1 orders 40% of target; washery about a quarter late; FY26 revenue and orders missed'],
                         ['NCC', 'FY27 revenue +8–10%; margin 8.5–9%; orders ₹22,000–25,000cr (first guidance in several quarters)', '₹500cr in FY27 (₹912cr in FY26)', '**Beating**: Q1 revenue +12% at a 9% margin; no Q4 guidance to compare'],
                         ['GPT Infraprojects', 'FY27 revenue about ₹1,700cr (+30%); margin 14–15%; orders ₹3,000cr-plus', 'Small; no new debt', '**At risk**: Q1 revenue −3.5% and orders about ₹130cr; needs about ₹1,400cr in nine months'],
                         ['Cemindia Projects', 'Revenue +25% in FY27 and FY28; margin ‘10% plus’ (10–10.5% in April); orders about ₹25,000cr', '₹350–400cr; ₹1,400cr QIP done in October of up to ₹5,000cr approved', '**Mixed**: margin and orders on track; Q1 revenue +6% against 25%; fund-raising reversal'],
@@ -598,15 +598,15 @@ export const constructionDiversified: SectorOverview = {
     verdicts: [
         {
             company: 'J Kumar Infra', rank: 1, stance: 'SCALEUP', segment: DIV_URBAN,
-            what: "A Mumbai-based urban contractor that builds elevated roads, flyovers, metro stations and road tunnels, mainly for Mumbai's agencies, NHAI and Delhi Metro; order book a record ₹22,246cr, 48% elevated corridors and flyovers.",
-            view: "**Cheap, clean and slow.** It has held a 14–15% margin, net cash and an ICRA A+/Positive rating through two flat years, and produced ₹1,128cr of operating cash in FY26. But FY26 growth was about 1% against a 15% promise, the ₹7,500cr revenue target has moved to FY28, and bank-guarantee lines are 65% used. The price needs about {need:J Kumar Infra|5}% a year against my ~10%.",
-            watch: 'Second-half revenue above about ₹1,800cr a quarter; the Goregaon–Mulund tunnel machines boring; a Mumbai sea-link or metro win.',
+            what: "A Mumbai-based urban contractor that builds elevated roads, flyovers, metro stations and road tunnels, mainly for Mumbai's agencies, NHAI and Delhi Metro; order book a record ₹22,711cr at September 2026, 47% elevated corridors and flyovers.",
+            view: "**Cheap, clean and slow.** It has held a 14–15% margin, net cash and an ICRA A+/Positive rating through two flat years, and produced ₹1,128cr of operating cash in FY26. But FY26 growth was about 1% against a 15% promise, the ₹7,500cr revenue target has moved to FY28, and bank-guarantee lines are 65% used. Q2 FY27 (call of 16 Nov 2026) was better: revenue +15% to ₹1,539cr, margin 14.9% and profit +25%, with ₹69cr of net cash and ₹5,540cr of orders in H1. But H1 revenue grew only 8% against the 15% kept for the year, and the ₹1,500cr Delhi Metro work where it was lowest bidder was cancelled for a re-tender. The price needs about {need:J Kumar Infra|5}% a year against my ~10%.",
+            watch: 'Second-half revenue above about ₹1,800cr a quarter, which the 15% FY27 guide needs; both Goregaon–Mulund tunnel machines boring (one 300 m in, the other started in November); the Delhi Metro re-tender and a Mumbai sea-link or metro win.',
         },
         {
             company: 'Power Mech Proj.', rank: 2, stance: 'SCALEUP', segment: DIV_SERVICE,
             what: "India's largest independent erector and maintainer of power plants, moving into whole plant sections, coal-mine operation and civil work; executable order book ₹16,229cr, with BHEL, Adani and Vedanta its biggest clients.",
-            view: "**The group's best growth, with cash lagging.** Revenue rose from ₹2,710cr (FY22) to ₹6,062cr (FY26), return on capital is 22%, Q1 grew 26%, and upkeep and mining contracts lift the margin over time. But FY26 revenue and order targets were missed, Q1's 10.8% margin was well under the 12.5% guide, and five-year cash conversion is only 38%. The price needs about {need:Power Mech Proj.|13}% a year against my ~16%.",
-            watch: 'The margin recovering towards 12% in the second half; the Tasra coal-washing plant commissioned by about December; payment of the held-up water-scheme bills.',
+            view: "**The group's best growth, with cash lagging.** Revenue rose from ₹2,710cr (FY22) to ₹6,062cr (FY26) and return on capital is 22%. Q2 FY27 (call of 13 Nov 2026) grew revenue 30% to ₹1,609cr and lifted the margin to 11.6% from 10.8%; the upkeep order book is up 56% to ₹4,642cr, and the FY27 revenue and margin guides were kept (at least 11.6% before other income, 12.25–12.5% with it). But H1 orders were ₹4,801cr against a ₹12,000cr target, the Tasra coal-washing plant slipped to about March 2027, net debt rose about ₹425cr on its capex, and five-year cash conversion is only 38%. The price needs about {need:Power Mech Proj.|13}% a year against my ~16%.",
+            watch: 'An H2 margin that delivers at least 11.6% for the year; the Tasra washing plant finished by January and commissioned by March 2027; orders catching up to ₹12,000cr; net debt after the washery spend and certification of the ₹150cr of water-scheme work.',
         },
         {
             company: 'NCC', rank: 3, stance: 'CYCLICAL', segment: DIV_STATE,
