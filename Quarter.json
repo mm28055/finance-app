@@ -24,6 +24,12 @@
   "q": "GEN"
  },
  {
+  "id": "058387e1-46ed-40bf-86fc-1e7d444556be",
+  "name": "Special call 13 Nov 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
   "id": "0624f469-2e30-4551-bafc-0a1933ab9957",
   "name": "Special call 28 Apr 2026",
   "year": 2027,
@@ -44,6 +50,12 @@
  {
   "id": "161bbe87-6dbe-4dbc-be2d-20c8382740af",
   "name": "AGM 24 Jun 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "172898de-c770-4409-8c67-7a33bca52810",
+  "name": "AGM 24 Sep 2026",
   "year": 2027,
   "q": "GEN"
  },
@@ -153,6 +165,12 @@
   "id": "4dc3905b-24e6-424f-93d4-baa9112766fd",
   "name": "Special call 28 Jan 2026",
   "year": 2026,
+  "q": "GEN"
+ },
+ {
+  "id": "537bed2e-cdba-4c5c-960d-1e01321d962b",
+  "name": "Special call 09 Nov 2026",
+  "year": 2027,
   "q": "GEN"
  },
  {
@@ -312,6 +330,12 @@
   "q": "GEN"
  },
  {
+  "id": "ad9c738a-740b-49ac-82c4-d38279f1bbf2",
+  "name": "Special call 17 Nov 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
   "id": "afd8a5e2-de2b-42b4-9768-01f29ce1393d",
   "name": "AGM 17 Sep 2026",
   "year": 2027,
@@ -374,6 +398,12 @@
  {
   "id": "dd02c45e-c3d3-49b8-a786-a1e0218ba379",
   "name": "AGM 13 Aug 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "dddd85b2-a06d-41b8-a152-1a979b3d2ce6",
+  "name": "Special call 16 Nov 2026",
   "year": 2027,
   "q": "GEN"
  },
