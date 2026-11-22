@@ -703,8 +703,8 @@ export const platformCos: SectorOverview = {
         {
             company: 'Urban Company', rank: 7, stance: 'TURNAROUND', segment: CONSUMER,
             what: "India's leading app for home services (cleaning, salon, repairs), plus Native water purifiers and InstaHelp, an on-demand house-help service.",
-            view: "**Profitable core, costlier new bet.** In Q2 FY27 core India bookings grew 26% at 3.5% of bookings, up from 2.4% a year earlier, and the group excluding InstaHelp made ₹30cr of adjusted profit. But InstaHelp lost ₹174cr, up from ₹132cr, the filed loss doubled to ₹182cr, and management expects InstaHelp's loss to stay high for a few more quarters. On 16 October 2026 the board approved raising up to ₹2,500cr of new shares on top of ₹1,901cr of cash, which will dilute holders. It keeps its target of group adjusted break-even by Q3 FY28.",
-            watch: 'InstaHelp\'s quarterly loss turning down from ₹174cr; the price and dilution of the ₹2,500cr share sale; break-even by Q3 FY28.',
+            view: "**Profitable core, costlier new bet.** In Q2 FY27 core India bookings grew 26% at 3.5% of bookings, up from 2.4% a year earlier, and the group excluding InstaHelp made ₹30cr of adjusted profit. But InstaHelp lost ₹174cr, up from ₹132cr, the filed loss doubled to ₹182cr, and management expects InstaHelp's loss to stay high for a few more quarters. On 20 November 2026 it raised ₹2,500cr from institutions at ₹156 a share (over six times subscribed), about 10% more shares, on top of ₹1,901cr of cash. It keeps its target of group adjusted break-even by Q3 FY28.",
+            watch: 'InstaHelp\'s quarterly loss turning down from ₹174cr; how the ₹2,500cr raised in November is spent; break-even by Q3 FY28.',
         },
         {
             company: 'Shiprocket', rank: 8, stance: 'SCALEUP', segment: B2B,
