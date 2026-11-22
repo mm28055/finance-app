@@ -818,7 +818,7 @@ export const autoRelatedMetal: SectorOverview = {
             company: 'Menon Bearings', rank: 7, stance: 'SCALEUP', segment: ENGINE,
             what: "A Kolhapur maker of bi-metal engine bearings and bushes for tractors, trucks and transmissions, with aluminium die-casting (Menon Alkop) and brake-lining subsidiaries; about a third exported.",
             view: "**Growing fast with real pricing power, but cash and governance lag.** Q1 sales rose 37% at a 22% margin and Q2 57% at 20%, it passed on a steep copper rise, and management now expects more than 30% growth in FY27 and FY28 (30 Oct 2026 call). H1 operating cash of about ₹20cr nearly matched all of FY26. But only 36% of FY26 operating profit became cash, debtor days rose to 111, the promoter family sold 1.8% while promoting the story, and ₹19.5cr a year goes to the chairman's firm. The price needs about {need:Menon Bearings|21}% a year against my ~18%. 23 Oct 2026: stays wait though the price now fits; only 36% of FY26 operating profit became cash and promoters have been selling.",
-            watch: 'Operating cash above 60% of operating profit in FY27 (about half in H1); no further promoter selling; first railway brake orders, still none reported.',
+            watch: 'Who leads the company and replaces his personal guarantee on its loans after Executive Chairman Nitin Menon died on 21 Nov 2026, and what happens to his 27.6% stake; operating cash above 60% of operating profit in FY27 (about half in H1); no further promoter selling; first railway brake orders, still none reported.',
         },
         {
             company: 'RACL Geartech', rank: 8, stance: 'SCALEUP', segment: ENGINE,
