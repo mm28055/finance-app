@@ -1,5 +1,5 @@
 {
- "date": "2026-11-22",
+ "date": "2026-11-24",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -1434,7 +1434,7 @@
    "sector": "Agrochemical & Fertilizers"
   },
   "Lemon Tree Hotels": {
-   "call": "own",
+   "call": "follow",
    "sector": "Hotels and Travels"
   },
   "Samhi Hotels": {
@@ -1486,7 +1486,7 @@
    "sector": "Hotels and Travels"
   },
   "Jeena Sikho Lifecare": {
-   "call": "own",
+   "call": "follow",
    "sector": "Pharma Others"
   },
   "Advanced Enzyme": {
