@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-24",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -2030,7 +2030,10 @@
    "due": "Q2 FY27",
    "ifMet": "Revenue breaking out of its plateau would improve the view",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹100cr",
+   "resolvedOn": "2026-11-24",
+   "resolvedBy": "auto"
   },
   {
    "id": "frontier-springs-q2fy27-2",
@@ -14166,7 +14169,10 @@
    "target": 15,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "13.3%",
+   "resolvedOn": "2026-11-24",
+   "resolvedBy": "auto"
   },
   {
    "id": "praj-industries-q2fy27-1",
@@ -14599,7 +14605,10 @@
    "target": 20,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "15.4%",
+   "resolvedOn": "2026-11-24",
+   "resolvedBy": "auto"
   },
   {
    "id": "krn-heat-exchan-q2fy27-2",
@@ -17992,7 +18001,10 @@
    "due": "Q2 FY27",
    "ifMet": "The margin the follow is waiting for",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "10.9%",
+   "resolvedOn": "2026-11-24",
+   "resolvedBy": "auto"
   },
   {
    "id": "hexagon-nutrition-q2fy27-2",
@@ -37196,7 +37208,10 @@
    "ifMet": "Pricing is beating the coal and power cost squeeze; the 12% plateau may finally break",
    "ifMissed": "Margin stays stuck near 12% for a fourth year; cost pass-through is not working",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "missed",
+   "actual": "10.9%",
+   "resolvedOn": "2026-11-24",
+   "resolvedBy": "auto"
   },
   {
    "id": "kirlfer-q2fy27-2",
