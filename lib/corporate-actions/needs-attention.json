@@ -3400,7 +3400,8 @@
     "sector": "Auto Related",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run. 1 Nov 2026: transcript still not filed (Screener lists only the presentation); left open for the next run. 4 Nov 2026: transcript still not filed (Screener lists only the presentation and recording); left open for the next run. 6 Nov 2026: transcript still not filed (Screener lists only the presentation and recording); left open for the next run. 11 Nov 2026: transcript still not filed (Screener lists only the presentation and recording); left open for the next run. 13 Nov 2026: transcript still not filed (Screener lists only the presentation and recording); left open. 18 Nov 2026: transcript still not filed (Screener lists only the presentation and recording); left open. 22 Nov 2026: Screener still lists the Q2 call without a filed transcript (presentation and recording only); left open.",
-    "addedOn": "2026-10-27"
+    "addedOn": "2026-10-27",
+    "handled": "2026-11-25: Q3 CY26 call read (22 Oct, BSE). India +18% in line with its market (checkpoint met); India margin 16.3% on energy costs; Europe margin 16.3%; US casting order started mid-October, six months late (milestone missed, new ramp-up milestone added); growth capex ~8% of sales, no acquisitions. Card, view, section 1 and 6 rows, projects, capacity and picture updated. Stays own."
   },
   {
     "company": "Supreme Power",
@@ -4609,7 +4610,8 @@
     "sector": "Pumps Comp & Eng",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 6 Nov 2026: transcript not yet filed (Screener lists only the recording); left open for the next run. 11 Nov 2026: transcript still not filed (Screener lists only the presentation or recording); left open for the next run. 13 Nov 2026: the transcript is now on the company's website, but it is a scanned image with no text layer, so it could not be read this run; next run, read it page by page.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-25: Q2 FY27 call read (27 Oct, image transcript). H1 sales −5% to ₹620cr against ₹750–800cr aimed; 20% growth called \"challenging\", now \"strong double-digit\"; order book ₹2,040cr; precision-engineering order slipped to H2; Zephyros capex paced to sales. Two Q2 checkpoints missed, guide revision and a Q3 checkpoint added; project, capacity, picture updated. Call follow → wait, re-ranked."
   },
   {
     "company": "Praj Industries",
@@ -5520,7 +5522,8 @@
     "sector": "Hospitals",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-09"
+    "addedOn": "2026-11-09",
+    "handled": "2026-11-25: Q2 FY27 call read (2 Nov). Revenue +13.2%, Gurugram margin 23.8% at 68% occupancy (checkpoint partly), Raipur ₹9cr first-quarter loss as budgeted (partly; break-even now 12–15 months), Tower IV 220–250 beds in H2 FY28 (milestone added), acquisitions and share sale around Jan–Feb 2027. Card, view, rows, projects, capacity and picture updated. Stays follow."
   },
   {
     "company": "Eveready Industries India",
@@ -10299,7 +10302,8 @@
     "sector": "Pharma",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-24"
+    "addedOn": "2026-11-24",
+    "handled": "2026-11-25: Q2 FY27 call read (12 Nov). Revenue +18%, margin 35%, own US label past FY26 sales in one half; US guide trimmed to 20–25%; H1 operating cash ₹205cr after ₹185cr into stock and receivables. Card, view, section-6 rows, debtor checkpoint (missed), US checkpoint revision, projects, capacity and picture updated. Stays own."
   },
   {
     "company": "IFGL Refractories",

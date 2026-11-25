@@ -4600,47 +4600,47 @@
   },
   {
    "company": "Artemis Medicare",
-   "fingerprint": "dea83a8d5af4a71b",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "fecdb1a90581e4e1",
+   "checkedOn": "2026-11-25",
    "lines": {
-    "heading": "How full the Gurugram hospital is (Q1 FY27)",
+    "heading": "How full the Gurugram hospital is (Q2 FY27)",
     "items": [
      {
       "name": "Gurugram",
       "size": "700-bed building, 544 beds in use",
-      "usedPct": 65.7,
-      "usedLabel": "65.7% occupied",
+      "usedPct": 68,
+      "usedLabel": "68% occupied",
       "marker": {
-       "pct": 70,
-       "label": "about 70% expected in Q2 FY27 (dashed)"
+       "pct": 75,
+       "label": "75% targeted (dashed)"
       },
-      "note": "61.2% a year earlier. Average revenue per occupied bed ₹85,690"
+      "note": "65.7% in Q1 FY27 and 61.2% a year earlier. Average revenue per occupied bed ₹85,690 (Q1)"
      }
     ]
    },
    "adds": [
     {
-     "heading": "What Gurugram Tower IV adds (18–22 months once clearances come)",
+     "heading": "What Gurugram Tower IV adds (220–250 beds all at once, in H2 FY28)",
      "projectId": "artemis-medicare-tower-iv",
      "bars": [
       {
        "name": "Gurugram beds",
-       "sub": "to 900-plus beds on the campus",
+       "sub": "to 950 beds at the top of the range (management: 900-plus)",
        "base": 700,
-       "add": 200,
+       "add": 250,
        "baseLabel": "building today 700 (544 in use)",
-       "addLabel": "+200-plus beds",
-       "right": "about +29%"
+       "addLabel": "+220–250 beds",
+       "right": "about +31–36%"
       }
      ],
      "notes": [
       "A women-and-children tower using extra floor area (partly from a platinum green-building rating)",
       "About ₹1,500cr of sales a year if the whole 700-bed building ran 70% full at Q1's ₹85,690 per bed-day (about ₹1,150cr run-rate now)"
      ],
-     "caveat": "Drawn against the 700-bed building; against the 544 beds in use the 200-plus beds would be about +37%"
+     "caveat": "Drawn at the top of the range (250) against the 700-bed building; against the 544 beds in use 220–250 beds would be about +40–46%"
     },
     {
-     "heading": "What the South Delhi hospital adds (two phases of 450 and 200 beds, first phase in FY29)",
+     "heading": "What the South Delhi hospital adds (two phases of 450 and 200 beds, operations from Q4 FY29–30)",
      "projectId": "artemis-medicare-south-delhi",
      "bars": [
       {
@@ -4654,10 +4654,10 @@
       }
      ],
      "notes": [
-      "On the VIMHANS trust site in South Delhi",
+      "On the VIMHANS trust site in Lajpat Nagar, South Delhi, under a 30-year operation and management contract; drawings with the MCD and demolition under way (Nov 2026)",
       "Raipur's 300 beds opened in July 2026 and are counted in today's 1,000"
      ],
-     "caveat": "Management's target of about 2,000 beds by 2029–30 is more than 700 + 300 + 650 + 200-plus (about 1,850-plus)"
+     "caveat": "Management's target of about 2,000 beds by 2029–30 is more than 700 + 300 + 650 + 220–250 (about 1,870–1,900)"
     }
    ],
    "money": {
@@ -4665,11 +4665,11 @@
     "items": [
      {
       "name": "Raipur hospital (300 beds)",
-      "sub": "about ₹20cr of losses before break-even",
+      "sub": "about ₹20cr of losses before break-even (Aug 2026); ₹9cr lost in its first quarter, as budgeted",
       "total": 120,
       "spent": 96,
       "right": "about ₹96cr (80%) of ₹120cr spent",
-      "status": "started",
+      "status": "ramping",
       "projectId": "artemis-medicare-raipur"
      },
      {
@@ -4690,7 +4690,7 @@
       "projectId": "artemis-medicare-south-delhi"
      },
      {
-      "name": "Gurugram Tower IV (200-plus beds)",
+      "name": "Gurugram Tower IV (220–250 beds)",
       "sub": "about ₹55 lakh a bed, with parking",
       "right": "₹120cr on the call (₹160–180cr in the board approval)",
       "status": "planned",
@@ -4707,25 +4707,28 @@
     {
      "when": "July 2026",
      "tone": "done",
-     "text": "Raipur 300-bed hospital (Artemis Shanti) soft-launched: outpatients from 9 July, theatres from 27 July; PET-CT and radiotherapy still being installed"
+     "text": "Raipur 300-bed hospital (Artemis Shanti) soft-launched: outpatients from 9 July, theatres and cath-lab from 29 July; formally opened 3 Nov 2026"
     },
     {
      "when": "Q2 FY27",
-     "tone": "next",
-     "text": "Gurugram about 70% occupied"
+     "tone": "done",
+     "text": "Gurugram 68% occupied (about 70% had been expected); Raipur ₹5.3cr of revenue at 10% occupancy and a ₹9cr loss"
     },
     {
      "when": "Q4 FY28",
      "tone": "later",
      "milestones": [
       "artemis-medicare-raipur-m1"
-     ]
+     ],
+     "sub": "Management changed this (Nov 2026 call): break-even in 12–15 months from opening (was 15–18)"
     },
     {
-     "when": "18–22 months after clearances",
-     "tone": "maybe",
-     "text": "Gurugram Tower IV running (200-plus beds)",
-     "sub": "Starting 'subject to getting all the clearances'"
+     "when": "H2 FY28",
+     "tone": "later",
+     "milestones": [
+      "artemis-medicare-tower-iv-m1"
+     ],
+     "sub": "Nov 2026 call; Aug 2026 call had said 18–22 months once clearances come"
     },
     {
      "when": "Q4 FY29",
@@ -4733,7 +4736,7 @@
      "milestones": [
       "artemis-medicare-south-delhi-m1"
      ],
-     "sub": "Q4 FY26 call: commissioning in FY29"
+     "sub": "Management changed this (Nov 2026 call): operations in Q4 FY29–30; the Q4 FY26 call had said commissioning in FY29"
     },
     {
      "when": "2029–30",
@@ -4743,9 +4746,9 @@
    ],
    "notes": [
     "Three-year ₹800cr plan: Raipur ₹120cr, South Delhi ₹350–360cr (first 450 beds), Tower IV ₹120cr, plus multi-level parking and replacements",
-    "₹700cr share sale delayed"
+    "₹700cr share sale and acquisitions expected around January–February 2027 (Nov 2026 call)"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Q2 FY27 call (2 Nov 2026, BSE transcript), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Ashapura Minechem",
@@ -7296,37 +7299,40 @@
   },
   {
    "company": "Caplin Point Labs",
-   "fingerprint": "d60d680de7cbad9b",
-   "checkedOn": "2026-11-07",
+   "fingerprint": "d4ba26995e4d6a97",
+   "checkedOn": "2026-11-25",
    "adds": [
     {
-     "heading": "What the new US injectable block adds (5 lines by about August 2027, towards about 17 lines by 2029 and beyond)",
+     "heading": "What the new US injectable block (COL-II) adds: six lines by about August 2027 (Nov 2026 call), towards about 17 lines by 2029 and beyond",
      "projectId": "caplin-point-labs-injectable-block",
      "bars": [
       {
        "name": "Sterile injectable lines",
-       "sub": "to 13 lines, on the way to about 17 (the last 3–4 potentially by 2029 and beyond)",
+       "sub": "to 14 lines, on the way to about 17 (the last 3–4 potentially by 2029 and beyond)",
        "base": 8,
-       "add": 5,
+       "add": 6,
        "baseLabel": "today 8 lines",
-       "addLabel": "+5 lines",
-       "right": "about +63%"
+       "addLabel": "+6 lines",
+       "right": "about +75%"
       }
      ],
      "notes": [
       "Today's 8 lines: 6 running at the Chennai injectables plant (CSL, Gummidipoondi), a seventh coming up, plus the cancer line",
+      "Nov 2026 call: six lines initially, including eye-drop and blow-fill-seal lines; the Aug 2026 call had said five",
+      "Machines for two of the six lines have arrived; advances are paid on the other four",
+      "Two older lines are being upgraded in Q3–Q4 FY27, which slows US output this half",
       "US capacity is now the limit on growth: 40-plus products wait to be moved onto new lines",
       "Moving a US product to a new line takes at least about 9–10 months before sales start"
      ]
     }
    ],
    "money": {
-    "heading": "₹1,000cr-plus programme, about half done, all from cash: ₹510cr left to spend over 18–24 months (May 2026)",
+    "heading": "₹1,000cr-plus programme, all from cash: about ₹175cr spent in H1 FY27, mostly advances for new lines (Nov 2026); ₹510cr was left to spend as of May 2026",
     "items": [
      {
       "name": "New US injectable block",
       "sub": "a new sterile block at the Chennai injectables arm",
-      "right": "part of the ₹1,000cr-plus programme",
+      "right": "₹500–600cr more over the next 12–18 months (Nov 2026)",
       "status": "building",
       "projectId": "caplin-point-labs-injectable-block"
      },
@@ -7340,14 +7346,14 @@
      {
       "name": "Larger oral-solids and skin-products plant, Pondicherry",
       "sub": "tablets, capsules and ointments; both main plants are full",
-      "right": "part of the ₹1,000cr-plus programme",
+      "right": "₹120–150cr over the next 12 months (Nov 2026)",
       "status": "building",
       "projectId": "caplin-point-labs-oral-derma"
      },
      {
       "name": "Mexico plant",
-      "sub": "first Latin American factory: liquids, ovules, suppositories and blister packing",
-      "right": "not yet in the ₹1,000cr plan; land bought",
+      "sub": "first Latin American factory: liquid medicines and IV fluids to supply Central America by road (Nov 2026 call)",
+      "right": "outside the ₹1,000cr plan; land bought",
       "status": "planned",
       "projectId": "caplin-point-labs-mexico"
      }
@@ -7373,7 +7379,7 @@
      "milestones": [
       "caplin-point-labs-injectable-block-m2"
      ],
-     "sub": "Q1 FY27 call: \"this time next year\""
+     "sub": "Nov 2026 call: COL-II \"expected to be completed by August 2027\", six lines initially"
     },
     {
      "when": "2029 and beyond",
@@ -7384,15 +7390,16 @@
     {
      "when": "Not dated",
      "tone": "maybe",
-     "text": "Mexico plant: land bought; a local plant gives a 16% price edge in tenders",
-     "sub": "Q4 FY26 call; outside the ₹1,000cr plan"
+     "text": "Mexico plant for liquid medicines and IV fluids, after the Indian plants are done (2–2.5 years, Nov 2026 call); a local plant gives a 16% price edge in tenders",
+     "sub": "Outside the ₹1,000cr plan; land bought (Q4 FY26 call)"
     }
    ],
    "notes": [
     "Both main plants, oral solids and skin products at CP1 Pondicherry and injectables at CSL Gummidipoondi, are short of capacity; 40–50% of Latin American supply is outsourced",
+    "Thervoykandigai project: ₹100–120cr, awaiting approvals (Nov 2026 call)",
     "No utilisation % given"
    ],
-   "source": "Q1 FY27 call (Aug 2026, official transcript), Q4 FY26 call (May 2026) and sector note"
+   "source": "Q2 FY27 call (12 Nov 2026, transcript on the company site), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Carborundum Univer.",
@@ -8742,36 +8749,36 @@
   },
   {
    "company": "CIE Automotive",
-   "fingerprint": "e5f415fdea1871ab",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "1747c16102fa6c31",
+   "checkedOn": "2026-11-25",
    "money": {
-    "heading": "Money: India capex of ₹400–500cr in calendar 2026, ₹210cr spent in Jan–Jun (not split by project)",
+    "heading": "Money: Indian growth capex in calendar 2026 almost double 2025 (₹400–500cr guided; ₹210cr spent in Jan–Jun) and similar in 2027, about 8% of sales (not split by project)",
     "items": [
      {
-      "name": "Iron-foundry mould line",
-      "sub": "a large US machined-casting order (about ₹200cr of sales a year) fills today's foundry; another 4,000 sq m being added for the new mould line",
-      "right": "part of the ₹400–500cr",
-      "status": "building",
+      "name": "Iron-foundry mould line and US casting order",
+      "sub": "a large US machined-casting order (about ₹200cr of sales a year) fills the Urse foundry once ramped up by mid-2027; another 4,000 sq m added for the new mould line",
+      "right": "part of the growth capex",
+      "status": "started",
       "projectId": "cie-automotive-foundry-line"
      },
      {
-      "name": "Three new forging presses",
-      "sub": "one large press at Chakan, two at Bill Forge, Bengaluru",
-      "right": "part of the ₹400–500cr",
+      "name": "New forging presses",
+      "sub": "two new presses ordered for Chakan, more at Bill Forge, Bengaluru, and one moved from Bill Forge Mexico to Hosur (arriving Q1 2027)",
+      "right": "part of the growth capex",
       "status": "building",
       "projectId": "cie-automotive-presses"
      },
      {
       "name": "Gear plant expansions",
-      "sub": "Rajkot and Chakan, bigger buildings for new orders",
-      "right": "part of the ₹400–500cr",
+      "sub": "Rajkot and Chakan, a new 4,000 sq m gear building for new (including EV) orders",
+      "right": "part of the growth capex",
       "status": "building",
       "projectId": "cie-automotive-gears"
      },
      {
       "name": "Robotised stamping line",
       "sub": "Kanhe, near Pune; stamping is fully booked",
-      "right": "part of the ₹400–500cr",
+      "right": "part of the growth capex",
       "status": "building",
       "projectId": "cie-automotive-stamping"
      }
@@ -8781,7 +8788,7 @@
     {
      "when": "Jan–Jun 2026",
      "tone": "done",
-     "text": "₹210cr of India capex spent (₹380cr in all of 2025). The foundry's two plants each grew by 4,000 sq m for machining; US casting dispatches began"
+     "text": "₹210cr of India capex spent (₹380cr in all of 2025). The foundry's two plants each grew by 4,000 sq m for machining"
     },
     {
      "when": "Q2 FY27",
@@ -8790,7 +8797,20 @@
       "cie-automotive-foundry-line-m1"
      ],
      "text": "Second half of 2026: capex 'significantly higher' than the first half as presses, gear-plant and foundry lines go in",
-     "sub": "Sales from the US order are booked from the Jul–Sep quarter, as the supply chain is long"
+     "sub": "Management changed this (Oct 2026 call): supply of the US order started only in mid-October, about six months late, on the customer's side; no sales from it in Jul–Sep"
+    },
+    {
+     "when": "Q4 FY27",
+     "tone": "next",
+     "text": "Press moved from Bill Forge Mexico arrives at Hosur (Q1 2027), after GKN cut its Mexican volumes by about 20%"
+    },
+    {
+     "when": "Q1 FY28",
+     "tone": "next",
+     "milestones": [
+      "cie-automotive-q1fy28-1"
+     ],
+     "sub": "Ramp-up finished 'by mid of next year' (Oct 2026 call)"
     },
     {
      "when": "Q2 FY28",
@@ -8803,16 +8823,16 @@
     {
      "when": "Under study",
      "tone": "maybe",
-     "text": "Brownfield expansion of the iron foundry's casting mould capacity being evaluated, and two or three greenfields in different technologies, not yet approved"
+     "text": "A new foundry needed by 2028 for orders already nominated; two or three greenfields in different technologies, not yet approved"
     }
    ],
    "notes": [
     "Today in India: forgings (Chakan, Bill Forge Bengaluru), iron foundry, aluminium, gears (Rajkot, Chakan), stamping (Pune, Zahirabad), composites and magnets. Europe: forging plants in Spain, Germany and Lithuania. No unit capacity disclosed",
-    "Running tight: stamping 'fully booked' and the US casting order fills the foundry. Management says it has been tight in some technologies but not short of output",
+    "Running tight: stamping 'fully booked', and the iron foundry is close to full and fully booked once the US order ramps up. Management says it has been tight in some technologies but not short of output",
     "US EV gear programmes (Metalcastello) run at about 10% of the expected volumes (Q4 FY26 call)",
-    "Net cash, so growth is not limited by capex; every business except magnets is adding capacity, and composites are growing by 4,000 sq m"
+    "Net cash, so growth is not limited by capex; every business except magnets is adding capacity: composites presses, a stamping line and building at Kanhe, and new aluminium die-casting (HPDC) lines for four-wheeler parts. No acquisition or buyback planned (Oct 2026 call)"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026) and sector note",
+   "source": "Q3 CY26 call (22 Oct 2026, BSE transcript) and presentation, Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026) and sector note",
    "recheck": {
     "changes": [
      "Stamping line: \"Chakan (Pune)\" corrected to \"Kanhe, near Pune\"; the official transcript says 'it will be installed in Kanhe' (Chakan came from the AI copy). Other figures confirmed"
@@ -21266,13 +21286,13 @@
   },
   {
    "company": "Kirloskar Pneumatic",
-   "fingerprint": "c5098e44bfacdaa6",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "b79fba60db01feaa",
+   "checkedOn": "2026-11-25",
    "money": {
     "items": [
      {
       "name": "Zephyros ammonia air-conditioning",
-      "sub": "capacity under the government production-incentive scheme, over FY27–FY28",
+      "sub": "capacity under the government production-incentive scheme, over FY27–FY28; Management changed this (Oct 2026 call): the rest is spent only as sales pick up",
       "total": 320,
       "spent": 60,
       "right": "about ₹60cr of ₹320cr spent by March",
@@ -21288,9 +21308,14 @@
      "text": "Extra centrifugal-compressor capacity commissioned and available. First outside Zephyros order in July 2026; the ₹320cr commitment still stands"
     },
     {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "Zephyros commercialised: units sold but not yet commissioned; part of the capacity built is used for other products"
+    },
+    {
      "when": "FY27",
      "tone": "next",
-     "text": "The capex year: about ₹100cr of capex plus the Zephyros spend"
+     "text": "The capex year: about ₹100cr of capex (₹34cr spent in H1) plus the Zephyros spend"
     },
     {
      "when": "Q4 FY28",
@@ -21303,9 +21328,9 @@
    ],
    "notes": [
     "Compressor and refrigeration plants at Hadapsar (Pune), Saswad and Nashik, with in-house forging, casting and fabrication",
-    "₹165cr spent on capex in the last two years; debt-free"
+    "₹165cr spent on capex in the two years before FY27; debt-free, cash ₹514cr at 1 October 2026"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026) and sector note"
+   "source": "Q2 FY27 call (27 Oct 2026, company transcript), Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026) and sector note"
   },
   {
    "company": "Knack Packaging",

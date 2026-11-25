@@ -2076,7 +2076,11 @@
    "due": "Q2 FY27",
    "ifMet": "Own case holds (this is the test)",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "India +18% in Jul–Sep 2026 against light vehicles +18.8%, two-wheelers +16.7%, tractors +6.8% (company presentation)",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays own"
   },
   {
    "id": "cie-automotive-q3fy27-1",
@@ -12935,7 +12939,11 @@
    "text": "Gurugram occupancy near 70% in Q2 (65.7% group)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Gurugram occupancy 68% in Q2 FY27 (call of 2 Nov 2026), up from 65.7%",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "artemis-medicare-q2fy27-2",
@@ -12944,7 +12952,11 @@
    "text": "Raipur losses staying near ₹20cr before break-even in 15–18 months",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Raipur lost ₹9cr in its first quarter, as budgeted (₹9–10cr), at 10% occupancy; break-even now guided at 12–15 months. A ₹9cr quarter makes a ₹20cr total tight",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "artemis-medicare-q4fy27-1",
@@ -18421,7 +18433,11 @@
    "text": "Debtor days falling back towards 120 at the half-year",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Receivables rose ₹70cr and stock ₹115cr in H1 FY27 (CFO, 12 Nov 2026 call); tender dues expected partly in Q4",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays own; cash from H1 stock and receivables to watch by March"
   },
   {
    "id": "caplin-point-labs-q4fy27-1",
@@ -18445,7 +18461,13 @@
    "text": "US arm grows 25–30% in FY27 as promised",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-25",
+     "text": "Q2 FY27 call (12 Nov 2026): now \"targeting around 20–25% growth\" in the US this year, as two older lines are upgraded in H2"
+    }
+   ]
   },
   {
    "id": "emcure-pharma-q3fy27-1",
@@ -19903,7 +19925,11 @@
    "ifMet": "Would make it an own again",
    "ifMissed": "Stays follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "H1 FY27 sales ₹620cr (−5%), EBITDA margin 16.2% (company; Q2 14.9%)",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Moved to wait (from follow)"
   },
   {
    "id": "kirloskar-pneumatic-q4fy27-1",
@@ -19915,7 +19941,13 @@
    "target": 20,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-25",
+     "text": "Q2 FY27 call (27 Oct 2026): 20% on the top line \"does look a little bit challenging\"; now \"confident of delivering a strong double-digit growth this year\""
+    }
+   ]
   },
   {
    "id": "kirloskar-pneumatic-q4fy27-2",
@@ -19936,7 +19968,11 @@
    "text": "Middle East package orders restart",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Q2 call (27 Oct 2026): still unable to dispatch to parts of the Middle East; large package orders yet to pick up, some close to finalisation",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Moved to wait (from follow)"
   },
   {
    "id": "powerica-q3fy27-1",
@@ -25378,8 +25414,12 @@
    "text": "US machined-casting order shipping (a quarter later than first said)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "cie-automotive-foundry-line"
+   "status": "missed",
+   "project": "cie-automotive-foundry-line",
+   "actual": "Supply started only in mid-October 2026 (Q3 FY27), about six months late, on the customer's side (22 Oct 2026 call)",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays own; ramp-up by mid-2027 now the test"
   },
   {
    "id": "cie-automotive-stamping-m1",
@@ -29916,7 +29956,13 @@
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "artemis-medicare-raipur"
+   "project": "artemis-medicare-raipur",
+   "revisions": [
+    {
+     "on": "2026-11-25",
+     "text": "Q2 FY27 call (2 Nov 2026): \"we have given you a breakeven timeline of 12 to 15 months\", internally trying to better it"
+    }
+   ]
   },
   {
    "id": "artemis-medicare-south-delhi-m1",
@@ -42511,6 +42557,36 @@
    "ifMissed": "Follow at best; consider wait",
    "createdOn": "2026-11-22",
    "status": "pending"
+  },
+  {
+   "id": "cie-automotive-q1fy28-1",
+   "company": "CIE Automotive",
+   "sector": "Auto Related",
+   "text": "US machined-casting order fully ramped up by mid-2027, filling the Urse iron foundry",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-25",
+   "status": "pending",
+   "project": "cie-automotive-foundry-line"
+  },
+  {
+   "id": "kirloskar-pneumatic-q3fy27-1",
+   "company": "Kirloskar Pneumatic",
+   "sector": "Pumps Comp & Eng",
+   "text": "Large package orders signed in Q3 FY27, as management expects, and the precision-engineering order largely dispatched",
+   "due": "Q3 FY27",
+   "ifMet": "Back towards follow if H2 sales catch up",
+   "createdOn": "2026-11-25",
+   "status": "pending"
+  },
+  {
+   "id": "artemis-medicare-tower-iv-m1",
+   "company": "Artemis Medicare",
+   "sector": "Hospitals",
+   "text": "Gurugram Tower IV opens with 220–250 beds, all at once",
+   "due": "H2 FY28",
+   "createdOn": "2026-11-25",
+   "status": "pending",
+   "project": "artemis-medicare-tower-iv"
   }
  ]
 }

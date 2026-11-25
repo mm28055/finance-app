@@ -1198,35 +1198,41 @@
    "company": "CIE Automotive",
    "sector": "Auto Related",
    "name": "New iron-foundry mould line and US casting order",
-   "what": "New moulding line at the iron foundry because a large US order for machined castings fills today's capacity; brownfield casting expansion also being studied",
+   "what": "New moulding line at the iron foundry because a large US order for machined castings fills today's capacity; supply started mid-October 2026 and fills the Urse foundry once ramped up by mid-2027; a further foundry expansion is needed by 2028 for orders already nominated",
    "cost": "within India capex of ₹400–500cr in calendar 2026 (₹210cr spent in Jan–Jun)",
    "adds": "about ₹200cr a year of new sales from the US order",
-   "status": "building",
-   "source": "Q1 FY27 call (Jul 2026, company's Q2 CY26)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "New iron-foundry mould line; the ₹200cr-a-year US order alone fills today's foundry"
+   "status": "started",
+   "source": "Q3 CY26 call (22 Oct 2026, BSE transcript) and presentation; Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-11-25",
+   "capacityAdd": "New iron-foundry mould line; the ₹200cr-a-year US order alone fills today's foundry",
+   "revisions": [
+    {
+     "on": "2026-11-25",
+     "text": "Q3 CY26 call (22 Oct 2026): supply of the US order started only in mid-October, about six months late, a customer-driven delay; no sales from it in July–September"
+    }
+   ]
   },
   {
    "id": "cie-automotive-presses",
    "company": "CIE Automotive",
    "sector": "Auto Related",
    "name": "Three new forging presses",
-   "what": "One large press at Chakan and two at the Bill Forge plants in Bengaluru",
-   "cost": "within India capex of ₹400–500cr in calendar 2026",
+   "what": "Two new presses ordered for Chakan, more press capacity at the Bill Forge plants in Bengaluru, and one press moved from Bill Forge Mexico to Hosur (arriving Q1 2027) after GKN cut volumes",
+   "cost": "within Indian growth capex that is almost double CY2025's in CY2026, about 8% of sales",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29"
+   "source": "Q3 CY26 call (22 Oct 2026, BSE transcript) and presentation; Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-11-25"
   },
   {
    "id": "cie-automotive-gears",
    "company": "CIE Automotive",
    "sector": "Auto Related",
    "name": "Gear plant expansions, Rajkot and Chakan",
-   "what": "Capacity additions at both gear plants for new orders",
+   "what": "Capacity additions at the gear plants for new orders, including a new 4,000 m² gear building; gears and composites have new EV orders",
    "cost": "within India capex of ₹400–500cr in calendar 2026",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29"
+   "source": "Q3 CY26 call (22 Oct 2026, BSE transcript) and presentation; Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-11-25"
   },
   {
    "id": "cie-automotive-stamping",
@@ -7578,13 +7584,13 @@
    "company": "Artemis Medicare",
    "sector": "Hospitals",
    "name": "Raipur hospital (300 beds)",
-   "what": "Artemis Shanti Hospital, Raipur: outpatients from 9 July 2026, theatres from 27 July; PET-CT and radiotherapy still being installed",
+   "what": "Artemis Shanti Hospital, Raipur: outpatients from 9 July 2026, theatres and cath-lab from 29 July; formal inauguration 3 Nov 2026; Q2 FY27 revenue ₹5.3cr at 10% occupancy and ARPOB of ₹30,000–32,000, with a ₹9cr loss as budgeted",
    "cost": "₹120cr, 80% spent",
    "expectedStart": "Q2 FY27",
-   "adds": "300 beds; about ₹20cr of losses before break-even",
-   "status": "started",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29",
+   "adds": "300 beds; about ₹20cr of losses before break-even (Aug 2026); break-even in 12–15 months (Nov 2026)",
+   "status": "ramping",
+   "source": "Q2 FY27 call (2 Nov 2026, BSE transcript); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-25",
    "capacityAdd": "+300 beds (+55% on Gurugram's 544 in use)"
   },
   {
@@ -7592,27 +7598,28 @@
    "company": "Artemis Medicare",
    "sector": "Hospitals",
    "name": "South Delhi hospital (650 beds)",
-   "what": "650-bed hospital on the VIMHANS trust site in South Delhi, opening in two phases of 450 and 200 beds",
+   "what": "650-bed hospital on the VIMHANS trust site in Lajpat Nagar, South Delhi, under a 30-year operation and management contract, opening in two phases of 450 and 200 beds; drawings submitted to the MCD and demolition of the old building under way (Nov 2026)",
    "cost": "₹500cr (₹350cr for the first 450 beds) plus a ₹250cr deposit, ₹130cr paid",
    "expectedStart": "Q4 FY29",
    "adds": "650 beds, toward 2,000 beds by 2029–30",
    "status": "planned",
-   "source": "Q4 FY26 call (May 2026): commissioning in FY29",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (2 Nov 2026, BSE transcript): operations in Q4 FY29–30; Q4 FY26 call (May 2026)",
+   "updatedOn": "2026-11-25",
    "capacityAdd": "+650 beds in two phases (450, then 200), more than doubling today's 544 in use"
   },
   {
    "id": "artemis-medicare-tower-iv",
    "company": "Artemis Medicare",
    "sector": "Hospitals",
-   "name": "Gurugram Tower IV (200-plus beds)",
+   "name": "Gurugram Tower IV (220–250 beds)",
    "what": "New women-and-children tower on the Gurugram campus using extra floor area; 18–22 months to build once clearances come",
    "cost": "₹120cr on the call (₹160–180cr in the board approval), about ₹55 lakh a bed",
-   "adds": "200-plus beds",
+   "adds": "220–250 beds, all at once (Nov 2026 call); taking the campus from about 700 to 900-plus beds",
    "status": "planned",
-   "source": "Q1 FY27 call (Aug 2026): starting 'subject to getting all the clearances'",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "+200-plus beds on the Gurugram campus (+29% on the 700-bed building; +37% on the 544 beds in use)"
+   "source": "Q2 FY27 call (2 Nov 2026, BSE transcript); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-25",
+   "capacityAdd": "+220–250 beds on the Gurugram campus (+31–36% on the 700-bed building; Aug 2026 call said 200-plus)",
+   "expectedStart": "H2 FY28"
   },
   {
    "id": "narayana-hrudayalaya-india-pipeline",
@@ -11606,18 +11613,22 @@
    "company": "Caplin Point Labs",
    "sector": "Pharma",
    "name": "New US injectable block",
-   "what": "A new sterile block at its Chennai injectables arm with 5 more lines, part of a plan to go from 8 lines today to about 17 in 2–3 years; the current plant is booked out to about February",
-   "cost": "part of a ₹1,000cr-plus programme, all from cash; ₹510cr of it left to spend over 18–24 months (May 2026)",
+   "what": "A new sterile block (COL-II) at Gummidipoondi, initially six lines including eye-drop and blow-fill-seal lines (the Aug 2026 call said five), part of a plan to go from 8 lines today to about 17; two of the six lines' machines have arrived and advances are paid on the other four",
+   "cost": "part of a ₹1,000cr-plus programme, all from cash; ₹500–600cr more to spend at the block over the next 12–18 months (Nov 2026); about ₹175cr of capex spent in H1 FY27, mostly advances",
    "expectedStart": "Q4 FY27",
    "adds": "US capacity, which is now the limit on growth; 40-plus products wait to be moved onto new lines",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026, official transcript on the company site, filed with NSE 19 Aug 2026); Q4 FY26 call for the ₹510cr left",
-   "updatedOn": "2026-11-07",
-   "capacityAdd": "+5 sterile lines (8 to 13, about +63%), on the way to about 17 lines in 2–3 years",
+   "source": "Q2 FY27 call (12 Nov 2026, transcript on the company site); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-25",
+   "capacityAdd": "+6 sterile lines (8 to 14, about +75%) per the Nov 2026 call (Aug 2026 call: +5), on the way to about 17 lines",
    "revisions": [
     {
      "on": "2026-11-07",
      "text": "Q1 FY27 call (Aug 2026, official transcript): the 5 new lines come \"this time next year\", about Q2 FY28 (was March 2027, Q4 FY27); the last 3–4 of the 17 lines potentially by 2029 and beyond"
+    },
+    {
+     "on": "2026-11-25",
+     "text": "Q2 FY27 call (12 Nov 2026): COL-II \"expected to be completed by August 2027\", with six lines initially (was five)"
     }
    ]
   },
@@ -11638,20 +11649,20 @@
    "sector": "Pharma",
    "name": "Larger oral-solids and skin-products plant, Pondicherry",
    "what": "A bigger tablets, capsules and ointments plant in Pondicherry, as its two main plants are full",
-   "cost": "part of the ₹1,000cr-plus programme",
+   "cost": "₹120–150cr over the next 12 months (Nov 2026), within the ₹1,000cr-plus programme",
    "status": "building",
-   "source": "Q4 FY26 call (May 2026); Q1 FY27 call",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (12 Nov 2026, transcript on the company site); Q4 FY26 call (May 2026)",
+   "updatedOn": "2026-11-25"
   },
   {
    "id": "caplin-point-labs-mexico",
    "company": "Caplin Point Labs",
    "sector": "Pharma",
    "name": "Mexico plant",
-   "what": "Land bought for its first Latin American factory (liquids, ovules, suppositories and blister packing); a local plant gives a 16% price edge in tenders",
+   "what": "Land bought for its first Latin American factory; the Nov 2026 call describes it as a liquid-medicine and IV-fluid plant to supply Central America by road, to start after the Indian plants are done (2–2.5 years); a local plant gives a 16% price edge in tenders",
    "status": "planned",
-   "source": "Q4 FY26 call (May 2026); not yet in the ₹1,000cr plan",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (12 Nov 2026, transcript on the company site); Q4 FY26 call (May 2026)",
+   "updatedOn": "2026-11-25"
   },
   {
    "id": "rubicon-research-pithampur",
@@ -12222,11 +12233,17 @@
    "company": "Kirloskar Pneumatic",
    "sector": "Pumps Comp & Eng",
    "name": "Zephyros ammonia air-conditioning plant",
-   "what": "Capacity for the Zephyros ammonia-based air-conditioning system under the government production-incentive scheme; first outside order in July 2026",
+   "what": "Capacity for the Zephyros ammonia-based air-conditioning system under the government production-incentive scheme; first outside order in July 2026; commercialised in Q2 FY27 (sold, not yet commissioned)",
    "cost": "₹320cr over FY27–FY28 (about ₹60cr spent by March)",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): ₹320cr commitment still valid; FY27 is the capex year and FY28 the ramp-up",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (27 Oct 2026, company transcript); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-25",
+   "revisions": [
+    {
+     "on": "2026-11-25",
+     "text": "Q2 FY27 call (27 Oct 2026): \"We are waiting to see how the sales really pick up before deploying that capital\"; part of what was built is used for other products"
+    }
+   ]
   },
   {
    "id": "elgi-equipments-mk2-campus",
