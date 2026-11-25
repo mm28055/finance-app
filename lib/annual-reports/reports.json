@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T04:44:58.919Z",
+ "updated": "2026-11-25T13:26:34.220Z",
  "reports": [
   {
    "company": "Aartech Solonics",
@@ -4201,6 +4201,23 @@
     "There is key-man risk as the Chairman and Managing Director faced health issues, and his son is not involved in operations."
    ],
    "researchedOn": "2026-09-27"
+  },
+  {
+   "company": "Medi Assist Healthcare",
+   "sector": "Healthcare",
+   "year": "FY26",
+   "url": "https://www.mediassist.in/assets/pdf/reports/2026/annual-report-fy-25-26.pdf",
+   "auditor": "The auditor included an emphasis of matter regarding an Enforcement Directorate search on April 4, 2025, at the Ranchi offices linked to Jharkhand's Ayushman Bharat scheme, with no outcome communicated yet. Under CARO remarks, the auditor noted that bank stock statements did not agree with the books and there was a slight delay in a few cases regarding the payment of statutory dues.",
+   "contingent": "The company reported about ₹64 crore in contingent liabilities. This was mostly due to a ₹46.5 crore old income-tax demand at an acquired TPA, DHS, for the 2007 to 2009 period. Additionally, outstanding capital contracts as of March 2026 were ₹3.6 crore.",
+   "other": "The company operates as a single reportable segment. Revenue is highly concentrated, with one customer forming 37.2% of FY26 revenue and the top five making up 64.8%. Reported profit was flattered by a ₹31.0 crore one-time non-cash deferred tax reversal. It also included ₹14.2 crore in exceptional costs for a cyber-incident clean-up, a labour-code provision, and a provision for disallowed claims. Amortisation of Paramount's customer relationships will cost ₹137.5 crore over ten years.",
+   "flags": [
+    "Customer concentration is very high, with a single client accounting for 37.2% of revenue and the top five making up 64.8%.",
+    "The Enforcement Directorate searched the company's Ranchi offices regarding a government scheme, resulting in an auditor emphasis of matter.",
+    "The auditor noted discrepancies between bank stock statements and the company books, along with slight delays in paying some statutory dues.",
+    "The company faces about ₹64 crore in contingent liabilities, primarily a ₹46.5 crore old income-tax demand.",
+    "A cyber incident at the acquired Paramount business cost ₹3.8 crore to clean up and negatively impacted policy renewals."
+   ],
+   "researchedOn": "2026-11-25"
   },
   {
    "company": "Menon Bearings",

@@ -629,6 +629,82 @@ export const healthcareCharts: Record<string, ProfileCharts> = {
             "inventory5y": -14,
             "payables5y": -2
         }
+    },
+    "Medi Assist Healthcare": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Staff",
+                    "share": 44
+                },
+                {
+                    "label": "Other costs",
+                    "share": 37
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 19
+                }
+            ],
+            "note": "Filed expense split (Screener). Other costs include sub-contracting, advertising, software and legal fees; there are no materials."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                92.0,
+                120.0,
+                133.0,
+                154.0,
+                175.0
+            ],
+            "ocf": [
+                64.0,
+                81.0,
+                66.0,
+                138.0,
+                118.0
+            ],
+            "fcf": [
+                52.0,
+                53.0,
+                48.0,
+                92.0,
+                62.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "18.2x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "9.8x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹190cr net cash",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "69%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "19%"
+            }
+        ],
+        "statsAsOf": "25 Nov 2026"
     }
 };
 
@@ -669,5 +745,11 @@ export const healthcareValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 53.0,
         "mcapAtWriting": 1229.0,
         "peAtWriting": 22.1
+    },
+    "Medi Assist Healthcare": {
+        "netDebt": -190,
+        "ttmEbitda": 190.0,
+        "mcapAtWriting": 2043.0,
+        "peAtWriting": 18.2
     }
 };

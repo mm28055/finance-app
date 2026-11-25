@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-25",
  "capacity": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -5839,6 +5839,22 @@
    "fullUse": "The ~₹1,300cr of EPC work is about 2.5 years of FY26 revenue, or about 1.5 years at the ₹840–910cr FY27 target; management expects to carry ₹800–900cr of orders into FY28 (November 2026 call, as reported). The 1,000 MVA transformer plant would add revenue only after utility type tests and approvals; the company does not give a revenue figure for it",
    "capexStatus": "Planned: greenfield power-transformer plant on 14 acres near Vadodara, phase 1 about ₹90cr (₹70–80cr said in June) for 132 kV/63 MVA by the end of FY28, ₹3.5–4cr spent by August 2026 and about ₹10cr in FY27; CRISIL says it is to be funded by ₹50cr of debt and ₹40cr of equity. Two own BESS projects (Rajasthan 100 MW/200 MWh, capex ₹198cr; Gujarat 65 MW/130 MWh) need about ₹60cr of equity and are on hold. ₹48.2cr committed to buy an office building within 24 months. Capital work in progress ₹2.5cr at September 2026; a ₹150cr rights issue was approved on 2 November 2026",
    "source": "Q1 FY27 call (6 Aug 2026) and presentation, Q4 FY26 call (25 Jun 2026) and presentation, Q2 FY27 results and press release (2 Nov 2026), NSE filing of 21 Sep 2026, FY26 annual report (note 41), CARE (6 Oct 2026) and CRISIL (6 Oct 2026) rationales, Screener"
+  },
+  {
+   "company": "Medi Assist Healthcare",
+   "sector": "Healthcare",
+   "today": "Asset-light: no plants. Capacity is staff, a 40,000+ hospital network and its own MAtrix claims system, which ran about 7 million claims in H1 FY27 (about 1 million a month); it serves 4.75 crore group lives and about 31 crore government-scheme members; headcount is 800-plus lower than at the Paramount deal",
+   "capexStatus": "No plant capex; ₹56cr of capex in FY26 (Screener), mostly in-house software; ₹24.5cr spent on a board-approved AI roadmap over six quarters to June 2026; tech and international growth funded from own cash; big cash uses are acquisitions (Paramount TPA, ₹412cr, July 2025) and a ₹49.3cr buyback",
+   "source": "Q1 FY27 call (Aug 2026), Q2 FY27 call and presentation (Nov 2026), FY26 annual report, Screener"
+  },
+  {
+   "company": "Sahajanand Medical Technologies",
+   "sector": "Health Products",
+   "today": "Three plants: Surat (Sachin SEZ, 6,888 sq m; stents and catheters, the older site), Hyderabad, Telangana (12,348 sq m; stents, catheters, TAVI valves and occluders; running since October 2022, about 33% of the site area in use) and Nonthaburi, Thailand (TAVI, through Vascular Innovations). Installed capacity at June 2026 (prospectus): 960,000 stents, 1,260,000 catheters, 56,000 drug-coated balloons, 9,600 TAVI devices and 42,000 occluders a year. The Q2 FY27 presentation shows TAVI at 3,000 a year (as read by an analyst on the call): the CFO said the prospectus figure includes Hyderabad sterilisation capacity that is technical, not yet commercial",
+   "utilisation": "H1 FY27 (call): stents 79% at Surat and 20% at Telangana; balloons 72% at Surat (97% a year earlier, as stock made earlier was sold first) and 57% at Telangana; the new drug-coated balloon line at Surat 40%; TAVI about 60% of the 3,000 commercial capacity (analyst reading the presentation). FY26 (prospectus): stents 78.3%, catheters 91.7%, drug-coated balloons 1.8%, TAVI 19.8% and occluders 34.7% of installed capacity",
+   "fullUse": "Management says present capacity is enough for at least a year and a half (November 2026) and gives no peak-revenue figure, as more TAVI output at Hyderabad would earn far more per unit than more stents; it may try to give one by the next call. Gross fixed-asset turn was about 7x before the Telangana plant and 3.41x in FY26 (prospectus); raising TAVI or occluder capacity is not capex-heavy",
+   "capexStatus": "About ₹70cr a year in FY27 and FY28, and not above ₹70cr for two to three years: vertical integration (nitinol processing, polymer extrusion, braiding and lamination at Hyderabad, components in validation before EU approval), automation, upkeep of the Sachin plant and small stent and balloon line additions. About ₹44cr spent in H1 FY27 (₹41cr in the opening remarks). A ₹8.67cr government grant (MISRID) is payable on reimbursement. FY26 capex was ₹98cr and capital work in progress ₹15cr at September 2026 (Screener). The October 2026 IPO raised no money for the company (all offer for sale)",
+   "source": "Q2 FY27 call (5 Nov 2026), red herring prospectus (9 Oct 2026) pp. 252, 258, 260, 270, CRISIL rationale (3 Nov 2026), Screener"
   }
  ]
 }

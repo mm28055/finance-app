@@ -48587,6 +48587,196 @@
     "Capital work in progress ₹2.5cr at September 2026"
    ],
    "source": "Q1 FY27 call (6 Aug 2026) and presentation, Q4 FY26 call (25 Jun 2026) and presentation, Q2 FY27 results and press release (2 Nov 2026), NSE filing of 21 Sep 2026, FY26 annual report (note 41), CARE and CRISIL rationales (6 Oct 2026), Screener"
+  },
+  {
+   "company": "Medi Assist Healthcare",
+   "fingerprint": "943b1998d7182cea",
+   "checkedOn": "2026-11-25",
+   "adds": [
+    {
+     "heading": "What the H2 FY27 go-lives add (insurers running claims on its platform)",
+     "projectId": "medi-assist-healthcare-platform-rollout",
+     "bars": [
+      {
+       "name": "Insurers live on the platform",
+       "sub": "seven contracted",
+       "base": 3,
+       "add": 4,
+       "baseLabel": "3 live in H1 FY27",
+       "addLabel": "+4 due in H2 FY27",
+       "right": "about +133%"
+      }
+     ],
+     "notes": [
+      "Platform revenue ₹19.8cr in H1 FY27, up 70%; paid per claim, and add-on modules (fraud scoring, document reading, zero-wait discharge) could earn 5–10 times the base fee per claim",
+      "Funded from operating cash"
+     ]
+    }
+   ],
+   "money": {
+    "items": [
+     {
+      "name": "Platform roll-out and AI roadmap",
+      "sub": "funded from operating cash",
+      "right": "₹24.5cr spent on the AI roadmap over six quarters to June 2026",
+      "status": "ramping",
+      "projectId": "medi-assist-healthcare-platform-rollout"
+     },
+     {
+      "name": "Mayfair stake from 60% to 91.75%",
+      "sub": "31.75% bought from existing holders; growth funded from operating cash",
+      "right": "about £0.59 million",
+      "status": "started",
+      "projectId": "medi-assist-healthcare-mayfair-international"
+     }
+    ]
+   },
+   "timeline": [
+    {
+     "when": "July 2025",
+     "tone": "done",
+     "text": "Paramount TPA bought for ₹412cr"
+    },
+    {
+     "when": "Q1 FY27",
+     "tone": "done",
+     "text": "Board approves the Mayfair stake rise (24 Jun 2026); Thailand platform live from 1 July 2026"
+    },
+    {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "Mayfair at 91.75% with a new CEO; all Paramount claims on MAtrix; three of seven contracted insurers live; platform live in Laos and Cambodia"
+    },
+    {
+     "when": "H2 FY27",
+     "tone": "next",
+     "milestones": [
+      "medi-assist-healthcare-platform-rollout-m1",
+      "medi-assist-healthcare-mayfair-international-m1"
+     ]
+    }
+   ],
+   "notes": [
+    "No plants: capacity is staff, a 40,000+ hospital network and its own MAtrix claims system, which ran about 7 million claims in H1 FY27 (about 1 million a month)",
+    "Serves 4.75 crore group lives and about 31 crore government-scheme members; headcount is 800-plus lower than at the Paramount deal",
+    "₹56cr of capex in FY26 (Screener), mostly in-house software; big cash uses are acquisitions and a ₹49.3cr buyback",
+    "Mayfair: revenue ₹41.1cr in FY26, annualised book up 17%; travel tie-ups cover about 50% of Indian travel premiums; management expects margin expansion and a bigger book in H2 FY27"
+   ],
+   "source": "Q1 FY27 call (Aug 2026), Q2 FY27 call and presentation (Nov 2026), June 2026 Mayfair filing, FY26 annual report, Screener"
+  },
+  {
+   "company": "Sahajanand Medical Technologies",
+   "fingerprint": "4404c719ac04727f",
+   "checkedOn": "2026-11-25",
+   "lines": {
+    "heading": "How full each line is (H1 FY27)",
+    "items": [
+     {
+      "name": "Stents, Surat",
+      "size": "Plant split not given; company-wide 960,000 stents a year (June 2026)",
+      "usedPct": 79
+     },
+     {
+      "name": "Stents, Telangana",
+      "size": "Plant split not given",
+      "usedPct": 20
+     },
+     {
+      "name": "Balloons, Surat",
+      "size": "Plant split not given; company-wide 1,260,000 catheters a year (June 2026)",
+      "usedPct": 72,
+      "note": "97% a year earlier; stock made earlier was sold first"
+     },
+     {
+      "name": "Balloons, Telangana",
+      "size": "Plant split not given",
+      "usedPct": 57
+     },
+     {
+      "name": "Drug-coated balloons, Surat",
+      "size": "New line; company-wide 56,000 a year (June 2026)",
+      "usedPct": 40
+     },
+     {
+      "name": "TAVI valves",
+      "size": "3,000 a year of commercial capacity (presentation, as read by an analyst); 9,600 installed (prospectus)",
+      "usedPct": 60,
+      "usedLabel": "about 60% used",
+      "note": "The CFO said the prospectus figure includes Hyderabad sterilisation capacity that is technical, not yet commercial"
+     }
+    ]
+   },
+   "money": {
+    "heading": "Money",
+    "items": [
+     {
+      "name": "Vertical integration and automation (FY27)",
+      "sub": "Nitinol, extrusion, braiding and lamination at Hyderabad, automation, Sachin upkeep and small line additions; ₹41cr in the opening remarks; about ₹70cr again in FY28; ₹8.67cr government grant on reimbursement",
+      "total": 70,
+      "spent": 44,
+      "right": "about ₹44cr of ₹70cr in H1 FY27",
+      "status": "building",
+      "projectId": "sahajanand-medical-technologies-vertical-integration"
+     },
+     {
+      "name": "Hyderabad plant ramp-up",
+      "sub": "Stents, catheters, TAVI and occluders; 12,348 sq m, about 33% of the site area in use",
+      "right": "cost not disclosed",
+      "status": "ramping",
+      "projectId": "sahajanand-medical-technologies-hyderabad-ramp"
+     }
+    ]
+   },
+   "timeline": [
+    {
+     "when": "Q3 FY23",
+     "tone": "done",
+     "text": "Hyderabad plant starts operating (October 2022, CRISIL)"
+    },
+    {
+     "when": "H1 FY27",
+     "tone": "done",
+     "text": "About ₹44cr of capex spent; Telangana stents at 20%, balloons at 57%"
+    },
+    {
+     "when": "Q3 FY27",
+     "tone": "next",
+     "milestones": [
+      "sahajanand-medical-technologies-hyderabad-ramp-m1"
+     ]
+    },
+    {
+     "when": "Q4 FY27",
+     "tone": "next",
+     "milestones": [
+      "sahajanand-medical-technologies-vertical-integration-m1"
+     ]
+    },
+    {
+     "when": "Q4 FY28",
+     "tone": "later",
+     "milestones": [
+      "sahajanand-medical-technologies-vertical-integration-m2"
+     ]
+    },
+    {
+     "when": "From about mid-2028",
+     "tone": "later",
+     "text": "New capacity needed: today's is enough for at least a year and a half from November 2026",
+     "sub": "Line additions to come within the ₹70cr a year"
+    }
+   ],
+   "notes": [
+    "Three plants: Surat (Sachin SEZ, 6,888 sq m, the older site), Hyderabad and Nonthaburi, Thailand (TAVI, through Vascular Innovations)",
+    "Installed capacity at June 2026 (prospectus): 960,000 stents, 1,260,000 catheters, 56,000 drug-coated balloons, 9,600 TAVI devices and 42,000 occluders a year",
+    "FY26 utilisation (prospectus): stents 78.3%, catheters 91.7%, drug-coated balloons 1.8%, TAVI 19.8%, occluders 34.7%",
+    "No peak-revenue figure yet: more TAVI output at Hyderabad would earn far more per unit than more stents; raising TAVI or occluder capacity is not capex-heavy",
+    "Gross fixed-asset turn was about 7x before the Telangana plant and 3.41x in FY26 (prospectus)",
+    "Components made in-house at Hyderabad are in validation; EU notified bodies must then approve Hyderabad as a source. Management will not yet quantify the gross-margin gain",
+    "Capex not above ₹70cr a year for two to three years; FY26 capex ₹98cr and capital work in progress ₹15cr at September 2026 (Screener)",
+    "The October 2026 IPO raised no money for the company (all offer for sale)"
+   ],
+   "source": "Q2 FY27 call (5 Nov 2026), red herring prospectus (9 Oct 2026), CRISIL rationale (3 Nov 2026), Screener"
   }
  ]
 }

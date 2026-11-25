@@ -1026,6 +1026,130 @@ export const healthProductsCharts: Record<string, ProfileCharts> = {
             "inventory5y": -10,
             "payables5y": -1
         }
+    },
+    "Sahajanand Medical Technologies": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 24
+                },
+                {
+                    "label": "Staff",
+                    "share": 29
+                },
+                {
+                    "label": "Other costs",
+                    "share": 33
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 14
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Stainless-steel tubes price",
+            "periods": [
+                "Q2 FY26",
+                "Q1 FY27",
+                "Q2 FY27"
+            ],
+            "margin": [
+                16.1,
+                13.9,
+                17.7
+            ],
+            "index": [
+                100,
+                107,
+                null
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY21",
+                "FY22",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                49.0,
+                48.0,
+                110.0,
+                129.0,
+                171.0
+            ],
+            "ocf": [
+                46.0,
+                17.0,
+                41.0,
+                74.0,
+                105.0
+            ],
+            "fcf": [
+                15.0,
+                -78.0,
+                -1.0,
+                25.0,
+                7.0
+            ],
+            "note": "Screener has no FY23 figures for this company, which listed in October 2026."
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "75.1x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "27.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹172cr",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "56%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "14%"
+            }
+        ],
+        "statsAsOf": "25 Nov 2026",
+        "workingCapital": {
+            "fromYear": "FY21",
+            "toYear": "FY26",
+            "debtorDays": [
+                158,
+                86
+            ],
+            "inventoryDays": [
+                329,
+                384
+            ],
+            "payableDays": [
+                252,
+                137
+            ],
+            "cycleDays": [
+                235,
+                333
+            ],
+            "absorbed5y": -240,
+            "receivables5y": -128,
+            "inventory5y": -133,
+            "payables5y": 23
+        }
     }
 };
 
@@ -1072,5 +1196,11 @@ export const healthProductsValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 50.0,
         "mcapAtWriting": 2131.0,
         "peAtWriting": 63.7
+    },
+    "Sahajanand Medical Technologies": {
+        "netDebt": 172,
+        "ttmEbitda": 206.0,
+        "mcapAtWriting": 5390.0,
+        "peAtWriting": 75.1
     }
 };

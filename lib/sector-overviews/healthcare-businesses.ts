@@ -16,7 +16,7 @@ const intro: OverviewSection[] = [
     {
         heading: 'The businesses, in plain words',
         body: [
-            "Six healthcare companies that are neither hospitals, drug makers, diagnostic chains nor pharmacies, in three groups. (The six diagnostic chains are in the Healthcare Diagnostic note; GPT Healthcare is now in the Hospitals note and Sastasundar in the Retail note.)",
+            "Seven healthcare companies that are neither hospitals, drug makers, diagnostic chains nor pharmacies, in four groups. (The six diagnostic chains are in the Healthcare Diagnostic note; GPT Healthcare is now in the Hospitals note and Sastasundar in the Retail note.)",
         ],
         points: [
             {
@@ -31,10 +31,14 @@ const intro: OverviewSection[] = [
                 label: 'Dialysis clinics',
                 text: "NephroPlus runs dialysis clinics in five countries, most of them inside private and government hospitals. **Filling clinics decides the margin**; payers set the price of a session, and governments take three to four months to pay.",
             },
+            {
+                label: 'Health-insurance administration',
+                text: "Medi Assist, added in November 2026, runs claims for health insurers, employers and government schemes as a licensed third-party administrator, and licenses its claims software to insurers. **It is paid a small share of each rupee of premium it handles**, so its growth follows group health premiums, how many clients it keeps and the fee insurers allow.",
+            },
         ],
     },
     {
-        heading: 'Three ways of earning',
+        heading: 'Four ways of earning',
         body: [
             "How each business earns decides what its margin means and how quickly profit turns into cash.",
         ],
@@ -45,6 +49,7 @@ const intro: OverviewSection[] = [
                     ['**A tender or rate-contract price**', 'Molbio, 3B BlackBio (partly), NephroPlus (government clinics)', 'A price fixed by a state or central buyer for years, with small escalators', 'Governments take three to four months or more; receivables are the main risk'],
                     ['**Project, staff or output fees from drug companies**', 'Syngene, Vimta, Indegene', 'Per scientist, per study, per batch or per result delivered', 'Clients pay in roughly 50–100 days; Syngene collects advances early in the year'],
                     ['**A charge per treatment**', 'NephroPlus', 'Per dialysis session, at a price set by the payer', 'Patients and insurers pay quickly; government schemes take three to four months'],
+                    ['**A fee on the premium administered**', 'Medi Assist', 'About 2.7% of each policy’s premium, booked day by day over the policy year; per-claim fees on its software', 'Fees often come in advance; insurers and employers pay in 100–120 days, governments later'],
                 ],
             },
         ],
@@ -106,6 +111,37 @@ const profiles: BusinessProfile[] = [
         money: "Screener shows **₹62cr of net cash**; borrowings are about ₹3cr and it has not used its bank limits. Capex was about ₹100cr in FY26; FY27 capex is about ₹80cr on the company's figure (CARE says about ₹60cr), and almost all operating cash is reinvested. Working capital is heavy, with 95 debtor days in FY26. It pays out only 7–12% of profit. Promoters hold **35.7%**, down from 37.0% in September 2023; Eurofins holds 19.72%.",
         watch: ["Two quarters of 15%+ growth (Q2 FY27 was about 10%).", "More biologics clients beyond the first order; management hoped to add a couple in Q3.", "Food-testing samples recovering after the Middle East disruption."],
         charts: healthcareCharts['Vimta Labs'],
+    },
+    {
+        company: 'Medi Assist Healthcare',
+        segment: 'Health-insurance administration',
+        inShort: ["**India's largest health-insurance claims administrator (TPA)**: it issues health cards, approves cashless hospital stays and settles claims for insurers and employers, taking a fee of about 2.7% of the premium. It handles about a third of India's group health premiums.", "**Good:** no debt, ₹268cr of cash, fees paid in advance, a ₹49.3cr buyback and a policy to return about half its free cash. **Bad:** like-for-like revenue grew only 3.9% in Q2 FY27 and group revenue about 4% once Paramount is in both years; retention fell to 90.5% and its recovery date moved out to mid-FY28; one customer is 37% of revenue; fees per rupee of premium keep falling; the state insurers have set up their own administrator; an Enforcement Directorate search at its Ranchi office is unresolved; and IRDAI is consulting on cost caps for insurers.", "**Verdict: follow.** I expect about 12% a year of earnings growth against the {need:Medi Assist Healthcare|12}% the price needs ({label:Medi Assist Healthcare|fits}), but the reported P/E is flattered by a one-off tax credit and growth has stalled. I would buy once revenue growth is back near 10% with a margin of 21% or more."],
+        tagline: "A health-insurance third-party administrator that runs claims, hospital networks and fraud checks for insurers, employers and government schemes, and licenses its claims software to insurers in India and South-East Asia.",
+        revenue: '₹905cr (FY26, consolidated)',
+        products: [
+            { name: 'India TPA: group', text: "Claims service for employer health policies: cashless admissions, reimbursements, hospital network and fraud checks for 4.75 crore lives at 11,000+ companies. Group was ₹334.7cr in H1 FY27, **70% of revenue**, up 13.7% (about 4% in Q2 on a like-for-like base)." },
+            { name: 'India TPA: government and retail', text: "Runs Ayushman Bharat and state health schemes for about 31 crore members in 14 states and 4 union territories (₹57.3cr in H1, 12%), and claims for individual retail policies where it is named on the policy (₹45.5cr, about 10%, down 1.8%)." },
+            { name: 'Platform and HBA (technology)', text: "Insurers run their own claims teams on its MAtrix software and AI modules (fraud scoring, document reading, zero-wait discharge), paid per claim. ₹19.8cr in H1, 4% of revenue, up 70%; seven insurers contracted, three live and four due in H2 FY27. It also runs the NPS Swasthya pension-health scheme for PFRDA." },
+            { name: 'International (Mayfair We Care, 91.75%)', text: "A UK-based administrator of travel, expat, marine and student medical cover in 185 countries: ₹20.7cr in H1, 4% of revenue, up 1.1%. Its platform went live in Thailand in July 2026, then Laos and Cambodia." },
+        ],
+        revenueText: "**India TPA was 91.5% of H1 FY27 revenue** (group 70%, government 12%, retail about 10%), the technology platform 4.2% and international 4.3%. Fees are mostly a fixed share of the premium administered, about **2.7% blended**, down from 2.98% in FY23. Revenue is booked day by day over each policy year, so clients won or lost show up over the following year. **One customer gave 37.2% of FY26 revenue** and another 9.3%; the top five gave 64.8%. The company does not name them.",
+        mixes: [
+            { caption: 'Revenue by business, H1 FY27 (company call)', parts: [{ label: 'Group TPA', share: 70 }, { label: 'Government schemes', share: 12 }, { label: 'Retail TPA', share: 10 }, { label: 'Platform (software)', share: 4 }, { label: 'International', share: 4 }] },
+        ],
+        shares: [
+            { title: "Its share of India's health-insurance premiums, H1 FY27", source: 'Company presentation, Q2 FY27', groups: [{ rows: [{ name: 'Group policies', share: 34 }, { name: 'Retail, as named TPA', share: 4 }, { name: 'Retail, TPA plus its platform', share: 34 }] }] },
+        ],
+        customers: ["**Health insurers**, public and private, who pay its fee: it works with all major insurers, and 19 of 32 use only Medi Assist as their TPA (CARE, November 2025). One unnamed customer is 37% of revenue; CARE notes its heavy reliance on the four state-owned insurers.", "**Employers** (11,000+ companies in 25+ sectors) who choose it for their staff policies: under IRDAI rules an employer can ask its insurer for its preferred TPA, which keeps the relationship with Medi Assist.", "**Central and state governments** for Ayushman Bharat and state schemes, and PFRDA for NPS Swasthya; **foreign insurers and Indian travel insurers** through Mayfair."],
+        difficulty: { level: 'Medium', text: "A TPA needs an IRDAI licence, doctors and claims staff, a hospital network with agreed tariffs and reliable software that handles about a million claims a month. Scale and data help, but CARE counts 16 licensed TPAs offering largely similar services, and big insurers can do the work in-house." },
+        moat: "Scale, a 40,000+ hospital network and 93–94% retention in normal years make it the default choice for large employers, and its software lets it earn even from insurers that keep claims in-house. The weakness is that insurers set its fee, which keeps falling, and the state insurers' own TPA (HITPA) could take work from it.",
+        salesDrivers: ["**Group health premiums**: same-store growth on retained clients of 8–9% a year (lives, medical inflation, wider benefits), plus new clients; group premiums it handles grew 21.8% in H1 against 15.3% for the industry.", "**Retention**: 90.5% in H1 after churn in the acquired Paramount book and a cyber incident there; management now expects 93–94% within three to four quarters (the August call had said through FY27). About 75–80% of lost premium was replaced.", "**Fee rates**: the blended fee of about 2.7% of premium has fallen for years; IRDAI's September 2026 proposal to cap insurers' running costs could push it lower or, as management argues, send insurers more outsourced work.", "**Technology and international**: platform fees grow with claims (about 7 million in H1) and four insurers go live in H2 FY27; add-on modules could earn 5–10 times the base fee per claim. Mayfair's annualised book is up 17%.", "**Government schemes**: opportunistic, margin-accretive, paid by states."],
+        inputs: "**People and software.** There are no materials. Staff were 44% of sales in FY26 and other costs 37% (sub-contracting ₹91.6cr, advertising ₹52.3cr, software and legal fees). It capitalises some in-house software development; capex was ₹56cr in FY26.",
+        costEffect: "**Insulated from materials; driven by staff and claims volume.** Costs move with headcount, pay rises and how much of the claims work its software automates. **Rule of thumb:** a 10% rise in staff costs not recovered would cut the margin by about 4 points (19% to 15%). **What happened:** there is no input price index to chart. The operating margin was 21% in FY24 and FY25, fell to 17% in Q2 FY26 when lower-margin Paramount was added, and recovered to 20% by Q2 FY27 (Screener) as all Paramount claims moved onto its own system and headcount fell by 800-plus. Management says the core business can make 22–23% but gives no date.",
+        competitors: [{ name: 'Health Insurance TPA of India (HITPA)', note: 'Owned by the four state-owned general insurers; still smaller and mostly retail, but a strategic risk given Medi Assist depends on them.' }, { name: 'Insurers’ in-house claims teams', note: 'Star Health and other large private insurers settle most retail claims themselves; Medi Assist now sells them software instead (MAtrix is live at Star Health and SBI General).' }, { name: 'Other licensed TPAs', note: 'About 15 others; the acquired TPAs ran at best 82–83% client retention against its 93–94%.' }],
+        position: "**India's largest health-benefits administrator**: 34.1% of group health premiums in H1 FY27 (up 1.8 points), and about a third of all health premiums pass through its TPA or platform.",
+        money: "Screener shows **₹190cr of net cash** (its ₹54cr of borrowings are leases); the company reports zero debt and ₹268.3cr of cash in September 2026, after repaying the ₹150cr bridge loan for Paramount (bought for ₹412cr in July 2025). It raised **₹198cr in a preferential issue** in October 2025. It pays a ₹2 dividend and is buying back up to ₹49.3cr of shares at ₹425, under a policy of returning about half its free cash over five years. Open items: an Enforcement Directorate search (April 2025) at its Ranchi office over a Jharkhand scheme, flagged by the auditor with no outcome yet; ₹4.83cr paid under protest after a GST search; about ₹64cr of contingent tax claims. Promoters hold **4.61%**, down from 38.91% in March 2024 after Bessemer sold out; Dr Chhatwal's stake is unchanged.",
+        watch: ["Group retention back to 93–94% and revenue growth catching up with premium growth.", "Margin back toward 22% (20.4% in Q2 FY27).", "IRDAI's final cost rules for insurers, and the four platform go-lives in H2 FY27."],
+        charts: healthcareCharts['Medi Assist Healthcare'],
     },
     {
         company: '3B Blackbio Diagnostics',

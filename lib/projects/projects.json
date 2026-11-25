@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-25",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -16591,6 +16591,56 @@
    "source": "Q2 FY27 call (3 Nov 2026, BSE transcript)",
    "updatedOn": "2026-11-25",
    "capacityAdd": "+3,000 t of chemicals a year"
+  },
+  {
+   "id": "medi-assist-healthcare-platform-rollout",
+   "company": "Medi Assist Healthcare",
+   "sector": "Healthcare",
+   "name": "Claims platform roll-out to insurers",
+   "what": "Insurers license its MAtrix claims system and AI modules (fraud scoring, document reading, zero-wait discharge) to run claims with their own teams; seven insurers contracted, three live in H1 FY27, four to go live in H2 FY27",
+   "cost": "Funded from operating cash; ₹24.5cr spent on the AI roadmap over six quarters to June 2026",
+   "expectedStart": "H2 FY27 for the four remaining insurers",
+   "adds": "Per-claim fees; add-on modules could earn 5–10 times the base fee per claim; platform revenue ₹19.8cr in H1 FY27, up 70%",
+   "status": "ramping",
+   "source": "Q2 FY27 call and press release (Nov 2026); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-25"
+  },
+  {
+   "id": "medi-assist-healthcare-mayfair-international",
+   "company": "Medi Assist Healthcare",
+   "sector": "Healthcare",
+   "name": "Mayfair international build-out",
+   "what": "Stake in Mayfair We Care (UK) raised from 60% to 91.75% after Q1 FY27, with a new CEO; its platform went live in Thailand on 1 July 2026, then Laos and Cambodia; travel tie-ups with Indian insurers cover about 50% of Indian travel premiums",
+   "cost": "About £0.59 million for the 31.75% stake; further growth funded from operating cash",
+   "expectedStart": "Stake purchase completed after Q1 FY27 (board approval 24 Jun 2026)",
+   "adds": "Mayfair revenue ₹41.1cr in FY26; annualised book up 17%; management expects margin expansion and a bigger book in H2 FY27",
+   "status": "started",
+   "source": "June 2026 filing; Q1 FY27 call (Aug 2026); Q2 FY27 call and presentation (Nov 2026)",
+   "updatedOn": "2026-11-25"
+  },
+  {
+   "id": "sahajanand-medical-technologies-vertical-integration",
+   "company": "Sahajanand Medical Technologies",
+   "sector": "Health Products",
+   "name": "Vertical integration and automation programme (FY27–FY28)",
+   "what": "Bringing outsourced processes in-house at Hyderabad (nitinol processing, polymer extrusion, braiding and lamination; prototypes of TAVI nitinol frames, delivery-system parts, catheter tubing and stent components are in validation, after which EU notified bodies must approve Hyderabad as a source), plus automation, upkeep of the older Sachin (Surat) plant and small stent and balloon line additions",
+   "cost": "About ₹70cr a year in FY27 and FY28 (about ₹44cr spent in H1 FY27; ₹41cr in the opening remarks); ₹8.67cr government grant (MISRID) on reimbursement",
+   "adds": "A better gross margin that management will not yet quantify; the MD says the spend creates capabilities rather than extra revenue",
+   "status": "building",
+   "source": "Q2 FY27 call (5 Nov 2026); red herring prospectus (9 Oct 2026) pp. 260, 270",
+   "updatedOn": "2026-11-25"
+  },
+  {
+   "id": "sahajanand-medical-technologies-hyderabad-ramp",
+   "company": "Sahajanand Medical Technologies",
+   "sector": "Health Products",
+   "name": "Hyderabad (Telangana) plant ramp-up",
+   "what": "The second Indian plant, run by subsidiary SMT Cardiovascular and licensed for stents, catheters, TAVI valves and occluders (12,348 sq m; about 33% of the site area in use). In H1 FY27 its stent lines ran at 20% and balloon lines at 57%",
+   "expectedStart": "Q3 FY23",
+   "adds": "No peak-revenue figure yet (management may give one by the next call); more TAVI output there would earn far more per unit than more stents. Present capacity is enough for at least a year and a half (November 2026)",
+   "status": "ramping",
+   "source": "Q2 FY27 call (5 Nov 2026); red herring prospectus (9 Oct 2026); CRISIL (3 Nov 2026): operating since October 2022",
+   "updatedOn": "2026-11-25"
   }
  ]
 }

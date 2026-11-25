@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -42647,6 +42647,120 @@
    "createdOn": "2026-11-25",
    "status": "pending",
    "project": "artemis-medicare-tower-iv"
+  },
+  {
+   "id": "medi-assist-healthcare-platform-rollout-m1",
+   "company": "Medi Assist Healthcare",
+   "sector": "Healthcare",
+   "text": "The four remaining contracted insurers live on the claims platform in H2 FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-25",
+   "status": "pending",
+   "project": "medi-assist-healthcare-platform-rollout"
+  },
+  {
+   "id": "medi-assist-healthcare-mayfair-international-m1",
+   "company": "Medi Assist Healthcare",
+   "sector": "Healthcare",
+   "text": "International revenue growth picking up in H2 FY27 as the bigger book is billed (H1 FY27: +1.1%)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-25",
+   "status": "pending",
+   "project": "medi-assist-healthcare-mayfair-international"
+  },
+  {
+   "id": "medi-assist-healthcare-q4fy27-1",
+   "company": "Medi Assist Healthcare",
+   "sector": "Healthcare",
+   "text": "Operating margin back to about 22%, the pre-Paramount level, by Q4 FY27 as the August call aimed; the November call gave no date (Q2 FY27: 20.4%)",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 22,
+   "due": "Q4 FY27",
+   "ifMet": "Candidate for own if revenue growth has also recovered",
+   "ifMissed": "Stays follow",
+   "createdOn": "2026-11-25",
+   "status": "pending"
+  },
+  {
+   "id": "medi-assist-healthcare-q2fy28-1",
+   "company": "Medi Assist Healthcare",
+   "sector": "Healthcare",
+   "text": "Group retention back to 93–94% within three to four quarters, with revenue growth catching up with premium growth (H1 FY27: retention 90.5%; Q2 revenue +3.9% against H1 TPA premiums +18.8%)",
+   "due": "Q2 FY28",
+   "ifMet": "Buy",
+   "ifMissed": "Drop to wait",
+   "createdOn": "2026-11-25",
+   "status": "pending"
+  },
+  {
+   "id": "sahajanand-medical-technologies-q4fy27-1",
+   "company": "Sahajanand Medical Technologies",
+   "sector": "Health Products",
+   "text": "FY27 operating margin of at least 15.6%, the bottom of the 150–200 bp rise guided on the Q2 FY27 call from 14.1% in FY26 (H1 FY27: 15.7%; target about 20% by FY29)",
+   "metric": "fyEbitdaMargin",
+   "op": ">=",
+   "target": 15.6,
+   "due": "Q4 FY27",
+   "ifMet": "On course for the 20% margin plan; supports my 25% growth estimate",
+   "ifMissed": "Operating leverage weaker than promised; my 25% estimate is at risk",
+   "createdOn": "2026-11-25",
+   "status": "pending"
+  },
+  {
+   "id": "sahajanand-medical-technologies-q4fy27-2",
+   "company": "Sahajanand Medical Technologies",
+   "sector": "Health Products",
+   "text": "FY27 revenue growth of at least 15%, the mid-teens constant-currency baseline guided on the Q2 FY27 call (reported growth includes currency: H1 FY27 was 24.9% reported, about 15% at constant currency)",
+   "metric": "fyRevenueGrowth",
+   "op": ">=",
+   "target": 15,
+   "due": "Q4 FY27",
+   "ifMet": "Guidance kept in its first year as a listed company",
+   "ifMissed": "Growth slowing even with the rupee's help; the follow call would need review",
+   "createdOn": "2026-11-25",
+   "status": "pending"
+  },
+  {
+   "id": "sahajanand-medical-technologies-q4fy27-3",
+   "company": "Sahajanand Medical Technologies",
+   "sector": "Health Products",
+   "text": "Next-generation Hydra TAVI (Hydra Elevate valve with the AVDC 1.5 delivery system) launched within FY27: 'as early as Q3, though hopefully no later than Q4' (Q2 FY27 call)",
+   "due": "Q4 FY27",
+   "ifMet": "Gives structural heart a better product to win share beyond about 1.5% of Europe",
+   "ifMissed": "Valve growth leans on the older device; a sign of slipping launches",
+   "createdOn": "2026-11-25",
+   "status": "pending"
+  },
+  {
+   "id": "sahajanand-medical-technologies-vertical-integration-m1",
+   "company": "Sahajanand Medical Technologies",
+   "sector": "Health Products",
+   "text": "About ₹70cr of capex spent in FY27 (about ₹44cr in H1)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-25",
+   "status": "pending",
+   "project": "sahajanand-medical-technologies-vertical-integration"
+  },
+  {
+   "id": "sahajanand-medical-technologies-vertical-integration-m2",
+   "company": "Sahajanand Medical Technologies",
+   "sector": "Health Products",
+   "text": "About ₹70cr of capex in FY28, with capex not above ₹70cr a year",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-25",
+   "status": "pending",
+   "project": "sahajanand-medical-technologies-vertical-integration"
+  },
+  {
+   "id": "sahajanand-medical-technologies-hyderabad-ramp-m1",
+   "company": "Sahajanand Medical Technologies",
+   "sector": "Health Products",
+   "text": "Management gives a peak-revenue figure for its existing plants, which it said it may try to do by the next call",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-25",
+   "status": "pending",
+   "project": "sahajanand-medical-technologies-hyderabad-ramp"
   }
  ]
 }
