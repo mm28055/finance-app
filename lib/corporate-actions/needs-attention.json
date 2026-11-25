@@ -10331,5 +10331,82 @@
     "subject": "Checkpoint met: madhya-bharat-agro-products-q2fy27-1",
     "why": "Quarterly sales growth catching up with the 50%-plus FY27 expectation (Q1 was flat) — actual 58.9% (met).  Weigh it in the call and write the outcome on the checkpoint.",
     "addedOn": "2026-11-24"
+  },
+  {
+    "company": "Wheels India",
+    "sector": "Auto Related",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-11-25"
+  },
+  {
+    "company": "Centum Electronics",
+    "sector": "EMS & Electronics",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from stretched to fits since the note. Revisit the call.",
+    "addedOn": "2026-11-25"
+  },
+  {
+    "company": "Galaxy Surfactants",
+    "sector": "Chemicals",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-11-25"
+  },
+  {
+    "company": "Genus Power",
+    "sector": "Electrical Equipment",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-25"
+  },
+  {
+    "company": "John Cockerill",
+    "sector": "Industrials",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-25"
+  },
+  {
+    "company": "ICE Make Refrig.",
+    "sector": "Industrials",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-25"
+  },
+  {
+    "company": "Stallion India Fluor",
+    "sector": "Chemicals",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-25"
+  },
+  {
+    "company": "Medi Assist Healthcare",
+    "sector": "Healthcare",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-25"
+  },
+  {
+    "company": "Sahajanand Medical Technologies",
+    "sector": "Health Products",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-25"
+  },
+  {
+    "company": "Genus Power",
+    "sector": "Electrical Equipment",
+    "subject": "Checkpoint met: genus-power-q2fy27-1",
+    "why": "Q2 FY27 operating margin of 18% or better (the cut FY27 guide) — actual 19.8% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-25"
+  },
+  {
+    "company": "Genus Power",
+    "sector": "Electrical Equipment",
+    "subject": "Checkpoint partly: genus-power-q2fy27-2",
+    "why": "New metering awards refill the order book above June's ₹24,020cr — actual ₹22,634cr (partly).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-25"
   }
 ]

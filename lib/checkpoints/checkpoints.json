@@ -9479,7 +9479,10 @@
    "target": 18,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "19.8%",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "auto"
   },
   {
    "id": "genus-power-q2fy27-2",
@@ -9491,7 +9494,10 @@
    "target": 24020,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹22,634cr",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "auto"
   },
   {
    "id": "genus-power-q4fy27-1",
