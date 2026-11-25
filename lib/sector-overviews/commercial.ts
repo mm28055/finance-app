@@ -672,7 +672,7 @@ export const commercialServices: SectorOverview = {
         {
             company: 'TeamLease Services', rank: 4, stance: 'HARVEST', segment: PEOPLE,
             what: "Employs about 3.4 lakh people on its payroll for clients, with IT staffing for GCCs, degree apprenticeships and education and compliance services.",
-            view: "**Cheap and cash-rich, but its target is gone.** It holds about ₹350cr of net cash after a ₹238cr buyback and collects in six days. But group EBITDA rose 3% in Q1 against an ‘over 20%’ promise the new CEO has abandoned, mark-ups are lower than in FY18, and PF claims of ₹184.6cr and ₹395cr hang over it. The price needs about {need:TeamLease Services|7–8}% a year against my ~6%.",
+            view: "**Cheap and cash-rich, but its target is gone.** It holds about ₹350cr of net cash after a ₹238cr buyback and collects in six days. But group EBITDA rose 3% in Q1 against an ‘over 20%’ promise the new CEO has abandoned, mark-ups are lower than in FY18, and PF claims of ₹184.6cr and ₹395cr hang over it, plus a third EPFO demand of ₹180.65cr (10 Nov 2026) over its old PF trust's losses, which it calls untenable. The price needs about {need:TeamLease Services|7–8}% a year against my ~6%.",
             watch: 'Staffing margin rising in Q3–Q4; the two PF court cases; specialised margins back to 8–9%.',
         },
         {
@@ -685,7 +685,7 @@ export const commercialServices: SectorOverview = {
             company: 'Sanghvi Movers', rank: 6, stance: 'CYCLICAL', segment: SPECIAL,
             what: "India's largest crane-hire company, third in the world by lifting capacity, renting to wind, refinery and industrial projects, erecting wind turbines on contract and expanding into Saudi Arabia.",
             view: "**A busy fleet that eats cash.** Q1 income rose 40%, cranes are 86% used and the order book rose 19% to ₹1,253cr, with FY27 EBITDA guided at ₹525–575cr. But margins fell to 33%, Gulf clients take 201 days to pay, the Saudi pipeline was cut and ₹652cr of capex keeps free cash negative. The price needs about {need:Sanghvi Movers|12}% a year against my ~15%.",
-            watch: 'H2 crane deliveries to Saudi Arabia; Gulf collections; wind additions reaching 7.5 GW.',
+            watch: 'H2 crane deliveries to Saudi Arabia; Gulf collections; wind additions reaching 7.5 GW; the missing FY16–FY26 board records (police complaint 19 Nov 2026).',
         },
         {
             company: 'Awfis Space Solutions', rank: 7, stance: 'SCALEUP', segment: SPACE,
