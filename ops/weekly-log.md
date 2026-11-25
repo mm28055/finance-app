@@ -987,3 +987,39 @@ No entry had an analysed call, so no checkpoints were judged from this pass.
 **Waiting entries:** nothing new for HEG's electrode company listing, Ganesh Benzoplast's sale, the UPI merchant fee or the NPPA cancer-drug caps (Beta Drugs, HCG). All are left open with today's date.
 
 **Results pass:** no unreviewed entries.
+
+## 25 November 2026 (Wednesday)
+
+**Checks:** the notes check lists the same 30 problems it showed before I edited anything (companies in a sector with no verdict, such as Anawil Wire and Simca Advertising). They were already on master and are not from this run. The type check and picture check are clean. The two old branches (weekly-review/2026-09-30 and 2026-10-18) still show as unmerged only because master's history was rebuilt; their work is already in master. Everything was pushed to master in three batches.
+
+**Follow-ups handled: 10. Still open: 689** (mostly Q2 results calls, then automatically settled checkpoints, project follow-ups, call drifts and special calls). I took the two own names whose transcripts are now filed (**Caplin Point** and **CIE Automotive**), then the follow names in order that had one. **ICICI Bank, Ador Welding, Talbros and CMS Info Systems** (own) and **Sobha, Kirloskar Brothers, Engineers India, V-Guard and Shriram Pistons** (follow) still have no filed transcript, so they stay open. Anthem, Syrma and Emcure have transcripts and are next in line.
+
+**Call changed:**
+- **Kirloskar Pneumatic: follow → wait.** First-half sales fell 5% to ₹620cr, against the ₹750–800cr I had asked for. A large precision-engineering order slipped into the second half over paperwork. On the 27 Oct call management called its 20% sales aim "a little bit challenging" and now promises only "strong double-digit" growth. The note had said a cut to the guide would move it to wait. The order book did grow 10% to ₹2,040cr, the company holds ₹514cr of cash and the 18–20% margin aim stands. A strong second half would bring it back to follow. Powerica now ranks first in the note.
+
+**New results calls (transcripts read):**
+- **Caplin Point** (stays own). Revenue +18%, margin 35%, profit +14%. Its own US label sold more in the half than in all of FY26. Two problems: the US growth target is now 20–25% (was 25–30%) while two old lines are upgraded, and half-year operating cash fell to ₹205cr because ₹185cr went into stock and receivables. The debtor checkpoint was missed. The new injectable block is now six lines, due about August 2027.
+- **CIE Automotive** (stays own). This was the test the note set, and it passed: India grew 18% in July–September, in line with its market. The Indian margin slipped to 16.3% on energy costs. The US casting order finally started in mid-October, about six months late (milestone missed; a ramp-up milestone for mid-2027 is added). Management is giving up on acquisitions and will spend about 8% of sales on capex instead.
+- **Artemis** (stays follow). Revenue +13%. Gurugram earned a record 23.8% margin at 68% occupancy (checkpoint partly met). Raipur lost ₹9cr in its first quarter, as budgeted, with break-even now put at 12–15 months. Tower IV (220–250 beds) is due in H2 FY28, and acquisitions plus the share sale are expected around January–February 2027.
+- **Shree Pushkar** (stays follow). Its best quarter: revenue +58%, profit +96%, helped by Chinese shortages of dye intermediates that the chairman calls temporary. He now talks of about ₹2,000cr of revenue in FY28 (was ₹1,700–1,750cr), but FY27 is put at ₹1,250–1,300cr without Unit 6. Unit 6 trials have slipped again, to about December. Borrowings rose to ₹232cr. A new ₹70cr plant will be part-funded by ₹45cr of warrants to the chairman. I added it as a project but gave it no milestone, because four checkpoints are already pending.
+- **Shaily** (stays follow). A record quarter: revenue +24%, healthcare +78% (now 55% of sales) and 10.4 million devices. But the second new pen line was only starting qualification (three checkpoints missed). The first contract with an original drug maker is now hoped for by the end of 2027 (missed).
+- **Mold-Tek** (stays follow, closer to own). Volume came back: +10.1%, with ₹46.5 of operating profit a kilo (checkpoint met) and profit up about 40%. Management now hopes for ₹250cr of FY27 operating profit and twice FY26's operating cash, and cut capex to ₹75–80cr. If H2 volume and the cash follow, it becomes an own.
+- **GNFC** (stays follow). Revenue +41%, but operating profit halved from Q1 to ₹197cr. The causes were weaker chemical prices, dearer coal and a wage provision (about ₹75cr of one-offs). The coal plant has supplied steam since July (checkpoint met). The ₹21,370cr telecom demand was not discussed, so that checkpoint stays open.
+- **Intellect** (stays follow). Total income was ₹878cr against the ₹900cr I wanted (missed). Customers paid faster, at 111 days (met). Cash is ₹1,216cr, and the FY28 ₹4,000cr target was repeated. Profit is still flat.
+- **Seshaasai** (stays follow). Card revenue is growing again (payments +22%) and profit rose 21%. The gross margin is still 3.3 points lower than a year ago. This company has only a Tab 2 card, so only the card was updated.
+- Projects, capacity and pictures were updated for Caplin, CIE, Kirloskar Pneumatic, Artemis, Shree Pushkar, Shaily, Mold-Tek and GNFC.
+
+**Filings pass, 22–24 November** (notes corrected):
+- **Marksans (own):** a US FDA inspection of the Verna plant in Goa (12–20 Nov) ended with a Form 483 listing six observations. The company says they are procedural. Added to the view and watch list. It stays own unless the FDA escalates.
+- **Gland Pharma (own):** the FDA closed the inspection of its Vizag cancer-drug plant as "No Action Indicated", the cleanest result. Card updated.
+- **Oswal Pumps (pass):** ICRA cut the rating to A (Negative) from A+ on 23 Nov, citing receivables. Card and note corrected.
+- **TeamLease (follow):** a third EPFO demand, of ₹180.65cr, over losses at its old PF trust. The company calls it untenable. Card and view updated.
+- **Sanghvi Movers (follow):** board minutes and statutory registers for FY16–FY26 went missing after an office renovation, and a police complaint was filed. This is a governance watch item. It is added to the watch lists, and the call is unchanged.
+- **TBO Tek (wait):** CFO Vikas Jain resigned; his last day is 31 Jan 2027. The management record is updated.
+- **Logged only:** large orders at RMC Switchgears (₹522cr, about 1.7 times sales), Sterling and Wilson (over ₹2,050cr), Dilip Buildcon, Titagarh and Arkade. Brigade's ₹1,600cr launch weekend and Secunderabad plot, and Max Estates' sold-out Bungalows phase. Clean Max's Gujarat SPV stake sale. Shadowfax's WeFast purchase and Rashi's sale of 26% of its chip arm. Alembic's bosutinib approval and Juniper Green's CRISIL upgrade. Jupiter Wagons' Woojin JV and Apollo Micro's IEC offer. GST searches at IG Petrochem (₹8cr paid), Waterways and Turtlemint. Related-party ballots at Clean Max and Molbio, PW's new university, and small holder and promoter trades.
+
+**News pass, 22–24 November:** 3 entries had a clear reason, and none was very important (Ratnaveer's copper supply deals, Solarworld's Assam project, Sterlite's AI-stock sell-off). No note changed.
+
+**Waiting entries:** nothing new for HEG's electrode company listing, Ganesh Benzoplast's sale, the UPI merchant fee or the NPPA cancer-drug caps. All are left open with today's date.
+
+**Results pass:** no unreviewed entries.
