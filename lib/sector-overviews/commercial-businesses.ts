@@ -537,7 +537,7 @@ const profiles: BusinessProfile[] = [
         "segment": "Specialist services — distribution, cash logistics, e-auctions, crane hire",
         "inShort": [
             "**Makes and personalises bank cards, cheque books and secure documents for Indian banks and insurers**, and a growing line of RFID tags and SIM cards, from 24 plants; it says it had 31.9% of India's debit and credit card issuance in FY25.",
-            "**Good:** a 26% operating margin, about ₹332cr of net cash after its 2025 IPO, about 19 times earnings, and IoT revenue up 145% in Q1 FY27. **Bad:** card revenue fell from ₹1,052cr in FY24 to ₹720cr in FY26 and total revenue fell 1.5% in FY26; the cash cycle doubled from 64 to 127 days in two years; one customer is about 15% of sales and ten are 63%; and the founders own 82%, leaving little free float.",
+            "**Good:** a 26% operating margin, about ₹332cr of net cash after its 2025 IPO, about 16 times earnings, IoT revenue up 145% in Q1 FY27, and card revenue growing again in Q2 FY27 (payments +22%, profit +21%). **Bad:** card revenue fell from ₹1,052cr in FY24 to ₹720cr in FY26 and total revenue fell 1.5% in FY26; the cash cycle doubled from 64 to 127 days in two years; one customer is about 15% of sales and ten are 63%; and the founders own 82%, leaving little free float.",
             "**Verdict: follow.** Cheap and cash-rich, but I want to see the card business stop shrinking and working capital come back down before buying."
         ],
         "tagline": "A Mumbai-based maker of payment cards, cheque books, secure communications and RFID/SIM products for banks, insurers and enterprises, founded in 1993 and listed in 2025.",
@@ -556,7 +556,7 @@ const profiles: BusinessProfile[] = [
                 "text": "RFID tags and traceability systems for retailers and pharma, data loggers and SIM/eSIM cards (it supplies 20–25% of one large telecom operator's SIMs). ₹154cr in FY26 (11%) and 18% of Q1 FY27 revenue."
             }
         ],
-        "revenueText": "**Payment solutions were 50% of FY26 revenue**, communication and fulfilment 39% and IoT 11%. Card revenue has fallen two years running (₹1,052cr in FY24, ₹915cr in FY25, ₹720cr in FY26) as banks issued and renewed fewer cards; communication and IoT grew. In Q1 FY27 revenue rose 21% to ₹377cr, with payments 42% (up 5%), communication 40% (up 13%) and IoT 18% (up 145%). Banks and other financial firms were about 83% of FY26 revenue. The **largest customer was 15.5%** of FY26 revenue, the top five 48% and the top ten 63%; over 95% of revenue comes from existing clients.",
+        "revenueText": "**Payment solutions were 50% of FY26 revenue**, communication and fulfilment 39% and IoT 11%. Card revenue has fallen two years running (₹1,052cr in FY24, ₹915cr in FY25, ₹720cr in FY26) as banks issued and renewed fewer cards; communication and IoT grew. In Q1 FY27 revenue rose 21% to ₹377cr, with payments 42% (up 5%), communication 40% (up 13%) and IoT 18% (up 145%). Banks and other financial firms were about 83% of FY26 revenue. The **largest customer was 15.5%** of FY26 revenue, the top five 48% and the top ten 63%; over 95% of revenue comes from existing clients. In Q2 FY27 (call of November 2026) revenue rose 15% to ₹405cr: payments ₹218cr (+22%, on debit cards, metal cards, mass-transit projects and card exports, plus a multi-year tender win), communication ₹129cr (flat) and IoT ₹55cr (+46%); the gross margin was 42.5%, 3.3 points lower than a year earlier on the weak rupee and input costs, and the top ten customers were 57%.",
         "mixes": [
             {
                 "caption": "Revenue by segment, FY26 (investor presentation)",
@@ -630,7 +630,7 @@ const profiles: BusinessProfile[] = [
         "position": "**One of India's two largest payment-card makers, with 31.9% of card issuance in FY25** (Frost & Sullivan, quoted by the company), and the largest maker of cheque leaves; plants run at about 65–70% of capacity.",
         "money": "At March 2026 it had about **₹416cr of cash and bank deposits against ₹84cr of debt including leases (net cash about ₹332cr)**, after repaying most loans from its 2025 IPO; cash was ₹369cr at June. Finance costs fell 39% in FY26. **Working capital has grown fast: debtor days rose from 52 to 83 and inventory days from 63 to 98 over FY24–FY26**, so operating cash was ₹220cr against ₹380cr of operating profit in FY26, and free cash only ₹59cr after capex. Capex of ₹140–160cr a year is planned. It pays a dividend (₹2.50 a share final for FY26). CRISIL rates its debt. Promoters hold **81.8%**, unchanged since listing.",
         "watch": [
-            "Card revenue stabilising, helped by metal cards and exports from the Bengaluru plant.",
+            "Card revenue growth holding after Q2's +22%, helped by metal cards, exports and the Bengaluru plant (due by December 2026).",
             "The cash cycle coming back toward 2024's 64 days.",
             "The gross margin recovering as price revisions catch up with the rupee and chip costs."
         ],
