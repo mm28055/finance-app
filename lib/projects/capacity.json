@@ -794,9 +794,9 @@
   {
    "company": "Sh. Pushkar Chem.",
    "sector": "Chemicals",
-   "today": "Acid, dye-intermediate, reactive-dye and fertiliser plants at Ratnagiri (Lote Parshuram); installed tonnage not given in sources; 20.6 MW solar once the 10 MW Nanded project is done",
-   "capexStatus": "₹512cr programme (₹209cr spent by June 2026): Unit 6 at Ratnagiri, the ₹350cr Meghnagar fertiliser complex (March 2028) and a built 6,000 t dye plant; adds 4.5 lakh t of fertiliser and 72,000 t of chemicals, roughly doubling capacity",
-   "source": "Q1 FY27 call (Aug 2026) and sector note"
+   "today": "Acid, dye-intermediate, reactive-dye and fertiliser plants at Ratnagiri (Lote Parshuram), including the 6,000 t Unit 5 dye plant started in September 2026; installed tonnage not given in sources; 20.6 MW (DC) of solar after the 10 MW Nanded project started in Q2 FY27",
+   "capexStatus": "₹512cr programme (₹209cr spent by June 2026): Unit 6 at Ratnagiri (built; trials from about December 2026), the ₹350cr Meghnagar fertiliser complex (₹92cr spent by September; March 2028) and the 6,000 t dye plant (running); adds 4.5 lakh t of fertiliser and 72,000 t of chemicals, roughly doubling capacity. Plus a new ₹70cr, 3,000 t chemical plant at Unit 5 by March 2028",
+   "source": "Q2 FY27 call (3 Nov 2026, BSE transcript), Q1 FY27 call (Aug 2026) and sector note"
   },
   {
    "company": "Sudarshan Chemicals",
@@ -3488,8 +3488,8 @@
    "sector": "Packaging",
    "today": "About 66,900 t a year of plastic containers across 10 plants, incl. 12,000 t of paint-pail capacity for Grasim (Panipat 5,000, Cheyyar 4,400, Mahad/Satara 2,500) and about 1,500 t of pharma packaging",
    "utilisation": "About 75% overall (Q1 FY27 call), aiming for 78–80%; Grasim plants about 65%",
-   "capexStatus": "About ₹90cr in FY27 (₹25–30cr pharma), brownfield only, no new debt; down from ₹120–140cr a year earlier",
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
+   "capexStatus": "₹75–80cr in FY27 (₹60cr spent in seven months; was about ₹90cr, ₹25–30cr of it pharma), brownfield only, no new debt; capacity to about 70,000 t by April 2027; down from ₹120–140cr a year earlier",
+   "source": "Q2 FY27 call (Nov 2026, BSE transcript), Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Huhtamaki India",
@@ -4076,9 +4076,9 @@
    "company": "Shaily Engg. Plastic",
    "sector": "Plastics",
    "today": "Pen injectors about 55mn a year (30mn older mixed lines plus a 25mn semaglutide line from March 2026); about 75mn once the second line is in; plus consumer and industrial moulding",
-   "utilisation": "Machine utilisation 55.2% in Q1 FY27 (47.6% in FY26); new semaglutide line at about 45% efficiency; about 9mn pens made in Q1",
-   "capexStatus": "Second 25mn pen line (end-September), Abu Dhabi pen plant (sales by end-FY28), ₹80–100cr South India electronics plant and about ₹5cr for semiconductor trays; ₹500cr fundraising approval standing",
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "utilisation": "Capacity about 52% used (Q2 FY27 call); 55.2% machine use in Q1 FY27 (47.6% in FY26); first new semaglutide line ramping; 10.4mn devices made in Q2 (about 9mn in Q1)",
+   "capexStatus": "Second 25mn pen line (in qualification since late October 2026; was due end-September), Abu Dhabi pen plant (ready by end-FY28), about ₹100cr electronics and semiconductor-packaging plant, and semiconductor trays from existing capacity (trial Q3, shipments Q4 FY27); ₹500cr fundraising approval standing; debt about 0.2 times equity",
+   "source": "Q2 FY27 call (30 Oct 2026, BSE transcript), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Finolex Inds",

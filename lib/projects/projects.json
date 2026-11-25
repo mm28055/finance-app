@@ -2509,25 +2509,31 @@
    "company": "Sh. Pushkar Chem.",
    "sector": "Chemicals",
    "name": "Unit 6, Ratnagiri",
-   "what": "1.5 lakh tonnes of fertiliser and 66,000 tonnes of acid at Ratnagiri, part of a ₹512cr programme (₹209cr spent by June 2026)",
+   "what": "1.5 lakh tonnes of fertiliser and 66,000 tonnes of acid at Ratnagiri, part of a ₹512cr programme (₹209cr spent by June 2026); plant 'completely ready' and raw materials being imported (Nov 2026)",
    "cost": "₹85cr",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): trials were due Aug–Sep, but start is being timed 'in a measured way' because of raw-material prices",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+1.5 lakh t of fertiliser and +66,000 t of acid a year"
+   "source": "Q2 FY27 call (3 Nov 2026, BSE transcript); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-25",
+   "capacityAdd": "+1.5 lakh t of fertiliser and +66,000 t of acid a year",
+   "revisions": [
+    {
+     "on": "2026-11-25",
+     "text": "Q2 FY27 call (3 Nov 2026): trials slip to end-November or December 2026 (Aug call: from end-August or September); 3–3.5 months to stabilise and get subsidy (NBS) approval; no Unit 6 sales assumed in Q4 FY27, full output in FY28"
+    }
+   ]
   },
   {
    "id": "sh-pushkar-chem-meghnagar",
    "company": "Sh. Pushkar Chem.",
    "sector": "Chemicals",
    "name": "Meghnagar fertiliser complex",
-   "what": "New complex-fertiliser plant in Madhya Pradesh, 3 lakh tonnes",
+   "what": "New complex-fertiliser plant at Meghnagar, Jhabua, Madhya Pradesh (subsidiary Madhya Bharat Phosphates), 3 lakh tonnes; ₹92cr invested by 30 September 2026 from internal accruals; the planned Kisan–Madhya Bharat merger was withdrawn after NCLT delays",
    "cost": "₹350cr",
    "expectedStart": "Q4 FY28",
-   "adds": "with Unit 6, management sees about ₹2,000cr of peak revenue",
+   "adds": "with Unit 6 and the other plants, management sees about ₹2,000cr of revenue in FY28 (Nov 2026 call; ±10%)",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026) and sector note",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (3 Nov 2026, BSE transcript); Q1 FY27 call (Aug 2026) and sector note",
+   "updatedOn": "2026-11-25",
    "capacityAdd": "+3 lakh t of complex fertiliser; with Unit 6, about ₹2,000cr of peak revenue (FY27 guidance ₹1,300–1,400cr)"
   },
   {
@@ -2538,8 +2544,8 @@
    "what": "New 6,000-tonne reactive-dye plant at Ratnagiri; commercial production started 10 Sep 2026 after being held back while raw-material prices were volatile",
    "cost": "₹37cr",
    "status": "started",
-   "source": "Q1 FY27 call (Aug 2026) and sector note",
-   "updatedOn": "2026-10-23",
+   "source": "Q2 FY27 call (3 Nov 2026, BSE transcript); Q1 FY27 call (Aug 2026) and sector note",
+   "updatedOn": "2026-11-25",
    "capacityAdd": "+6,000 t of reactive dyes a year"
   },
   {
@@ -2779,8 +2785,8 @@
    "expectedStart": "Q2 FY27",
    "adds": "saves ₹30,000–40,000 a tonne of TDI",
    "status": "started",
-   "source": "Q1 FY27 call (Aug 2026): now supplying steam and power; slipped from April to September",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (Nov 2026, BSE transcript): steam from 25 July 2026, power from August; guaranteed test run in Q3 FY27; grid power cheaper than its coal power for now; Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-25"
   },
   {
    "id": "gnfc-nitrates-ammonia",
@@ -10338,12 +10344,12 @@
    "company": "Mold-Tek Pack.",
    "sector": "Packaging",
    "name": "FY27 brownfield expansion",
-   "what": "About 10–12% more capacity a year: Panipat thin-wall output doubled from August 2026 (four machines since last year), moulds moved to Cheyyar, and brownfield work at Mysore and Satara (for Mahad)",
-   "cost": "about ₹90cr in FY27 (up from ₹80–85cr), no new debt",
+   "what": "About 10–12% more capacity a year: Panipat thin-wall output doubled from August 2026, moulds moved to Cheyyar, brownfield work at Mysore and Satara (for Mahad); more machines and a printing machine on the way, taking capacity from 66,900 t to about 70,000 t by April 2027",
+   "cost": "about ₹90cr in FY27 (Jul 2026); now ₹75–80cr for the year, ₹60cr spent in the first seven months (Nov 2026), no new debt",
    "adds": "volume growth of about 10% (management); use from 75% towards 78–80%",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-10-23",
+   "source": "Q2 FY27 call (Nov 2026, BSE transcript); Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-11-25",
    "capacityAdd": "About +10–12% a year (roughly +7,000–8,000 t on 66,900 t)"
   },
   {
@@ -10351,13 +10357,13 @@
    "company": "Mold-Tek Pack.",
    "sector": "Packaging",
    "name": "Pharma packaging expansion",
-   "what": "Pharma capacity from about 1,500 to 2,500 tonnes, including a 25,000 sq ft extension at the current pharma site for an ophthalmic range; the new Sultanpur land is now kept for injector pens and other devices",
+   "what": "Pharma capacity from about 1,500 to 2,500 tonnes, including a 25,000 sq ft extension at the current pharma site for an ophthalmic range; the new Sultanpur land is now kept for injector pens and other devices; eye-dropper moulds ready by January 2027 and the product ready for testing and commercial production by March 2027 (Nov 2026 call)",
    "cost": "₹25–30cr of FY27 capex",
    "expectedStart": "Q4 FY27",
    "adds": "pharma sales of ₹50–55cr in FY27 and 40–50% a year after (guided)",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): the extension to be finished in about six months; in May the new land was to hold a pharma plant starting before March 2027",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (Nov 2026, BSE transcript); Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-11-25",
    "capacityAdd": "Pharma from about 1,500 to 2,500 t (+67% for pharma; about +1.5% for the company)"
   },
   {
@@ -12080,9 +12086,15 @@
    "expectedStart": "Q2 FY27",
    "adds": "pens above 36 million in FY27 and about 50 million in FY28",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): operational by end of September; it slipped from July–August",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+25mn pens a year (about +45%, to about 75mn)"
+   "source": "Q2 FY27 call (30 Oct 2026, BSE transcript); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-25",
+   "capacityAdd": "+25mn pens a year (about +45%, to about 75mn)",
+   "revisions": [
+    {
+     "on": "2026-11-25",
+     "text": "Q2 FY27 call (30 Oct 2026): the second line is \"starting qualification\"; it was due to be operational by the end of September"
+    }
+   ]
   },
   {
    "id": "shaily-engg-plastic-pen-line-1",
@@ -12104,19 +12116,19 @@
    "what": "New plant in Abu Dhabi for pens aimed at Europe (semaglutide opens there in 2028), insulin and later markets; 50–55% of capacity has commitments or indications",
    "expectedStart": "Q4 FY28",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (30 Oct 2026, BSE transcript): ready by the end of FY28; Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-25"
   },
   {
    "id": "shaily-engg-plastic-south-plant",
    "company": "Shaily Engg. Plastic",
    "sector": "Plastics",
    "name": "South India electronics plant",
-   "what": "New plant in South India for consumer-electronics parts; management projects about US$10m of electronics sales in 24–30 months",
-   "cost": "₹80–100cr",
+   "what": "New plant for consumer-electronics and semiconductor-packaging parts, sized to customer commitments for a scale-up over about 36 months; supplies of five electronics parts for a new customer began in Q2 FY27 from existing capacity; management projects about US$10m of electronics sales in 24–30 months",
+   "cost": "₹80–100cr (Aug 2026); 'about ₹100cr', could be ₹80–120cr (Oct 2026)",
    "status": "planned",
-   "source": "Q1 FY27 call (Aug 2026); land and start-up update promised for the next call",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (30 Oct 2026, BSE transcript); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-25"
   },
   {
    "id": "prince-pipes-bhuj-bathware",
@@ -16565,6 +16577,20 @@
    "status": "planned",
    "source": "Q2 FY27 call (13 Nov 2026); land filing of 24 Sep 2026",
    "updatedOn": "2026-11-22"
+  },
+  {
+   "id": "sh-pushkar-chem-unit5-chem",
+   "company": "Sh. Pushkar Chem.",
+   "sector": "Chemicals",
+   "name": "New chemical plant at Unit 5, Lote Parshuram",
+   "what": "A new 3,000-tonne-a-year chemical plant at Unit 5 (a different chemistry from the dye plant), approved by the board on 3 Nov 2026",
+   "cost": "₹70cr, from internal accruals and ₹45cr of convertible warrants to the chairman at ₹526.90",
+   "expectedStart": "Q4 FY28",
+   "adds": "about ₹250cr of sales a year at 75% use (chairman)",
+   "status": "planned",
+   "source": "Q2 FY27 call (3 Nov 2026, BSE transcript)",
+   "updatedOn": "2026-11-25",
+   "capacityAdd": "+3,000 t of chemicals a year"
   }
  ]
 }

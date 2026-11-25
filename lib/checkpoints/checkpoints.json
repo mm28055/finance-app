@@ -3787,7 +3787,13 @@
    "due": "Q3 FY27",
    "ifMissed": "View worsens (further slippage)",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-25",
+     "text": "Q2 FY27 call (3 Nov 2026): Unit 6 \"completely ready\", trial production to start by end-November or December 2026; 3–3.5 months for stabilising and subsidy approvals, and management assumes no Unit 6 sales in Q4 FY27"
+    }
+   ]
   },
   {
    "id": "sh-pushkar-chem-q4fy27-1",
@@ -3796,7 +3802,13 @@
    "text": "FY27 revenue of ₹1,300–1,400cr (raised guidance)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-25",
+     "text": "Q2 FY27 call (3 Nov 2026): \"visibility of INR1,250 to INR1,300 crores\" without Unit 6, called conservative; H1 was ₹683.6cr"
+    }
+   ]
   },
   {
    "id": "sh-pushkar-chem-q4fy27-2",
@@ -4160,7 +4172,11 @@
    "text": "Power plant started (slipped from April to September 2026)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Steam from 25 July 2026, power from August (Q2 FY27 call); guaranteed test run in Q3",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "deepak-fert-and-petro-q2fy27-1",
@@ -16545,7 +16561,11 @@
    "text": "Operating profit per kilo holding at ₹44 or more (guide ₹44–45; ₹46.7 in Q1)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹46.5 of operating profit per kilo in Q2 FY27 (company)",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; closer to own"
   },
   {
    "id": "mold-tek-pack-q4fy27-2",
@@ -16554,7 +16574,13 @@
    "text": "FY27 operating profit up 18–20%, as guided",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-25",
+     "text": "Q2 FY27 call: \"we hope to see an EBITDA of INR250 crores compared to INR173 crores last year\"; operating cash aimed at about ₹215cr"
+    }
+   ]
   },
   {
    "id": "mold-tek-pack-q4fy27-3",
@@ -19317,7 +19343,11 @@
    "text": "Second pen line reaching 80% efficiency",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Second line 'starting qualification' on 30 Oct 2026 (Q2 FY27 call); not yet in production",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "shaily-engg-plastic-q2fy27-3",
@@ -19327,7 +19357,11 @@
    "due": "Q2 FY27",
    "ifMet": "View changes for the better",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No innovator contract yet; management now hopes for one or two by the end of calendar 2027 (Q2 FY27 call)",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "shaily-engg-plastic-q4fy27-1",
@@ -22247,7 +22281,11 @@
    "ifMet": "Two such quarters with a 24% margin make it a buy",
    "ifMissed": "Stay follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Total income ₹878cr in Q2 FY27 (company)",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "intellect-design-arena-q3fy27-1",
@@ -22267,7 +22305,11 @@
    "text": "Days sales outstanding staying below 125 days (124 now)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "DSO 111 days at 30 Sep 2026, excluding amounts not yet contractually due (company)",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "rategain-travel-tech-q2fy27-1",
@@ -26431,7 +26473,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "sh-pushkar-chem-unit6"
+   "project": "sh-pushkar-chem-unit6",
+   "revisions": [
+    {
+     "on": "2026-11-25",
+     "text": "Q2 FY27 call (3 Nov 2026): Unit 6 \"completely ready\", trial production to start by end-November or December 2026; 3–3.5 months for stabilising and subsidy approvals, and management assumes no Unit 6 sales in Q4 FY27"
+    }
+   ]
   },
   {
    "id": "sh-pushkar-chem-meghnagar-m1",
@@ -32917,8 +32965,12 @@
    "text": "Second line operational, pen capacity about 75 million",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "shaily-engg-plastic-pen-line-2"
+   "status": "missed",
+   "project": "shaily-engg-plastic-pen-line-2",
+   "actual": "Second line 'starting qualification' on 30 Oct 2026 (Q2 FY27 call); not yet in production",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "shaily-engg-plastic-pen-line-2-m2",
@@ -32967,8 +33019,12 @@
    "text": "Update on the South plant (land, start) on the Q2 call",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "shaily-engg-plastic-south-plant"
+   "status": "partly",
+   "project": "shaily-engg-plastic-south-plant",
+   "actual": "Q2 call: electronics supplies of five parts begun and capex of about ₹100cr (₹80–120cr) reiterated for a 36-month scale-up; no land or start date given",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "prince-pipes-bhuj-bathware-m1",
@@ -35177,8 +35233,12 @@
    "text": "Second 25-million pen line running, pen capacity about 75 million a year",
    "due": "Q2 FY27",
    "createdOn": "2026-10-07",
-   "status": "pending",
-   "source": "business-shift"
+   "status": "missed",
+   "source": "business-shift",
+   "actual": "Second line 'starting qualification' on 30 Oct 2026 (Q2 FY27 call); not yet in production",
+   "resolvedOn": "2026-11-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "shaily-engg-plastic-shift-2",

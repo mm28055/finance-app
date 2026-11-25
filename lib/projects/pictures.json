@@ -14447,8 +14447,8 @@
   },
   {
    "company": "GNFC",
-   "fingerprint": "4c3307dea738b5c6",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "3edce1e75d182657",
+   "checkedOn": "2026-11-25",
    "lines": {
     "heading": "How full each plant ran against its rating (FY26)",
     "items": [
@@ -14488,7 +14488,7 @@
     ]
    },
    "money": {
-    "heading": "About ₹2,800cr of projects under way; FY27 spend ₹1,500–1,800cr (₹300cr in Q1)",
+    "heading": "About ₹2,800cr of projects under way; FY27 spend ₹1,500–1,800cr (₹300cr in Q1, about ₹500cr in H1)",
     "items": [
      {
       "name": "Dahej coal-fired steam and power plant",
@@ -14515,12 +14515,17 @@
      "sub": "Slipped from April to September: the turnkey contractor was late (Q4 FY26 call)"
     },
     {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "Dahej plant supplying steam from 25 July and power from August; grid power is cheaper than its coal power for now, so the plant is the fallback"
+    },
+    {
      "when": "Q3 FY27",
      "tone": "next",
      "milestones": [
       "gnfc-dahej-ccpp-m1"
      ],
-     "sub": "Saves about ₹30,000–40,000 a tonne of TDI at today's gas and coal prices; Q4 FY26 call put it at ₹10–12cr a month"
+     "sub": "Guaranteed test run in Q3 FY27 (Nov 2026 call). Saves about ₹30,000–40,000 a tonne of TDI at today's gas and coal prices; Q4 FY26 call put it at ₹10–12cr a month"
     },
     {
      "when": "Q2 FY28",
@@ -14541,7 +14546,7 @@
     "Q1 FY27: ethyl acetate also stopped (not running in July); acetic acid, ethyl acetate and the Bharuch TDI plant all back to normal from August. A planned shutdown is set for April 2027",
     "FY27 spend was cut from about ₹2,800cr (Q4 FY26 call) to ₹1,500–1,800cr; about ₹1,500cr more over the following two years, besides any new projects"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
+   "source": "Q2 FY27 call (Nov 2026, BSE transcript), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
    "recheck": {
     "changes": []
    }
@@ -24607,8 +24612,8 @@
   },
   {
    "company": "Mold-Tek Pack.",
-   "fingerprint": "e85a0a15fb17f2ff",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "069c1266b91f5a72",
+   "checkedOn": "2026-11-25",
    "lines": {
     "heading": "How full the plants are (Q1 FY27; Grasim plants from the May call)",
     "items": [
@@ -24633,7 +24638,7 @@
    },
    "adds": [
     {
-     "heading": "What the FY27 brownfield work adds (about 10–12% a year)",
+     "heading": "What the FY27 brownfield work adds (about 10–12% a year; about 70,000 t by April 2027)",
      "projectId": "mold-tek-pack-fy27-brownfield",
      "bars": [
       {
@@ -24648,7 +24653,8 @@
      ],
      "notes": [
       "Panipat thin-wall output doubled from August 2026, moulds moved to Cheyyar, and brownfield work at Mysore and Satara (for Mahad)",
-      "Volume growth of about 10% (management); use from 75% towards 78–80%"
+      "Volume growth of about 10% (management); use from 75% towards 78–80%",
+      "More machines and a printing machine on the way: capacity from 66,900 t to about 70,000 t by the start of FY28 (Nov 2026 call). Volume 46,000–47,000 t expected in FY27 and 50,000–51,000 t in FY28"
      ]
     },
     {
@@ -24666,7 +24672,7 @@
       }
      ],
      "notes": [
-      "About +1.5% for the whole company. Includes a 25,000 sq ft extension at the current pharma site for an ophthalmic range",
+      "About +1.5% for the whole company. Includes a 25,000 sq ft extension at the current pharma site for an ophthalmic range: eye-dropper moulds ready by January 2027, product ready by March 2027 (Nov 2026 call)",
       "Pharma sales of ₹50–55cr guided for FY27 (₹34cr in FY26) and 40–50% a year after"
      ]
     }
@@ -24676,15 +24682,13 @@
      {
       "name": "FY27 brownfield expansion",
       "sub": "includes ₹25–30cr for pharma; brownfield only, no new debt",
-      "total": 90,
-      "spent": 20,
-      "right": "₹20–22cr of about ₹90cr spent in Q1 FY27",
+      "right": "₹60cr of ₹75–80cr spent in the first seven months (Nov 2026); the Jul call had said about ₹90cr",
       "status": "building",
       "projectId": "mold-tek-pack-fy27-brownfield"
      },
      {
       "name": "Pharma packaging expansion",
-      "sub": "part of the FY27 ₹90cr",
+      "sub": "part of the FY27 capex",
       "right": "₹25–30cr of FY27 capex",
       "status": "building",
       "projectId": "mold-tek-pack-pharma"
@@ -24695,7 +24699,7 @@
     {
      "when": "Q2 FY27",
      "tone": "done",
-     "text": "Panipat thin-wall output doubled from August (test-marketed on four machines since last year)"
+     "text": "Panipat thin-wall output doubled from August (test-marketed on four machines since last year); now winning northern food clients"
     },
     {
      "when": "Q4 FY27",
@@ -24713,9 +24717,9 @@
     }
    ],
    "notes": [
-    "FY27 capex about ₹90cr, up from the ₹80–85cr said in May, and down from ₹120–140cr a year earlier"
+    "FY27 capex now ₹75–80cr (Nov 2026 call), down from about ₹90cr said in July (₹80–85cr in May) and ₹120–140cr a year earlier"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Q2 FY27 call (Nov 2026, BSE transcript), Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Motherson Sumi Wirin",
@@ -32967,16 +32971,16 @@
   },
   {
    "company": "Sh. Pushkar Chem.",
-   "fingerprint": "58eddd6209b826fa",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "e169fa71f9bbc5ed",
+   "checkedOn": "2026-11-25",
    "money": {
-    "heading": "₹512cr programme, ₹209cr spent by June 2026: adds 4.5 lakh t of fertiliser and 72,000 t of chemicals, roughly doubling capacity",
+    "heading": "₹512cr programme, ₹209cr spent by June 2026: adds 4.5 lakh t of fertiliser and 72,000 t of chemicals, roughly doubling capacity; plus a new ₹70cr chemical plant",
     "items": [
      {
       "name": "Unit 6, Ratnagiri",
       "sub": "+1.5 lakh t of fertiliser and +66,000 t of acid a year",
       "total": 85,
-      "right": "₹85cr; plant almost complete",
+      "right": "₹85cr; plant 'completely ready' (Nov 2026)",
       "status": "building",
       "projectId": "sh-pushkar-chem-unit6"
      },
@@ -32992,9 +32996,18 @@
       "name": "Meghnagar fertiliser complex (Madhya Pradesh)",
       "sub": "+3 lakh t of complex fertiliser, double Unit 6, plus an 800 t a day chemical plant for its own use",
       "total": 350,
-      "right": "₹350cr, due March 2028",
+      "right": "₹92cr of ₹350cr invested by 30 Sep 2026; due March 2028",
       "status": "building",
-      "projectId": "sh-pushkar-chem-meghnagar"
+      "projectId": "sh-pushkar-chem-meghnagar",
+      "spent": 92
+     },
+     {
+      "name": "New chemical plant at Unit 5, Lote Parshuram",
+      "sub": "+3,000 t of chemicals a year, a different chemistry; about ₹250cr of sales at 75% use",
+      "total": 70,
+      "right": "₹70cr, part-funded by ₹45cr of warrants to the chairman; by March 2028",
+      "status": "planned",
+      "projectId": "sh-pushkar-chem-unit5-chem"
      }
     ]
    },
@@ -33011,18 +33024,23 @@
      "sub": "Start had been held back while raw-material prices swung"
     },
     {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "10 MW (DC) Nanded solar project starts, taking solar to 20.6 MW; ₹92cr invested at Meghnagar by 30 September"
+    },
+    {
      "when": "Q3 FY27",
      "tone": "next",
-     "text": "Unit 6 dry trials, then load trials, from end of August or September; about 4–5 months of output this year",
+     "text": "Unit 6 trial production from end-November or December 2026, then 3–3.5 months to stabilise and get subsidy approval",
      "milestones": [
       "sh-pushkar-chem-unit6-m1"
      ],
-     "sub": "Opening remarks said the start is being timed 'in a measured way' because of raw-material prices"
+     "sub": "Management changed this (Nov 2026 call): the Aug call had said trials from end of August or September; no Unit 6 sales now assumed in Q4 FY27"
     },
     {
      "when": "FY28",
      "tone": "later",
-     "text": "First full year of Unit 6; management sees sales of possibly ₹1,700–1,750cr (FY27 ₹1,300–1,400cr, up from ₹1,250cr)"
+     "text": "First full year of Unit 6; management now sees sales near ₹2,000cr, give or take 10% (Nov 2026 call; Aug call said ₹1,700–1,750cr). FY27 ₹1,250–1,300cr ‘conservatively’, without Unit 6 (Aug call: ₹1,300–1,400cr)"
     },
     {
      "when": "Q4 FY28",
@@ -33030,14 +33048,15 @@
      "milestones": [
       "sh-pushkar-chem-meghnagar-m1"
      ],
-     "sub": "With Unit 6, about ₹2,000cr of peak revenue in theory"
+     "sub": "New ₹70cr Unit 5 chemical plant also due by March 2028"
     }
    ],
    "notes": [
     "Acid, dye-intermediate, reactive-dye and fertiliser plants at Ratnagiri (Lote Parshuram); installed tonnage not given in sources",
-    "Solar reaches 20.6 MW once the 10 MW Nanded project, nearly done, is commissioned"
+    "Solar 20.6 MW (DC) after the 10 MW Nanded project started in Q2 FY27",
+    "The Kisan–Madhya Bharat merger was withdrawn after NCLT delays (Nov 2026 call)"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Unit 5 production start 10 Sep 2026 (NSE) and sector note",
+   "source": "Q2 FY27 call (3 Nov 2026, BSE transcript), Q1 FY27 call (Aug 2026), Unit 5 production start 10 Sep 2026 (NSE) and sector note",
    "recheck": {
     "changes": [
      "No change: the official May 2026 transcript now also confirms Unit 6 ₹85cr, Unit 5 ₹37cr and Meghnagar ₹350cr (previously sector-note only); Aug figures already checked against the official text. March 2028 stays from stored facts (call says 2028)"
@@ -33115,17 +33134,17 @@
   },
   {
    "company": "Shaily Engg. Plastic",
-   "fingerprint": "5353815630d62ee2",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "99cd0f7c40135f48",
+   "checkedOn": "2026-11-25",
    "lines": {
-    "heading": "How full the plants are (Q1 FY27; new pen line's speed as of May 2026)",
+    "heading": "How full the plants are (Q2 FY27; new pen line's speed as of May 2026)",
     "items": [
      {
       "name": "All machines",
       "size": "pens plus consumer and industrial moulding",
-      "usedPct": 55.2,
-      "usedLabel": "55.2% used",
-      "note": "47.6% in FY26. About 9mn pens made in Q1"
+      "usedPct": 52,
+      "usedLabel": "about 52% used (Q2 call)",
+      "note": "55.2% in Q1 FY27 and 47.6% in FY26. 10.4mn devices made in Q2 (about 9mn in Q1)"
      },
      {
       "name": "First semaglutide pen line",
@@ -33142,7 +33161,7 @@
    },
    "adds": [
     {
-     "heading": "What the second 25mn pen line adds (operational by end-September 2026)",
+     "heading": "What the second 25mn pen line adds (starting qualification at end-October 2026; was due end-September)",
      "projectId": "shaily-engg-plastic-pen-line-2",
      "bars": [
       {
@@ -33156,7 +33175,7 @@
       }
      ],
      "notes": [
-      "For generic semaglutide and insulin; the line is held at the supplier until it runs at 80%-plus efficiency, so it should start near that level",
+      "For generic semaglutide and insulin; the line was held at the supplier until it ran at 80%-plus efficiency, and was 'starting qualification' on the 30 Oct 2026 call",
       "Pens above 36mn in FY27 and about 50mn in FY28"
      ],
      "caveat": "The figures don't quite add up: the older 30mn mixed lines plus two 25mn lines make 80mn, but the company says about 75mn in all"
@@ -33174,15 +33193,15 @@
      },
      {
       "name": "Abu Dhabi pen plant",
-      "sub": "for Europe (semaglutide opens there in 2028), insulin and later markets; 50–55% of capacity has commitments or indications",
+      "sub": "for Europe (semaglutide opens there in 2028), insulin and later markets; 50–55% of capacity has commitments or indications; ready by end-FY28 (Oct 2026 call)",
       "right": "cost not given",
       "status": "building",
       "projectId": "shaily-engg-plastic-abu-dhabi"
      },
      {
-      "name": "South India electronics plant",
-      "sub": "consumer-electronics parts; about US$10m of electronics sales in 24–30 months",
-      "right": "₹80–100cr",
+      "name": "Electronics and semiconductor-packaging plant",
+      "sub": "consumer-electronics and semiconductor-packaging parts, sized to customer commitments over about 36 months; five electronics parts already supplied from existing capacity; about US$10m of electronics sales in 24–30 months",
+      "right": "₹80–100cr (Aug); about ₹100cr, possibly ₹80–120cr (Oct 2026)",
       "status": "planned",
       "projectId": "shaily-engg-plastic-south-plant"
      }
@@ -33196,12 +33215,17 @@
     },
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "shaily-engg-plastic-pen-line-2-m1",
       "shaily-engg-plastic-south-plant-m1"
      ],
-     "sub": "Line due by end-September (Q1 FY27 call); the May call had said July–August. Not yet confirmed; the Q2 call should say"
+     "sub": "Management changed this (Oct 2026 call): the second line was only 'starting qualification' at end-October; due by end-September per the Q1 FY27 call (the May call had said July–August). South plant: capex reiterated, no land or start date"
+    },
+    {
+     "when": "Q3 FY27",
+     "tone": "next",
+     "text": "Second pen line in qualification; semiconductor tray trial production; electronics parts ramping"
     },
     {
      "when": "Q4 FY27",
@@ -33223,9 +33247,10 @@
    ],
    "notes": [
     "The older 30mn pen capacity is mixed (insulin, teriparatide, auto-injectors and others); only a small part makes semaglutide",
-    "About ₹5cr for semiconductor trays at the existing plant"
+    "Semiconductor trays from the existing plant (about ₹5cr): trial production in Q3 FY27, commercial shipments from Q4 FY27",
+    "Debt about 0.2 times equity; ₹500cr fundraising approval standing"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Q2 FY27 call (30 Oct 2026, BSE transcript), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Shakti Pumps",
