@@ -1,6 +1,33 @@
 {
  "changes": [
   {
+   "date": "2026-11-26",
+   "company": "Kirloskar Pneumatic",
+   "sector": "Pumps Comp & Eng",
+   "from": "follow",
+   "to": "wait",
+   "price": 604.6,
+   "why": "(from follow, 25 Nov 2026). The best-run business here, but growth has stalled for two years and the price needs about {need:Kirloskar Pneumatic|18}% a year against my ~15%; a strong second half would bring it back to follow."
+  },
+  {
+   "date": "2026-11-26",
+   "company": "Medi Assist Healthcare",
+   "sector": "Healthcare",
+   "from": null,
+   "to": "follow",
+   "price": 273.75,
+   "why": "I expect about 12% a year of earnings growth against the {need:Medi Assist Healthcare|12}% the price needs ({label:Medi Assist Healthcare|fits}), but the reported P/E is flattered by a one-off tax credit and growth has stalled. I would buy once revenue growth is back near 10% with a margin of 21% or more."
+  },
+  {
+   "date": "2026-11-26",
+   "company": "Sahajanand Medical Technologies",
+   "sector": "Health Products",
+   "from": null,
+   "to": "follow",
+   "price": 530.75,
+   "why": "I expect about 25% a year of earnings growth against the {need:Sahajanand Medical Technologies|29}% the price needs ({label:Sahajanand Medical Technologies|full}); worth owning lower, once its own products grow faster again."
+  },
+  {
    "date": "2026-11-24",
    "company": "Lemon Tree Hotels",
    "sector": "Hotels and Travels",

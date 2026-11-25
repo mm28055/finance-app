@@ -1,5 +1,5 @@
 {
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -1265,6 +1265,10 @@
    "call": "follow",
    "sector": "Healthcare"
   },
+  "Medi Assist Healthcare": {
+   "call": "follow",
+   "sector": "Healthcare"
+  },
   "3B Blackbio Diagnostics": {
    "call": "wait",
    "sector": "Healthcare"
@@ -1893,6 +1897,10 @@
    "call": "follow",
    "sector": "Health Products"
   },
+  "Sahajanand Medical Technologies": {
+   "call": "follow",
+   "sector": "Health Products"
+  },
   "Tarsons Products": {
    "call": "pass",
    "sector": "Health Products"
@@ -2338,7 +2346,7 @@
    "sector": "Pharma API"
   },
   "Kirloskar Pneumatic": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Pumps Comp & Eng"
   },
   "Elgi Equipments": {
