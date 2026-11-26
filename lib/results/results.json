@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T23:54:05.901Z",
+ "updated": "2026-11-26T09:57:39.860Z",
  "results": [
   {
    "company": "Aartech Solonics",
@@ -9382,6 +9382,10 @@
    "reviewed": {
     "on": "2026-11-13",
     "text": "Tax fell to 28% from 33% and interest is small; the margin points are right."
+   },
+   "call": {
+    "text": "The call clarified that margins were held back by short-term fixed-price defense contracts but guided that full-year EBITDA margins will cross 22.8% driven by H2 volume leverage, underpinned by a ₹1,600 crore revenue target and in-principle approval for a ₹1,000 crore capex. This reinforces the \"ahead\" verdict by easing margin concerns and providing clear visibility on incoming orders and capacity expansion.",
+    "on": "2026-11-26"
    }
   },
   {
@@ -10565,6 +10569,10 @@
    "reviewed": {
     "on": "2026-11-11",
     "text": "Agree with 'behind'. Depreciation (₹54cr) now exceeds operating profit (₹40cr), so without other income the quarter would have been a loss before tax."
+   },
+   "call": {
+    "text": "The call explained that severe margin compression stemmed from crude-linked input inflation, currency depreciation on imported components, and launch costs for the new Luxuriem line, prompting a fresh 5% price hike in November. With management offering no forward margin guidance amid macro uncertainty, this reinforces the near-term profitability concerns and leaves the \"behind\" verdict unchanged.",
+    "on": "2026-11-26"
    }
   },
   {
