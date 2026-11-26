@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -7961,7 +7961,10 @@
    "due": "Q2 FY27",
    "ifMet": "Wait can end, once the control sale is also settled",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "2.1%",
+   "resolvedOn": "2026-11-26",
+   "resolvedBy": "auto"
   },
   {
    "id": "whirlpool-india-q2fy27-2",
@@ -14425,7 +14428,10 @@
    "target": 30,
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "50.1%",
+   "resolvedOn": "2026-11-26",
+   "resolvedBy": "auto"
   },
   {
    "id": "united-heat-transfer-h1fy27-2",

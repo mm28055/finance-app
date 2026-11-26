@@ -10408,5 +10408,61 @@
     "subject": "Checkpoint partly: genus-power-q2fy27-2",
     "why": "New metering awards refill the order book above June's ₹24,020cr — actual ₹22,634cr (partly).  Weigh it in the call and write the outcome on the checkpoint.",
     "addedOn": "2026-11-25"
+  },
+  {
+    "company": "HEG",
+    "sector": "Elect and Refrac",
+    "exDate": "07-Sep-2026",
+    "subject": "Demerger",
+    "why": "Possible spun-off company now listed — consider adding it (not added automatically)",
+    "candidate": {
+      "symbol": "HEGRAPHITE",
+      "name": "HEG Limited",
+      "isin": "INE0Y9J01020",
+      "listedOn": "2026-11-27"
+    },
+    "addedOn": "2026-11-26"
+  },
+  {
+    "company": "Mishra Dhatu Nigam (MIDHANI)",
+    "sector": "Aerospace defence",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-26"
+  },
+  {
+    "company": "Whirlpool India",
+    "sector": "Consumer Durables",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-26"
+  },
+  {
+    "company": "United Heat Transfer",
+    "sector": "Industrials",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-26"
+  },
+  {
+    "company": "Sahasra Electronic",
+    "sector": "EMS & Electronics",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-26"
+  },
+  {
+    "company": "Whirlpool India",
+    "sector": "Consumer Durables",
+    "subject": "Checkpoint missed: whirlpool-india-q2fy27-1",
+    "why": "Operating margin back above 6% (5.1% in Q1) — actual 2.1% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-26"
+  },
+  {
+    "company": "United Heat Transfer",
+    "sector": "Industrials",
+    "subject": "Checkpoint met: united-heat-transfer-h1fy27-1",
+    "why": "H1 FY27 revenue growth of 30–35% as guided — actual 50.1% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-26"
   }
 ]
