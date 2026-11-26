@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-25T23:46:37.122Z",
-  "movesDate": "2026-11-25",
+  "updated": "2026-11-26T23:43:00.947Z",
+  "movesDate": "2026-11-26",
   "items": [
     {
       "id": "2026-11-26|Action Const.Eq.|policy|construction-equipment-manufacturing-sch",
@@ -14,6 +14,74 @@
       "reason": "policy",
       "url": "https://economictimes.indiatimes.com/news/economy/policy/cabinet-clears-rs-11000-crore-push-for-construction-equipment-manufacturing-rs-4288-crore-kamarajar-port-expansion/articleshow/136171592.cms",
       "source": "Economic Times",
+      "dot": true
+    },
+    {
+      "id": "2026-11-26|Action Const.Eq.|move",
+      "company": "Action Const.Eq.",
+      "sector": "Vehicles",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 8.8,
+      "tone": "info",
+      "headline": "Up 8.8%: no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-11-26|Apex Frozen Foods|policy|ustr-proposes-india-tariffs",
+      "company": "Apex Frozen Foods",
+      "sector": "Food Products",
+      "date": "2026-11-26",
+      "kind": "policy",
+      "tone": "watch",
+      "headline": "The US Trade Representative proposed tariffs of up to 25% on Indian goods over alleged manufacturing excess capacity.",
+      "summary": "Processed shrimp exports to the US contribute roughly 70% of its revenue. A proposed 25% tariff on seafood imports would sharply hit its export volumes and profit margins.",
+      "reason": "policy",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOUVQ3R29NV3YzRzM5QWZ2SlRFQklLc1NIdEFGNUdFeHNYRmNrcC1Jblh6bENrR0drU0pWbHVSNFVHeUFPYlJXajY5QVBrbFRpeDBxQmd5by00dF9vQ1MtVHJVS0tMa0hLNk1XX1AyM1BmYXM5cTZZTUVNWlVUYXFJY2pEZmJyTmlVX3dYNU9sTnFSQ3NsUnhIYXBqckpvcm5CR0V0RmVVc05GX2ttOVV5czhLLXJheXM4RkdES3dGTW9KMEc4Vm1fcW9GSjFrTFNqVGtNZ1I3Mm5VMC0yZ0NTaXJGaHZtdnpSX3BQT3Y4YU5jS1pwTXdN0gH8AUFVX3lxTFBTUVhqN0JzejFtamZjOG1PZkFacHAzQ2VYeGRqYm93VjNMeUNYcVd6RmdfamZ5aV9aMF8yQ0hzR004VGFfUE9oTHZTSzV4NDgwX3d2U3Q2X0NVS2ZzRGpmanlmMkN2M3Q0TGNCaVd5UFhza3VBc29ZUHRVbDMwUnRuSURBcEg3cjJNODBYMGlqS0N4dk9iSmJzOFRCMzRiMnVVZGJYZWhFVVU0bkxTZEV0bDNTRS1qclhGMlhvTXl0MHJVajN6Q1Bnd29QdVBsa3l1WFEtem9uaXJsNzZUaE9jRFZUdnBNMzduNFFVWUJBSk5KNlZXekowSGxNUw?oc=5",
+      "source": "ET Manufacturing",
+      "dot": true
+    },
+    {
+      "id": "2026-11-26|Avalon Tech|move",
+      "company": "Avalon Tech",
+      "sector": "EMS & Electronics",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 7.5,
+      "tone": "info",
+      "headline": "Up 7.5%: no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-11-26|GE Power|move",
+      "company": "GE Power",
+      "sector": "Electrical Equipment",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 7.1,
+      "tone": "info",
+      "headline": "Up 7.1%: no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-11-26|HEG|move",
+      "company": "HEG",
+      "sector": "Elect and Refrac",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 8.6,
+      "tone": "good",
+      "headline": "Up 8.6%: Promoter group entities bought 0.19% equity in HEG Advanced Materials for ₹16.5 crore",
+      "summary": "Two promoter entities purchased 6.39 lakh shares from the open market. The insider purchase near prevailing market prices demonstrates promoter confidence following the recent corporate split.",
+      "reason": "filing",
+      "url": "https://nsearchives.nseindia.in/corporate/HEGAM_25112026183420_STEX_IntimationReg7_2.pdf",
+      "source": "Exchange filing",
       "dot": true
     },
     {
@@ -31,6 +99,21 @@
       "dot": true
     },
     {
+      "id": "2026-11-26|Jupiter Wagons|move",
+      "company": "Jupiter Wagons",
+      "sector": "Industrial - Railway",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 7.3,
+      "tone": "good",
+      "headline": "Up 7.3%: Jupiter Wagons formed an 80:20 joint venture with South Korea's Woojin Industrial Systems",
+      "summary": "The partnership allows the company to expand into passenger rail and metro segments. Management targets ₹3,000 crore to ₹4,000 crore in annual revenue from this business over 4 to 5 years.",
+      "reason": "news",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMUgxQmJUbHVzNEtuNzBFcU9fQ050QVNnNXE1OS0xT0pJaEVUT1BndjE3R0RmR0FDUmNocnVBLXd2TzFwb3dYYXBJZVRHNWJ1Ny1MOG5Wa093ODlZSTNuQWlCOU12VW1Rb1dpQWp5ME4tejRPN0M3UFNnNDhRb0JfdWZBeTN0bThDUVRtLWR1ODJFY3RzVHBDSk9LQlc3dWtNaS1PaUZvR0NPNDlPQzhqR2pFQVFtNVpyaEpiYmF30gHDAUFVX3lxTE4wUmM3NGJYaFZfNWJaX1Aya2otMGxQVHBEWUgtTkk0RWJDdmkxZXpnNmkwZzVfQkg4S0dNSHJkU2FLcTBCT1JCSjQ3bm82LVI4M3ZLeU4yZ2xRaUVZMFhKSEJLUW92cTNGUjlWaGltQ1E2R04xREY5cUdPQkFzM2dqQmFKR2tHQUNNVUdVM3NyLXFVUkVhQnRRUEhlY1NFdXlQLXFrNWd1TXZ2YlphOERBVWFnaVJJU3g5cWRQaFZjaUhjYw?oc=5",
+      "source": "CNBC TV18",
+      "dot": true
+    },
+    {
       "id": "2026-11-26|Motherson Sumi Wirin|policy|copper-prices-hit-11-month-low",
       "company": "Motherson Sumi Wirin",
       "sector": "Auto Related",
@@ -45,6 +128,33 @@
       "dot": true
     },
     {
+      "id": "2026-11-26|Paramount Communications|policy|ustr-proposes-india-tariffs",
+      "company": "Paramount Communications",
+      "sector": "Cables",
+      "date": "2026-11-26",
+      "kind": "policy",
+      "tone": "watch",
+      "headline": "The US Trade Representative proposed tariffs of up to 25% on Indian goods over alleged manufacturing excess capacity.",
+      "summary": "Power cable exports to the US account for 25% to 30% of its revenue. The proposed 25% tariff would directly increase import costs for US buyers and compress export earnings.",
+      "reason": "policy",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOUVQ3R29NV3YzRzM5QWZ2SlRFQklLc1NIdEFGNUdFeHNYRmNrcC1Jblh6bENrR0drU0pWbHVSNFVHeUFPYlJXajY5QVBrbFRpeDBxQmd5by00dF9vQ1MtVHJVS0tMa0hLNk1XX1AyM1BmYXM5cTZZTUVNWlVUYXFJY2pEZmJyTmlVX3dYNU9sTnFSQ3NsUnhIYXBqckpvcm5CR0V0RmVVc05GX2ttOVV5czhLLXJheXM4RkdES3dGTW9KMEc4Vm1fcW9GSjFrTFNqVGtNZ1I3Mm5VMC0yZ0NTaXJGaHZtdnpSX3BQT3Y4YU5jS1pwTXdN0gH8AUFVX3lxTFBTUVhqN0JzejFtamZjOG1PZkFacHAzQ2VYeGRqYm93VjNMeUNYcVd6RmdfamZ5aV9aMF8yQ0hzR004VGFfUE9oTHZTSzV4NDgwX3d2U3Q2X0NVS2ZzRGpmanlmMkN2M3Q0TGNCaVd5UFhza3VBc29ZUHRVbDMwUnRuSURBcEg3cjJNODBYMGlqS0N4dk9iSmJzOFRCMzRiMnVVZGJYZWhFVVU0bkxTZEV0bDNTRS1qclhGMlhvTXl0MHJVajN6Q1Bnd29QdVBsa3l1WFEtem9uaXJsNzZUaE9jRFZUdnBNMzduNFFVWUJBSk5KNlZXekowSGxNUw?oc=5",
+      "source": "ET Manufacturing",
+      "dot": true
+    },
+    {
+      "id": "2026-11-26|Patil Automation|move",
+      "company": "Patil Automation",
+      "sector": "Industrials",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 5,
+      "tone": "info",
+      "headline": "Up 5% (at its 5% limit two days running): no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
       "id": "2026-11-26|Pondy Oxides & Chem.|policy|copper-prices-hit-11-month-low",
       "company": "Pondy Oxides & Chem.",
       "sector": "Mining & Metals Recycle",
@@ -56,6 +166,21 @@
       "reason": "policy",
       "url": "https://economictimes.indiatimes.com/markets/commodities/copper-slumps-to-lowest-in-11-months-as-investors-flee/articleshow/136172100.cms",
       "source": "Economic Times",
+      "dot": true
+    },
+    {
+      "id": "2026-11-26|RMC Switchgears|move",
+      "company": "RMC Switchgears",
+      "sector": "Electrical Equipment",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 10,
+      "tone": "good",
+      "headline": "Up 10%: RMC Switchgears won a large contract worth ₹521.83 crore",
+      "summary": "The massive project order substantially expands the company's order book and boosts future revenue visibility.",
+      "reason": "news",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOUVota1o2aXB1dkh4MVJLTFl3eUdnMDZTdWg2RXprb3lxSkoxZmh5eXk3ZE1RTnduV2EtR012RjdJVGhreXhMOGctMWFZT0ZVN25ZejNqUHRFejFlUl9Oc25uNHVjVDRoM2tpeWZWYzlaRWtJYUZFVVFxT0xmcTcwa01ER0x1VlB0YS1ZZmJya19DY29CSEpPVThhVWdkNHJNN05jbE9leHlLNmp0d0xMMDhuQ0FjcUppYmNRUFdIZnloT0g5ckVYWHdEdFlBb03SAdQBQVVfeXFMTjY2dHV5TWhJMVpFSV9oU0hhLUZlamd2S1pYZUFtczVfbEFoT212VWVJMGxCUklRODEyUDdjcFhVVGxnZ2dtbko3ZUhWaEZJeE1RNW5SeXlqUVkyRVJlTlJMX2UzWHoyRS16N255cGx6NmdFbGlQQmhHZ0pYOGRKTjQtbWt3WDY1MHdzUmdSeHRLNFozOGpOcUZZZDhhb3hnQ3dxaDg4ajZoeXVubHc1dDdKZ1M2SDU0SXYtaVVTYzZ2ZlhQRzZmdk4tY0JjWUUyenVYZDg?oc=5",
+      "source": "Moneycontrol.com",
       "dot": true
     },
     {
@@ -73,6 +198,71 @@
       "dot": true
     },
     {
+      "id": "2026-11-26|Rubicon Research|move",
+      "company": "Rubicon Research",
+      "sector": "Pharma",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 8.2,
+      "tone": "info",
+      "headline": "Up 8.2%: no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-11-26|Shaily Engg. Plastic|move",
+      "company": "Shaily Engg. Plastic",
+      "sector": "Plastics",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 16.3,
+      "tone": "info",
+      "headline": "Up 16.3%: no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-11-26|Shiprocket|move",
+      "company": "Shiprocket",
+      "sector": "Platform Cos",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 8.3,
+      "tone": "info",
+      "headline": "Up 8.3%: no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-11-26|Shivalik Bimetal|move",
+      "company": "Shivalik Bimetal",
+      "sector": "Iron and Steel",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 7,
+      "tone": "info",
+      "headline": "Up 7%: no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-11-26|Thomas Cook India|move",
+      "company": "Thomas Cook India",
+      "sector": "Travel Services",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": -10,
+      "tone": "info",
+      "headline": "Down 10%: no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
       "id": "2026-11-26|TIL|policy|construction-equipment-manufacturing-sch",
       "company": "TIL",
       "sector": "Vehicles",
@@ -87,6 +277,19 @@
       "dot": true
     },
     {
+      "id": "2026-11-26|United Heat Transfer|move",
+      "company": "United Heat Transfer",
+      "sector": "Industrials",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": -2,
+      "tone": "info",
+      "headline": "Down 2% (at its 2% limit two days running): no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
       "id": "2026-11-26|Vidya Wires|policy|copper-prices-hit-11-month-low",
       "company": "Vidya Wires",
       "sector": "Cables",
@@ -98,6 +301,34 @@
       "reason": "policy",
       "url": "https://economictimes.indiatimes.com/markets/commodities/copper-slumps-to-lowest-in-11-months-as-investors-flee/articleshow/136172100.cms",
       "source": "Economic Times",
+      "dot": true
+    },
+    {
+      "id": "2026-11-26|Wockhardt|move",
+      "company": "Wockhardt",
+      "sector": "Pharma",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 7.5,
+      "tone": "info",
+      "headline": "Up 7.5%: no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-11-26|Zaggle Prepaid|move",
+      "company": "Zaggle Prepaid",
+      "sector": "Software",
+      "date": "2026-11-26",
+      "kind": "move",
+      "pct": 9,
+      "tone": "good",
+      "headline": "Up 9%: Zaggle signed a five-year agreement to provide its expense platform to Infosys",
+      "summary": "Adding a marquee client like Infosys strengthens Zaggle's software business and should drive steady long-term user fees.",
+      "reason": "filing",
+      "url": "https://nsearchives.nseindia.in/corporate/ZAGGLE_26112026150237_Infosys_Limited.pdf",
+      "source": "Exchange filing",
       "dot": true
     },
     {
