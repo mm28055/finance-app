@@ -10464,5 +10464,19 @@
     "subject": "Checkpoint met: united-heat-transfer-h1fy27-1",
     "why": "H1 FY27 revenue growth of 30–35% as guided — actual 50.1% (met).  Weigh it in the call and write the outcome on the checkpoint.",
     "addedOn": "2026-11-26"
+  },
+  {
+    "company": "Precision Camshafts",
+    "sector": "Auto Related",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-27"
+  },
+  {
+    "company": "DEE Development",
+    "sector": "Industrials",
+    "subject": "New Special call 18 Nov 2026",
+    "why": "Special call 18 Nov 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-11-27"
   }
 ]
