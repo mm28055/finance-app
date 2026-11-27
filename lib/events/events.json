@@ -1,23 +1,6 @@
 {
- "updated": "2026-11-26T23:43:53.873Z",
+ "updated": "2026-11-27T23:19:04.624Z",
  "events": [
-  {
-   "company": "Transformers & Rect",
-   "sector": "Electrical Transformers",
-   "kind": "call",
-   "date": "2026-10-13",
-   "time": "5:00 pm",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/TRIL_06102026171606_IntimationofEarningCallQ22027.pdf"
-  },
-  {
-   "company": "Transformers & Rect",
-   "sector": "Electrical Transformers",
-   "kind": "results",
-   "date": "2026-10-13",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2699_WebXMLFile_20261006_125821117.xml"
-  },
   {
    "company": "Accent Microcell",
    "sector": "Pharma Others",
